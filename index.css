@@ -1,7 +1,9 @@
 body {
     background-color: black;
     }
-    
+h1 {
+   color: white; 
+}
     
     .logo {
         height: 100px;
