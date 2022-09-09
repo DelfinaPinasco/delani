@@ -1,15 +1,44 @@
 body {
     background-color: black;
-    }
-h1 {
-   color: white; 
+    color: white;
 }
+
+.logo {
+    height: 100px;
+    width: 100px;
+    text-align: start;
+}
+
+.menu {
+    background-color: rgba(223, 144, 65, 0.904);
+    text-align: right;
+}
+
+header {
+    background-color: #32323D;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    display: flex;
+    color: white;
+    margin: 15px;
     
-    .logo {
-        height: 100px;
-        width: 100px;
-    }
-    
-    .menu {
-          background-color: rgba(223, 144, 65, 0.904);
-          text-align: right;}
+   
+}
+.headerinfo {
+   
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.secciones h2 {
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px;
+    text-align: center;
+
+}
+.secciones img{
+    height: 200x;
+    width: 200px;
+    justify-content: space-around;
+}
