@@ -1,12 +1,33 @@
-body{
+body {
     background-color: black;
 }
-.title1{
+
+.title1 {
     text-align: center;
     margin: 150px;
     color: white;
 }
+
 .section-movies article {
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.section-movies article:hover {
+    color: black;
+    background-color: white;
+}
+
+.section-movies2 article {
     color: white;
     border-style: solid;
     border-width: 1px;
@@ -14,9 +35,10 @@ body{
     border-radius: 15px;
     display: inline-block;
     padding: 8px;
+
 }
 
-.section-movies article:hover {
+.section-movies2 article:hover {
     color: black;
     background-color: white;
 }
