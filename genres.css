@@ -4,7 +4,7 @@ body {
 
 .title1 {
     text-align: center;
-    margin: 150px;
+    margin: 100px;
     color: white;
 }
 
@@ -39,6 +39,46 @@ body {
 }
 
 .section-movies2 article:hover {
+    color: black;
+    background-color: white;
+}
+.title2 {
+    text-align: center;
+    margin: 100px;
+    color: white;
+}
+
+.section-series article {
+    display: flex;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.section-series article:hover {
+    color: black;
+    background-color: white;
+}
+
+.section-series2 article {
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 8px;
+
+}
+
+.section-series2 article:hover {
     color: black;
     background-color: white;
 }
