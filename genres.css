@@ -4,16 +4,19 @@ body {
 
 .title1 {
     text-align: center;
-    margin: 150px;
+    margin: 100px;
     color: white;
 }
 
-.section-movies article {
+.section-movies {
     display: flex;
-    display: inline-block;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    
+}
+
+.section-movies article {
     color: white;
     border-style: solid;
     border-width: 1px;
@@ -27,18 +30,29 @@ body {
     background-color: white;
 }
 
-.section-movies2 article {
+.title2 {
+    text-align: center;
+    margin: 100px;
+    color: white;
+}
+
+.section-series {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-series article {
     color: white;
     border-style: solid;
     border-width: 1px;
     border-color: white;
     border-radius: 15px;
-    display: inline-block;
     padding: 8px;
-
 }
 
-.section-movies2 article:hover {
+.section-series article:hover {
     color: black;
     background-color: white;
 }
