@@ -21,10 +21,6 @@ header {
     display: flex;
     color: white;
     margin: 15px;
-
-    display: flex;
-    
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: white;
@@ -40,7 +36,7 @@ header {
    
     text-align: start;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .secciones h2 {
     border-style: solid;
