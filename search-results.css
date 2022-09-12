@@ -38,3 +38,6 @@ header {
     display: flex;
     flex-wrap: nowrap;
 }
+.headerinfo:hover {
+    color: black;
+    background-color: white;}
