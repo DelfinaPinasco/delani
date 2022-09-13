@@ -1,12 +1,18 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color:black;
     color: white;
+
 }
 
 .logo {
     height: 100px;
     width: 100px;
     text-align: start;
+}
+.home {
+        height: 20px;
+        width: 20px;
+        text-align: start;
 }
 
 .menu {
@@ -73,5 +79,10 @@ header {
         overflow: scroll; 
     }
 
-
+    .miniconte {
+        height: 380px;
+        width: 250px;
+        object-fit: cover;
+    
+    }
         
