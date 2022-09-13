@@ -45,6 +45,7 @@ header {
     border-width: 1px;
     padding: 8px;
     text-align: center;
+    
 
 }
 
@@ -55,5 +56,11 @@ header {
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
+
+
+   
 }
 
+.headerinfo:hover {
+    color: black;
+    background-color: white;}

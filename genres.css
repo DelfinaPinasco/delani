@@ -93,20 +93,23 @@ header {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
-    
-   
 }
+
 .headerinfo {
-   
+
     text-align: start;
     display: flex;
     flex-wrap: nowrap;
 }
 
+
+.headerinfo:hover {
+    color: black;
+    background-color: white;
+}
 .img {
-    height: 250x;
+    height: 350px;
     width: 250px;
     object-fit: cover;
-    
 
 }
