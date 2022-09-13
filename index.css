@@ -29,16 +29,22 @@ header {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
-    
-   
+
+
 }
+
 .headerinfo {
-   
+
     text-align: start;
     display: flex;
     flex-wrap: nowrap;
 }
+<<<<<<< HEAD
 .container h2 {
+=======
+
+.secciones h2 {
+>>>>>>> d1d419144dcb6fa81f472ced375330c8f4067499
     border-style: solid;
     border-width: 1px;
     padding: 8px;
@@ -46,7 +52,12 @@ header {
     
 
 }
+<<<<<<< HEAD
 .container img{
+=======
+
+.secciones img {
+>>>>>>> d1d419144dcb6fa81f472ced375330c8f4067499
     height: 200x;
     width: 200px;
     flex-wrap: nowrap;
@@ -61,6 +72,7 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;}
+<<<<<<< HEAD
 
 
     .container {
@@ -74,3 +86,5 @@ header {
 
 
         
+=======
+>>>>>>> d1d419144dcb6fa81f472ced375330c8f4067499
