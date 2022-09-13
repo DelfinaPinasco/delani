@@ -1,6 +1,6 @@
 body {
-    background-color:black;
-    color: white;
+    background-image: url(.//imgs/glaxia.webp)
+   
 
 }
 
@@ -19,6 +19,9 @@ body {
     background-color: rgba(223, 144, 65, 0.904);
     text-align: right;
 }
+
+
+
 
 header {
     background-color: #32323D;
@@ -45,6 +48,25 @@ header {
     display: flex;
     flex-wrap: nowrap;
 }
+
+.generos {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+.home {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+.favs {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+
 .container h2 {
     border-style: solid;
     border-width: 1px;
@@ -77,12 +99,44 @@ header {
         flex-wrap: nowrap;
         padding: 10px;
         overflow: scroll; 
+
+        
     }
 
-    .miniconte {
-        height: 380px;
-        width: 250px;
-        object-fit: cover;
-    
+    .container {
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
     }
-        
+
+   
+        .h1 {
+            color: white;
+            
+        }
+        .h2 {
+            color: white;
+        }
+
+.miniconte{
+color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+}  
+.data {
+   
+    text-align: center;
+}
+
+.miniconte .estreno {
+    font-weight: bold
+}
+.tituloo {
+    color: yellow;
+}
