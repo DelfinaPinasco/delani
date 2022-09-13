@@ -38,7 +38,7 @@ header {
     display: flex;
     flex-wrap: nowrap;
 }
-.secciones h2 {
+.container h2 {
     border-style: solid;
     border-width: 1px;
     padding: 8px;
@@ -46,14 +46,14 @@ header {
     
 
 }
-.secciones img{
+.container img{
     height: 200x;
     width: 200px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
-
+    overflow: scroll; 
 
    
 }
@@ -61,3 +61,16 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;}
+
+
+    .container {
+        background-color: black;
+        display: flex;
+        box-sizing: 500%;
+        flex-wrap: nowrap;
+        padding: 10px;
+        overflow: scroll; 
+    }
+
+
+        
