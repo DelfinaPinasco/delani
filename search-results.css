@@ -13,10 +13,21 @@ body {
     text-align: right;
 }
 
+
+
+.img1 {
+    height: 380px;
+    border-radius: 9px;
+}
+.search{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 header {
     background-color: #32323D;
     font-family: 'Raleway', sans-serif;
-    text-align: center;
+    text-align: right;
     display: flex;
     color: white;
     margin: 15px;
@@ -28,23 +39,44 @@ header {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
-    
-   
 }
+
 .headerinfo {
-   
+
     text-align: start;
     display: flex;
     flex-wrap: nowrap;
 }
+
+
+
+.generos {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+.home {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+.favs {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+
+.buscador {
+    height: 25px;
+    width: 25px;
+    flex-wrap: nowrap;
+}
+
 .headerinfo:hover {
     color: black;
-    background-color: white;}
-.img1 {
-    height: 380px;
-    border-radius: 9px;
+    background-color: white;
 }
-.search{
-    display: flex;
-    flex-wrap: wrap;
-}
+

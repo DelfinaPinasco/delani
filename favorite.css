@@ -13,36 +13,35 @@ body {
     text-align: right;
 }
 
-header {
-    background-color: #32323D;
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    display: flex;
+
+
+footer {
     color: white;
-    margin: 15px;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
+}
+
+
+
+.container h2 {
     border-style: solid;
     border-width: 1px;
-    border-color: white;
-    border-radius: 15px;
     padding: 8px;
+    text-align: center;
 
 
 }
 
-.headerinfo {
-
-    text-align: start;
-    display: flex;
+.container img {
+    height: 200x;
+    width: 200px;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: scroll;
 }
 
-.headerinfo:hover {
-    color: black;
-    background-color: white;
-}
+
+
 
 .title {
     text-align: center;
@@ -82,3 +81,60 @@ header {
     text-align: center;
     color: yellow;
 }
+
+header {
+    background-color: #32323D;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    display: flex;
+    color: white;
+    margin: 15px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.headerinfo {
+
+    text-align: start;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+.generos {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+.home {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+.favs {
+    height: 20px;
+    width: 20px;
+    text-align: start;
+}
+
+
+.buscador {
+    height: 25px;
+    width: 25px;
+    flex-wrap: nowrap;
+}
+
+.headerinfo:hover {
+    color: black;
+    background-color: white;
+}
+
