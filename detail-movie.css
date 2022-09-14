@@ -81,4 +81,5 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: fit-content;
+    color: white;
 }
