@@ -76,5 +76,10 @@ header {
     height: 380px;
     width: 250px;
     object-fit: cover;
+    align-items: center;
 
+}
+.nombre {
+    text-align: center;
+    color: yellow;
 }
