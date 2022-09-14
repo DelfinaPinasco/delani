@@ -79,4 +79,17 @@ header {
     color: black;
     background-color: white;
 }
+.footer{
+    color: white;
+}
+.nombredepeliculas{
+    color: white;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
