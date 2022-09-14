@@ -130,8 +130,8 @@ footer {
     color: yellow;
 }
 
-.containerseries {
+.timothe {
+    height: 1500px;
+    width: 1500px;
     flex-wrap: nowrap;
-    display: flex;
-    flex-direction: row;
 }
