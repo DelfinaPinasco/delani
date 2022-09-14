@@ -1,7 +1,5 @@
 body {
     background-image: url(.//imgs/glaxia.webp)
-   
-
 }
 
 .logo {
@@ -9,10 +7,11 @@ body {
     width: 100px;
     text-align: start;
 }
+
 .home {
-        height: 20px;
-        width: 20px;
-        text-align: start;
+    height: 20px;
+    width: 20px;
+    text-align: start;
 }
 
 .menu {
@@ -20,13 +19,10 @@ body {
     text-align: right;
 }
 
-
-
-
 header {
     background-color: #32323D;
     font-family: 'Raleway', sans-serif;
-    text-align: center;
+    text-align: right;
     display: flex;
     color: white;
     margin: 15px;
@@ -38,8 +34,6 @@ header {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
-
-
 }
 
 .headerinfo {
@@ -47,6 +41,10 @@ header {
     text-align: start;
     display: flex;
     flex-wrap: nowrap;
+}
+
+footer {
+    color: white;
 }
 
 .generos {
@@ -60,6 +58,7 @@ header {
     width: 20px;
     text-align: start;
 }
+
 .favs {
     height: 20px;
     width: 20px;
@@ -72,65 +71,67 @@ header {
     border-width: 1px;
     padding: 8px;
     text-align: center;
-    
+
 
 }
-.container img{
+
+.container img {
     height: 200x;
     width: 200px;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-right: 20px;
     margin-left: 20px;
-    overflow: scroll; 
-
-   
+    overflow: scroll;
 }
 
 .headerinfo:hover {
     color: black;
-    background-color: white;}
+    background-color: white;
+}
 
 
-    .container {
-        background-color: black;
-        display: flex;
-        box-sizing: 500%;
-        flex-wrap: nowrap;
-        padding: 10px;
-        overflow: scroll; 
+.container {
+    background-color: black;
+    display: flex;
+    box-sizing: 500%;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
 
-        
-    }
 
-    .container {
-        color: white;
-        border-style: solid;
-        border-width: 2px;
-        border-color: white;
-        border-radius: 15px;
-        padding: 8px;
-    }
+.h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', 'swap';
+}
 
-   
-        .h1 {
-            color: white;
-            text-align: center;
-            
-        }
-        .h2 {
-            color: white;
-        }
+.h2 {
+    color: white;
+}
 
 
 .data {
-   
     text-align: center;
 }
 
 .miniconte .estreno {
     font-weight: bold
 }
+
 .tituloo {
     color: yellow;
+}
+
+.containerseries {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
 }

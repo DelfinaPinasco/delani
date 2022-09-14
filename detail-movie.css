@@ -41,3 +41,16 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;}
+
+.fototitanic {
+    height: 470px;
+}
+.titulo {
+    text-align: center;
+    ;
+}
+.conteinermovie{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
