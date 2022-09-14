@@ -46,11 +46,38 @@ header {
     height: 470px;
 }
 .titulo {
+    font-size: 60px;
+    font-weight: bold;
     text-align: center;
-    ;
 }
+.genero{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.calificación{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.estreno{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.duración{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sinópsis{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .conteinermovie{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    
+}
+.titanic {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
