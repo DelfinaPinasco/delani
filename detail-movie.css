@@ -78,6 +78,8 @@ header {
     
 }
 .titanic {
-    justify-content: flex-end;
-    flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
 }
