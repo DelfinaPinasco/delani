@@ -40,3 +40,11 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;}
+.img1 {
+    height: 380px;
+    border-radius: 9px;
+}
+.search{
+    display: flex;
+    flex-wrap: wrap;
+}
