@@ -73,19 +73,27 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.conteinermovie{
+.titanic .contenedor{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
+    min-height: 80vh; 
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 12vh;
+    color: white; 
+    align-items: center;
+    flex-wrap: nowrap;
 }
-.titanic {
-    display: flex;
+.contenedor {
+    margin: 0 auto; 
+    margin: 5vh;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
-    color: white;
+} 
+
+.titanic .titulo{
+    font-weight: 600px;
+    font-size: 30px;
 }
+
 
 
 header {
