@@ -134,6 +134,7 @@ header {
     margin-right: 20px;
     margin-left: 20px;
     overflow: scroll;
+    border-radius: 9px;
 }
 
 footer {
