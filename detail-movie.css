@@ -83,17 +83,24 @@ footer {
     align-items: center;
     flex-wrap: nowrap;
 }
-.contenedor {
-    margin: 0 auto; 
-    margin: 5vh;
-    flex-direction: row;
-} 
-
-.titanic .titulo{
-    font-weight: 600px;
-    font-size: 30px;
+.fototitanic {
+    height: 600px;
+    width: 600px;
 }
 
+.titanic .titulo{
+    
+    font-size: 40px;
+    ;
+}
+
+
+.data {
+    height: 200x;
+    width: 200px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 
 header {
@@ -150,4 +157,12 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;
+}
+
+.star {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
