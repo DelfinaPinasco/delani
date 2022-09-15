@@ -44,8 +44,8 @@ footer {
 
 
 
-.fototitanic {
-    height: 470px;
+.fotofast {
+    height: 600px;
 }
 .titulo {
     font-size: 60px;
@@ -93,15 +93,6 @@ footer {
     font-size: 40px;
     ;
 }
-
-
-.data {
-    height: 200x;
-    width: 200px;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
 
 header {
     background-color: #32323D;
@@ -173,5 +164,13 @@ header {
     width: 20px;
     flex-wrap: nowrap;
     flex-direction: row;
-    
 }
+.informacion {
+  display: flex;
+        height: 200x;
+        width: 200px;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+}
+
