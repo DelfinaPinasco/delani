@@ -69,3 +69,11 @@ header {
     background-color: white;
 }
 
+.iconos {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}

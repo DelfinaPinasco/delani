@@ -166,3 +166,12 @@ header {
     flex-wrap: nowrap;
     flex-direction: row;
 }
+
+.iconos {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+}
