@@ -85,12 +85,9 @@ header {
     background-color: white;
 }
 
-<<<<<<< HEAD
-=======
 .footer {
     color: white;
 }
->>>>>>> e5e9a7c2b3ed7647001940249969f3427ae03556
 
 .nombredepeliculas {
     color: white;
@@ -105,17 +102,8 @@ header {
     border-radius: 15px;
     padding: 8px;
 }
-<<<<<<< HEAD
-.section1 article:hover {
-    color: black;
-    background-color: rgb(62, 62, 65);
-}
-.section2 article:hover {
-    color:  black;
-=======
 .search article:hover {
     color: black;
->>>>>>> e5e9a7c2b3ed7647001940249969f3427ae03556
     background-color: rgb(62, 62, 65);
 }
 .título{
