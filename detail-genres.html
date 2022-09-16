@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./detail-movie.css">
-
-<body>
     <header>
         <img class="logo" src="./imgs/logo posta.png" alt="logo">
         <a href="./index.html" style="color:white" , class="headerinfo">HOME</a> <img class="home"
@@ -26,37 +24,52 @@
         <br>
         <br>
 
-        <form action="./detail-movie.html" method="get">
+        <form action="./search-results.html" method="get">
             <img class="buscador" src="./imgs/buscador.png">
             <input type="text" name="Busca por título, género ..." placeholder="Busca por título, género ..." value="">
 
         </form>
 
-
-        </form>
-
     </header>
+
+
+<body>
+
+    <h1 class="titulo">ROMANCE</h1>
+
     <main class="containermovie">
 
-        <div class=" titanic">
-            <img class="fototitanic" src="../delani/imgs/titanic foto.jpg" alt="titanic portada">
-            <ul>
-                <h1 class="titulo">COMEDIA</h1>
-                <li class="calificación">Calificación: 4.5/5</li>
-                <li class="genero">Género: Romance/Drama</li>
-                <li class="estreno">Fecha de estreno: 5 de febrero de 1998</li>
-                <li class="duración">Duración: 3h 14min</li>
-                <li class="sinópsis">Sinópsis: Jack es un joven artista que gana un pasaje para viajar a América en el
-                    Titanic, el transatlántico más grande y seguro jamás construido. A bordo del buque conoce a Rose,
-                    una chica de clase alta que viaja con su madre y su prometido Cal, un millonario engreído a quien
-                    solo interesa el prestigio de la familia de su prometida. Jack y Rose se enamoran a pesar de las
-                    trabas que ponen la madre de ella y Cal en su relación. Mientras, el lujoso transatlántico se acerca
-                    a un inmenso iceberg.</li>
-            </ul>
+        <section class="contenedor">
+            <article><img class="fotofast" src="../amor" alt="fast and furious">
+            </article>
 
-        </div>
+            <section class="inf">
+                <p class="calificación">Calificación:</p>
+                <article class="star">
+                    <img class="star" src=".//imgs/star.png" alt="star">
+                    <img class="star" src=".//imgs/star.png" alt="star">
+                    <img class="star" src=".//imgs/star.png" alt="">
+                    <img class="star" src=".//imgs/star.png" alt="">
+                    <img class="star" src=".//imgs/star.png" alt="">
+                </article>
+                <p class="genero">Género: Acción/ suspenso</p>
+                <p class="estreno">Fecha de estreno: 2 de abril de 2009</p>
+                <p class="duración">Duración: 1h 47min</p>
+                <p class="sinópsis">Sinópsis: El exconvicto Dominic Toretto se une a su viejo adversario, Brian
+                    O'Conner, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una
+                    organización criminal que se dedica a introducir heroína en la ciudad.</p>
+
     </main>
 
+
+    <h1 class="trailer">¿Querés saber más? Haz click aquí para ver el trailer</h1>
+
+    <article class="videot">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/NXfmQsBMYAI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </article>
 
 </body>
 
