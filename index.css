@@ -1,5 +1,6 @@
 body {
-    background-image: url(.//imgs/glaxia.webp)
+    background-image: url(.//imgs/glaxia.webp);
+    width: auto;
 }
 
 .logo {
@@ -141,9 +142,22 @@ header {
 
 footer {
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
 
 }
 
 .iconos {
     text-align: center;
+    height: 10px;
+}
+.autores {
+    align-self: flex-end;
+}
+#redes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
