@@ -79,3 +79,11 @@ footer {
 .nombredepeliculas {
     color: yellow;
 }
+footer {
+    color: white;
+}
+
+.iconos {
+    text-align: center;
+    margin-top: 2%;
+}

@@ -85,16 +85,12 @@ header {
     background-color: white;
 }
 
-.footer {
-    color: white;
-}
-
 .nombredepeliculas {
     color: yellow;
     text-align: center;
 }
 
-.search article{
+.search article {
     color: white;
     border-style: solid;
     border-width: 2px;
@@ -102,20 +98,29 @@ header {
     border-radius: 15px;
     padding: 8px;
 }
+
 .search article:hover {
     color: black;
     background-color: rgb(62, 62, 65);
 }
-.título{
+
+.título {
     color: white;
 }
-.ryf{
+
+.ryf {
     color: white;
     text-align: center;
 }
-.título{
+
+.título {
     text-align: center;
 }
+
+footer {
+    color: white;
+}
+
 .iconos {
     text-align: center;
     margin-top: 2%;
