@@ -35,21 +35,18 @@ footer {
     overflow: scroll;
 }
 
-<<<<<<< HEAD
-
 
 
 .fototitanic {
     height: 470px;
     border-radius: 9px;
     justify-self: center;
-=======
+}   
 .fotofast {
     height: 700px;
     margin-right: 60px;
     margin-left: 40px;
     border-radius: 9px;
->>>>>>> 5c3b4e8653d4bbeb8882f9667d039838e2075b6c
 }
 
 .titulo {
@@ -82,12 +79,9 @@ footer {
     padding: 8px;
 }
 
-<<<<<<< HEAD
 .titanic .contenedor{
-    
-    
     min-height: 80vh; 
-=======
+}
 .calificación {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -111,7 +105,6 @@ footer {
 .contenedor {
     display: flex;
     min-height: 80vh;
->>>>>>> 5c3b4e8653d4bbeb8882f9667d039838e2075b6c
     background-position: center center;
     background-size: cover;
     margin-bottom: 12vh;
@@ -181,12 +174,10 @@ header {
     background-color: white;
 }
 
-<<<<<<< HEAD
 .estrellas{
     width: 140px;
     height: 140px;
 }
-=======
 
 
 .iconos {
@@ -225,4 +216,4 @@ header {
     text-align: center;
 
 }
->>>>>>> 5c3b4e8653d4bbeb8882f9667d039838e2075b6c
+
