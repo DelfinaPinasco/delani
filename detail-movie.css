@@ -61,8 +61,15 @@ body{
 }
 .favoritos{
     font-size: 20px;
+    color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    width: 340px;
+    height: 340px;
+}
+.favoritos .favs{
+    color: black;
+    text-align: justify;
 }
 .favoritos:hover {
     color: black;

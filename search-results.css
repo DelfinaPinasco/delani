@@ -85,12 +85,12 @@ header {
     background-color: white;
 }
 
-footer {
+.footer {
     color: white;
 }
 
 .nombredepeliculas {
-    color: white;
+    color: yellow;
     text-align: center;
 }
 
