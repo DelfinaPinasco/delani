@@ -18,11 +18,15 @@ body {
 .img1 {
     height: 380px;
     border-radius: 9px;
+    width: 250px;
+    object-fit: cover;
 }
 
 .search {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header {
@@ -90,12 +94,6 @@ header {
     text-align: center;
 }
 
-.search {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 .search article{
     color: white;
     border-style: solid;
@@ -120,5 +118,6 @@ header {
 }
 .iconos {
     text-align: center;
+    margin-top: 2%;
 }
 
