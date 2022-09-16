@@ -59,7 +59,7 @@ footer {
     overflow: scroll;
     border-radius: 9px;
 
-    
+
 }
 
 .container {
@@ -76,9 +76,10 @@ footer {
     width: 250px;
     object-fit: cover;
     align-items: center;
-    
+
 
 }
+
 .nombre {
     text-align: center;
     color: yellow;
@@ -140,3 +141,6 @@ header {
     background-color: white;
 }
 
+.iconos {
+    text-align: center;
+}

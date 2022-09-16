@@ -28,7 +28,7 @@ body {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
-    
+
 }
 
 .section-movies article:hover {
@@ -141,4 +141,8 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;
+}
+
+.iconos {
+    text-align: center;
 }

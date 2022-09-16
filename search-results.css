@@ -19,7 +19,8 @@ body {
     height: 380px;
     border-radius: 9px;
 }
-.search{
+
+.search {
     display: flex;
     flex-wrap: wrap;
 }
@@ -79,20 +80,24 @@ header {
     color: black;
     background-color: white;
 }
-.footer{
+
+.footer {
     color: white;
 }
-.nombredepeliculas{
+
+.nombredepeliculas {
     color: white;
     text-align: center;
 }
-.search{
+
+.search {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
 
+<<<<<<< HEAD
 .search article{
     color: white;
     border-style: solid;
@@ -115,3 +120,8 @@ header {
 .título{
     text-align: center;
 }
+=======
+.iconos {
+    text-align: center;
+}
+>>>>>>> 5c3b4e8653d4bbeb8882f9667d039838e2075b6c
