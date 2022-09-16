@@ -84,12 +84,34 @@ header {
 }
 .nombredepeliculas{
     color: white;
+    text-align: center;
 }
 .search{
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    align-content: center;
 }
 
+.search article{
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
+.search article:hover {
+    color: black;
+    background-color: rgb(62, 62, 65);
+}
+.título{
+    color: white;
+}
+.ryf{
+    color: white;
+    text-align: center;
+}
+.título{
+    text-align: center;
+}

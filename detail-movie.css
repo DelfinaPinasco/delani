@@ -1,6 +1,7 @@
-body {
-    background-image: url(.//imgs/glaxia.webp)
+body{
+    background-image: url(../delani/imgs/glaxia.webp); 
 }
+
 
 .logo {
     height: 100px;
@@ -46,6 +47,8 @@ footer {
 
 .fototitanic {
     height: 470px;
+    border-radius: 9px;
+    justify-self: center;
 }
 .titulo {
     font-size: 60px;
@@ -72,9 +75,27 @@ footer {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.favoritos{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.favoritos:hover {
+    color: black;
+    background-color: rgb(204, 201, 50);
+}
+.contenedor .favoritos{
+    color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
 
 .titanic .contenedor{
-    display: flex;
+    
+    
     min-height: 80vh; 
     background-position: center center;
     background-size: cover;
@@ -147,7 +168,12 @@ header {
     flex-wrap: nowrap;
 }
 
-.headerinfo:hover {
+.fototitanic:hover {
     color: black;
     background-color: white;
+}
+
+.estrellas{
+    width: 140px;
+    height: 140px;
 }
