@@ -1,6 +1,5 @@
 body {
-    background-image: url(.//imgs/glaxia.webp);
-    width: auto;
+    background-image: url(.//imgs/glaxia.webp)
 }
 
 .logo {
@@ -18,9 +17,9 @@ body {
 
 .img1 {
     height: 380px;
+    border-radius: 9px;
     width: 250px;
     object-fit: cover;
-    border-radius: 9px;
 }
 
 .search {
@@ -86,7 +85,7 @@ header {
     background-color: white;
 }
 
-footer {
+.footer {
     color: white;
 }
 
@@ -94,7 +93,8 @@ footer {
     color: white;
     text-align: center;
 }
-.miniconte{
+
+.search article{
     color: white;
     border-style: solid;
     border-width: 2px;
@@ -102,11 +102,7 @@ footer {
     border-radius: 15px;
     padding: 8px;
 }
-.section1 article:hover {
-    color: black;
-    background-color: rgb(62, 62, 65);
-}
-.section2 article:hover {
+.search article:hover {
     color: black;
     background-color: rgb(62, 62, 65);
 }
@@ -124,16 +120,3 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
-.section1{
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-}
-.section2{
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-}
-
