@@ -1,5 +1,6 @@
 body {
-    background-image: url(.//imgs/glaxia.webp)
+    background-image: url(.//imgs/glaxia.webp);
+    width: auto;
 }
 
 .logo {
@@ -85,7 +86,7 @@ header {
     background-color: white;
 }
 
-.footer {
+footer {
     color: white;
 }
 
@@ -118,5 +119,6 @@ header {
 }
 .iconos {
     text-align: center;
+    margin-top: 2%;
 }
 
