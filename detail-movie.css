@@ -40,6 +40,7 @@ footer {
     margin-left: 40px;
     border-radius: 9px;
 }
+
 .titulo {
     font-size: 40px;
     font-weight: bold;
@@ -47,37 +48,43 @@ footer {
     color: white;
 
 }
-.genero{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.calificación{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.estreno{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.duración{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.sinópsis{
+
+.genero {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contenedor{
+.calificación {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.estreno {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.duración {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sinópsis {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
     display: flex;
-    min-height: 80vh; 
+    min-height: 80vh;
     background-position: center center;
     background-size: cover;
     margin-bottom: 12vh;
-    color: white; 
+    color: white;
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .fototitanic {
     height: 600px;
     width: 600px;
@@ -142,11 +149,7 @@ header {
 
 
 .iconos {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    text-align: center;
 }
 
 
@@ -163,7 +166,7 @@ header {
     border-radius: 15px;
     padding: 15px;
     margin-right: 60px;
-    
+
 }
 
 .trailer {
@@ -176,6 +179,7 @@ header {
     width: 20px;
     display: flex;
 }
+
 .videot {
     text-align: center;
 

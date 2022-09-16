@@ -19,7 +19,8 @@ body {
     height: 380px;
     border-radius: 9px;
 }
-.search{
+
+.search {
     display: flex;
     flex-wrap: wrap;
 }
@@ -79,25 +80,23 @@ header {
     color: black;
     background-color: white;
 }
-.footer{
+
+.footer {
     color: white;
 }
-.nombredepeliculas{
+
+.nombredepeliculas {
     color: white;
 }
-.search{
+
+.search {
     display: flex;
     justify-content: space-between;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
-.iconos {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    
-}
 
+.iconos {
+    text-align: center;
+}
