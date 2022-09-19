@@ -2,10 +2,7 @@ body {
     background-image: url(.//imgs/glaxia.webp)
 }
 
-.logo {
-    height: 100px;
-    width: 100px;
-}
+
 
 .title1 {
     text-align: center;
@@ -146,7 +143,7 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;
-    
+
 }
 
 .iconos {
@@ -157,3 +154,191 @@ header {
 .h1 {
     text-align: center;
 }
+<<<<<<< HEAD
+=======
+
+/* MOBILE */
+
+@media (max-width: 420px) {
+    body {
+        background-image: url(.//imgs/glaxia.webp)
+    }
+
+
+
+    .title1 {
+        text-align: center;
+        margin: 40px;
+        color: white;
+    }
+
+    .section-movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+        
+    }
+
+    .section-movies article {
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+
+    }
+
+    .section-movies article:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.1)
+    }
+
+    .title2 {
+        text-align: center;
+        margin: 100px;
+        color: white;
+    }
+
+    .section-series {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-series article {
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+        margin-bottom: 100px;
+        
+    }
+
+    .section-series article:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.1)
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+
+
+
+    .img {
+        height: 380px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 9px;
+
+    }
+
+
+
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .h1 {
+        text-align: center;
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+        }
+    .h2 {
+        color: white;
+        text-align: center;
+        font-size:medium;
+        }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        text-align: start;
+    }
+
+    .menu {
+        background-color: rgba(223, 144, 65, 0.904);
+        text-align: right;
+    }
+
+    header {
+        background-color: #32323D;
+        font-family: 'Raleway', sans-serif;
+        text-align: right;
+        display: flex;
+        color: white;
+        margin: 1px;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+    }
+
+    .headerinfo {
+
+        text-align: start;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: x-small;
+
+    }
+
+
+
+    .generos {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .home {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .favs {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+
+    .buscador {
+        height: 10px;
+        width: 10px;
+        flex-wrap: nowrap;
+    }
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+
+
+    .headerinfo:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.1)
+    }
+}
+>>>>>>> b948601fcc40ca06884278a4b64d819840dbb677
