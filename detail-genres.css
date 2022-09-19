@@ -68,6 +68,7 @@ header {
     color: black;
     background-color: white;
 }
+
 footer {
     color: white;
 }
@@ -76,9 +77,11 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
+
 .nombredepeliculas {
     color: yellow;
 }
+
 footer {
     color: white;
 }
@@ -87,3 +90,4 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
+
