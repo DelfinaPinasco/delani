@@ -34,13 +34,7 @@ body{
 }
 
 
-
-.fototitanic {
-    height: 470px;
-    border-radius: 9px;
-    justify-self: center;
-}   
-.fotofast {
+.fotoriverdale {
     height: 700px;
     margin-right: 60px;
     margin-left: 40px;
@@ -73,11 +67,14 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.duración {
+.episodios {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.temporadas {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .sinópsis {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
