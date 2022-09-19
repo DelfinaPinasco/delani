@@ -102,7 +102,7 @@ header {
 .search article:hover {
     color: black;
     background-color: rgb(62, 62, 65);
-}
+    transform: scale(1.1)}
 
 .título {
     color: white;
