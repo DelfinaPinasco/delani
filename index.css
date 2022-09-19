@@ -158,8 +158,8 @@ footer {
 
 @media (max-width: 420px) {
     .logo {
-        height: 100px;
-        width: 100px;
+        height: 50px;
+        width: 50px;
         text-align: start;
     }
     
@@ -180,7 +180,7 @@ footer {
         text-align: right;
         display: flex;
         color: white;
-        margin: 15px;
+        margin: 1px;
         justify-content: space-around;
         align-items: center;
         color: white;
@@ -196,6 +196,8 @@ footer {
         text-align: start;
         display: flex;
         flex-wrap: nowrap;
+        font-size:x-small;
+    
     }
     
     
@@ -220,9 +222,14 @@ footer {
     
     
     .buscador {
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
         flex-wrap: nowrap;
+        
+       
+    }
+    .search {
+        
     }
     
     .headerinfo:hover {
@@ -245,7 +252,7 @@ footer {
         border-color: white;
         border-radius: 15px;
         padding: 8px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
     
     
@@ -253,11 +260,13 @@ footer {
         color: white;
         text-align: center;
         font-family: 'Roboto', 'swap';
+        font-size:large;
     }
     
     .h2 {
         color: white;
         text-align: center;
+        font-size:medium;
     }
     
     
@@ -283,8 +292,8 @@ footer {
     }
     
     .container img {
-        height: 200x;
-        width: 200px;
+        height: 100x;
+        width: 100px;
         flex-wrap: nowrap;
         justify-content: space-between;
         margin-right: 20px;
@@ -296,6 +305,7 @@ footer {
     
     footer {
         color: white;
+        font-size: x-small;
     }
     
     .iconos {
