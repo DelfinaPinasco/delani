@@ -154,8 +154,6 @@ header {
 .h1 {
     text-align: center;
 }
-<<<<<<< HEAD
-=======
 
 /* MOBILE */
 
@@ -234,9 +232,6 @@ header {
         color: white;
     }
 
-
-
-
     .img {
         height: 380px;
         width: 250px;
@@ -244,9 +239,6 @@ header {
         border-radius: 9px;
 
     }
-
-
-
     .iconos {
         text-align: center;
         margin-top: 2%;
@@ -341,4 +333,3 @@ header {
         transform: scale(1.1)
     }
 }
->>>>>>> b948601fcc40ca06884278a4b64d819840dbb677
