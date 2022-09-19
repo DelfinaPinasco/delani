@@ -17,6 +17,7 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 100px;
+
 }
 
 .section-movies article {
@@ -178,6 +179,8 @@ header {
         text-align: center;
         margin-bottom: 100px;
         
+        
+        
     }
 
     .section-movies article {
@@ -187,6 +190,7 @@ header {
         border-color: white;
         border-radius: 15px;
         padding: 8px;
+        
 
     }
 
