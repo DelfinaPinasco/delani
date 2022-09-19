@@ -164,4 +164,13 @@ footer {
         background-color: white;
         transform: scale(1.1)
     }
+    footer {
+        color: white;
+        font-size: x-small;
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    }
 }

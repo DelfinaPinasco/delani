@@ -242,6 +242,16 @@ header {
     h2 {
         font-size: medium;
     }
+
+    footer {
+        color: white;
+        font-size: x-small;
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    }
 }
 
 

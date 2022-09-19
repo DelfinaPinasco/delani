@@ -40,6 +40,10 @@ body{
     border-radius: 9px;
     justify-self: center;
 }   
+footer {
+    color: white;
+  g
+}
 .fotofast {
     height: 700px;
     margin-right: 60px;
@@ -302,5 +306,15 @@ header {
         color: black;
         background-color: white;
         transform: scale(1.1)
+    }
+
+    footer {
+        color: white;
+        font-size: x-small;
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
     }
 }
