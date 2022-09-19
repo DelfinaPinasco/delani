@@ -26,8 +26,8 @@ footer {
     border-width: 1px;
     padding: 8px;
     text-align: center;
-    
-    
+
+
 }
 
 .container img {
@@ -38,7 +38,7 @@ footer {
     margin-right: 20px;
     margin-left: 20px;
     overflow: scroll;
-    
+
 }
 
 
@@ -72,8 +72,6 @@ footer {
     width: 250px;
     object-fit: cover;
     align-items: center;
-
-
 }
 
 .nombre {
@@ -142,6 +140,81 @@ header {
     margin-top: 2%;
 }
 
-.container .miniconte :hover{
+.container .miniconte :hover {
     transform: scale(1.1)
+}
+
+/* MOBILE */
+
+@media (max-width: 420px) {
+    body {
+        background-image: url(.//imgs/glaxia.webp)
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        text-align: start;
+    }
+
+    header {
+        background-color: #32323D;
+        font-family: 'Raleway', sans-serif;
+        text-align: right;
+        display: flex;
+        color: white;
+        margin: 1px;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+    }
+
+    .headerinfo {
+        text-align: start;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: x-small;
+    }
+
+    .generos {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .home {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .favs {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+
+    .buscador {
+        height: 10px;
+        width: 10px;
+        flex-wrap: nowrap;
+    }
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+
+
+    .headerinfo:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.1)
+    }
 }
