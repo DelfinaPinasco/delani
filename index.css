@@ -74,6 +74,7 @@ header {
 .headerinfo:hover {
     color: black;
     background-color: white;
+    transform: scale(1.1)
 }
 
 
@@ -145,4 +146,8 @@ footer {
 .iconos {
     text-align: center;
     margin-top: 2%;
+}
+
+.container .miniconte :hover {
+    transform: scale(1.1)
 }

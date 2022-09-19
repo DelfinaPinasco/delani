@@ -64,7 +64,7 @@ header {
     flex-wrap: nowrap;
 }
 
-.headerinfo:hover {
+.headerinfo :hover {
     color: black;
     background-color: white;
 }

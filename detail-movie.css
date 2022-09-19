@@ -74,6 +74,7 @@ body{
 .favoritos:hover {
     color: black;
     background-color: rgb(204, 201, 50);
+    transform: scale(1.1);
 }
 .contenedor .favoritos{
     color: white;
@@ -174,9 +175,10 @@ header {
     flex-wrap: nowrap;
 }
 
-.fototitanic:hover {
+.fototitanic :hover {
     color: black;
     background-color: white;
+
 }
 
 .estrellas{
