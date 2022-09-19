@@ -158,8 +158,8 @@ footer {
 
 @media (max-width: 420px) {
     .logo {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
         text-align: start;
     }
     
@@ -203,34 +203,26 @@ footer {
     
     
     .generos {
-        height: 20px;
-        width: 20px;
+        height: 10px;
+        width: 10px;
         text-align: start;
     }
     
     .home {
-        height: 20px;
-        width: 20px;
+        height: 10px;
+        width: 10px;
         text-align: start;
     }
     
     .favs {
-        height: 20px;
-        width: 20px;
+        height: 10px;
+        width: 10px;
         text-align: start;
     }
     
     
-    .buscador {
-        height: 20px;
-        width: 20px;
-        flex-wrap: nowrap;
-        
-       
-    }
-    .search {
-        
-    }
+    
+    
     
     .headerinfo:hover {
         color: black;
@@ -268,10 +260,20 @@ footer {
         text-align: center;
         font-size:medium;
     }
-    
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+    .buscador {
+        height: 10px;
+        width: 10px;
+        flex-wrap: nowrap;
+    }
     
     .data {
         text-align: center;
+        font-size: small
     }
     
     .miniconte .estreno {
