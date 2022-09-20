@@ -168,7 +168,11 @@ header {
     margin-right: 60px;
 
 }
-
+.favo:hover {
+    color: yellow;
+    background-color: rgb(204, 201, 50);
+    transform: scale(1.1);
+}
 .trailer {
     color: white;
     text-align: center;

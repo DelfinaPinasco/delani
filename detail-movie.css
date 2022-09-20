@@ -76,8 +76,8 @@ footer {
     text-align: center;
     font-size: medium;
 }
-.favoritos:hover {
-    color: black;
+.favo:hover {
+    color: yellow;
     background-color: rgb(204, 201, 50);
     transform: scale(1.1);
 }
@@ -172,6 +172,7 @@ header {
     width: 20px;
     text-align: start;
 }
+
 
 
 .buscador {
