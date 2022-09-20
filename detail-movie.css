@@ -344,4 +344,9 @@ header {
         width: 15px;
         font-size: x-small
     }
+    .videot {
+        width:373px; 
+        height:210px
+
+    }
 }
