@@ -13,22 +13,6 @@ body {
     text-align: right;
 }
 
-
-
-.img1 {
-    height: 380px;
-    border-radius: 9px;
-    width: 250px;
-    object-fit: cover;
-}
-
-.search {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
 header {
     background-color: #32323D;
     font-family: 'Raleway', sans-serif;
@@ -53,8 +37,6 @@ header {
     flex-wrap: nowrap;
 }
 
-
-
 .generos {
     height: 20px;
     width: 20px;
@@ -73,7 +55,6 @@ header {
     text-align: start;
 }
 
-
 .buscador {
     height: 25px;
     width: 25px;
@@ -89,8 +70,13 @@ header {
     color: yellow;
     text-align: center;
 }
-
-.search article {
+.img1 {
+    height: 380px;
+    border-radius: 9px;
+    width: 250px;
+    object-fit: cover;
+}
+.sectionnn article {
     color: white;
     border-style: solid;
     border-width: 2px;
@@ -100,7 +86,7 @@ header {
     margin-bottom: 100px;
 }
 
-.search article:hover {
+.sectionnn article:hover {
     color: black;
     background-color: rgb(62, 62, 65);
     transform: scale(1.1)}
@@ -117,10 +103,17 @@ header {
 .título {
     text-align: center;
 }
+.sectionnn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
 footer {
     color: white;
 }
+
 
 .iconos {
     text-align: center;
@@ -209,13 +202,5 @@ footer {
     h2 {
         font-size:large; 
     }
-    footer {
-        color: white;
-        font-size: x-small;
-    }
     
-    .iconos {
-        text-align: center;
-        margin-top: 2%;
-    }
 }
