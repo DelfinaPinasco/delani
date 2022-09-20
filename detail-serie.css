@@ -89,6 +89,7 @@ body{
 }
 
 
+
 header {
     background-color: #32323D;
     font-family: 'Roboto', 'swap';
@@ -287,10 +288,14 @@ header {
         text-align: center;
         font-family: 'Roboto', 'swap';
         font-size:large;
+        margin-top: 40px;
     }
     .fotoriverdale {
         height: 300px;
         width: 300px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        
     }
     .sinópsis {
         font-size: small;
@@ -313,16 +318,29 @@ header {
     section.contenedor {
         flex-wrap: nowrap;
         display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
     }
+    
+
     h1.trailer {
         color: white;
         text-align: center;
         font-family: 'Roboto', 'swap';
-        font-size:large;
+        font-size:medium;
     }
     .videot {
-        width:"180"; 
-        height:"55"
+        width:345px; 
+        height:180px
+    }
+    .button {
+        width:50px; 
+        height:50px;
+        font-size: xx-small;
+    }
+    section.inf {
+        margin-left: 50px;
+        
     }
 }
 
