@@ -228,6 +228,7 @@ header {
         display: flex;
         flex-wrap: nowrap;
         font-size: x-small;
+        font-family: 'Roboto', 'swap';
     }
 
     .generos {
