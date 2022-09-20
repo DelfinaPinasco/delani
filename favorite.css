@@ -41,9 +41,6 @@ footer {
 
 }
 
-
-
-
 .title {
     text-align: center;
     margin: 40px;
@@ -232,7 +229,7 @@ header {
         border-color: white;
         border-radius: 15px;
         padding: 8px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         
 
     }
@@ -251,6 +248,18 @@ header {
     .iconos {
         text-align: center;
         margin-top: 2%;
+    }
+
+    img.foto {
+        height: 142.18px;
+        width:100px
+    }
+    section.container {
+        height: 192.18px;
+        width:320px
+    }
+    h4.nombre {
+        font-size: small;
     }
     
 }
