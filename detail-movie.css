@@ -42,10 +42,15 @@ body{
 }   
 footer {
     color: white;
+<<<<<<< HEAD
   g
     }
 
 
+=======
+  
+}
+>>>>>>> fe1b0b8dd1e0ffffefe6a409ae6138944d3b8b7d
 .fotofast {
     height: 700px;
     margin-right: 60px;
@@ -297,7 +302,13 @@ header {
         width: 10px;
         flex-wrap: nowrap;
     }
-    .search {
+    .search1 {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+
+    .search2 {
         height: 15px;
         width: 15px;
         font-size: x-small
@@ -318,5 +329,20 @@ header {
     .iconos {
         text-align: center;
         margin-top: 2%;
+    }
+    .titulo {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+    }
+    .fotofast {
+    height: 350px;
+    margin-right: 60px;
+    margin-left: 40px;
+    border-radius: 9px;
+    }
+    .trailer {
+        font-size:large;
     }
 }
