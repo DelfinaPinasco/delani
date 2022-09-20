@@ -192,6 +192,9 @@ header {
 .etiqueta {
     color: white;
 }
+.textofooter {
+    color: white;
+}
 
 /* MOBILE */
 
@@ -375,8 +378,10 @@ header {
         width: 10px;
         height: 10px;
     }
-
    
 
+
 }
+
+
 
