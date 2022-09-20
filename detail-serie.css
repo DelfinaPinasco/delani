@@ -84,14 +84,15 @@ body{
     background-size: cover;
     margin-bottom: 12vh;
     color: white;
-    align-items: center;
+    align-items:center;
     flex-wrap: nowrap;
 }
 
 
+
 header {
     background-color: #32323D;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', 'swap';
     text-align: right;
     display: flex;
     color: white;
@@ -168,7 +169,11 @@ header {
     margin-right: 60px;
 
 }
-
+.favo:hover {
+    color: yellow;
+    background-color: rgb(204, 201, 50);
+    transform: scale(1.1);
+}
 .trailer {
     color: white;
     text-align: center;
@@ -186,5 +191,192 @@ header {
 }
 .etiqueta {
     color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 420px) {
+    body {
+        background-image: url(.//imgs/glaxia.webp)
+    }
+
+    .logo {
+        height: 40px;
+        width: 40px;
+        text-align: start;
+    }
+
+    header {
+        background-color: #32323D;
+        font-family: 'Raleway', sans-serif;
+        text-align: right;
+        display: flex;
+        color: white;
+        margin: 1px;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+    }
+
+    .headerinfo {
+        text-align: start;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: x-small;
+        font-family: 'Roboto', 'swap';
+    }
+
+    .generos {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .home {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+    .favs {
+        height: 10px;
+        width: 10px;
+        text-align: start;
+    }
+
+
+    .buscador {
+        height: 10px;
+        width: 10px;
+        flex-wrap: nowrap;
+    }
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+
+    .videot {
+        width:373px; 
+        height:210px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+
+    }
+
+
+    .headerinfo:hover {
+        color: black;
+        background-color: white;
+        transform: scale(1.1)
+    }
+
+    footer {
+        color: white;
+        font-size: x-small;
+        
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    
+    }
+    
+    .titulo {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+        margin-top: 40px;
+    }
+    .fotoriverdale {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        
+    }
+    .sinópsis {
+        font-size: small;
+    }
+    .calificación {
+        font-size: small;
+    }
+    .genero {
+        font-size: small;
+    }
+    .estreno {
+        font-size: small;
+    }
+    .episodios {
+        font-size: small;
+    }
+    .temporadas {
+        font-size: small;
+    }
+    section.contenedor {
+        flex-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    
+
+    h1.trailer {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:medium;
+    }
+    .videot {
+        width:345px; 
+        height:180px
+    }
+    .button {
+        width:50px; 
+        height:50px;
+        font-size: xx-small;
+    }
+    section.inf {
+        margin-left: 60px;
+        margin-bottom: 30px;
+        width: 280px;
+        height: 234px;
+    }
+
+    p.calificación {
+        font-size: x-small;
+    }
+    p.genero {
+        font-size: x-small;
+    }
+    p.estreno {
+        font-size: x-small;
+    }
+    p.episodios {
+        font-size: x-small;
+    }
+    p.temporadas {
+        font-size: x-small;
+    }
+
+    p.sinópsis {
+        font-size: x-small;
+    }
+
+
+    .star img.star {
+        width: 10px;
+        height: 10px;
+    }
+
+   
+
 }
 

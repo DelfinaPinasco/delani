@@ -2,7 +2,10 @@ body {
     background-image: url(.//imgs/glaxia.webp)
 }
 
+footer {
+    color: white;
 
+}
 
 .title1 {
     text-align: center;
@@ -16,7 +19,8 @@ body {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    margin-bottom: 100px;
+ 
+
 }
 
 .section-movies article {
@@ -26,6 +30,7 @@ body {
     border-color: white;
     border-radius: 15px;
     padding: 8px;
+    margin-bottom: 100px;
 
 }
 
@@ -91,7 +96,7 @@ body {
 
 header {
     background-color: #32323D;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', 'swap';
     text-align: right;
     display: flex;
     color: white;
@@ -178,6 +183,8 @@ header {
         text-align: center;
         margin-bottom: 100px;
         
+        
+        
     }
 
     .section-movies article {
@@ -187,6 +194,7 @@ header {
         border-color: white;
         border-radius: 15px;
         padding: 8px;
+        
 
     }
 
@@ -233,8 +241,8 @@ header {
     }
 
     .img {
-        height: 380px;
-        width: 250px;
+        height: 190px;
+        width: 125px;
         object-fit: cover;
         border-radius: 9px;
 
@@ -251,12 +259,8 @@ header {
         font-family: 'Roboto', 'swap';
         font-size:large;
         }
-    .h2 {
-        color: white;
-        text-align: center;
-        font-size:medium;
-        }
 
+    
     .logo {
         height: 40px;
         width: 40px;
@@ -291,7 +295,7 @@ header {
         display: flex;
         flex-wrap: nowrap;
         font-size: x-small;
-
+        font-family: 'Roboto', 'swap';
     }
 
 
@@ -332,4 +336,27 @@ header {
         background-color: white;
         transform: scale(1.1)
     }
+    footer {
+        color: white;
+        font-size: x-small;
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    }
+    
+    .section-movies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+    h3 {
+        font-size: small;
+    }
+    
 }

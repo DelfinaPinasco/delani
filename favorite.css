@@ -41,9 +41,6 @@ footer {
 
 }
 
-
-
-
 .title {
     text-align: center;
     margin: 40px;
@@ -81,7 +78,7 @@ footer {
 
 header {
     background-color: #32323D;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', 'swap';
     text-align: right;
     display: flex;
     color: white;
@@ -179,6 +176,7 @@ header {
         display: flex;
         flex-wrap: nowrap;
         font-size: x-small;
+        font-family: 'Roboto', 'swap';
     }
 
     .generos {
@@ -205,6 +203,7 @@ header {
         width: 10px;
         flex-wrap: nowrap;
     }
+
     .search {
         height: 15px;
         width: 15px;
@@ -217,4 +216,53 @@ header {
         background-color: white;
         transform: scale(1.1)
     }
+
+    .container {
+        background-color: black;
+        display: flex;
+        box-sizing: 500%;
+        flex-wrap: nowrap;
+        padding: 10px;
+        overflow: scroll;
+        color: white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: white;
+        border-radius: 15px;
+        padding: 8px;
+        margin-bottom: 80px;
+        
+
+    }
+    h1 {
+        font-size:large;
+    }
+    h2 {
+        font-size: medium;
+    }
+
+    footer {
+        color: white;
+        font-size: x-small;
+    }
+    
+    .iconos {
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    img.foto {
+        height: 142.18px;
+        width:100px
+    }
+    section.container {
+        height: 192.18px;
+        width:320px
+    }
+    h4.nombre {
+        font-size: small;
+    }
+    
 }
+
+
