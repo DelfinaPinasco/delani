@@ -241,8 +241,8 @@ header {
     }
 
     .img {
-        height: 380px;
-        width: 250px;
+        height: 190px;
+        width: 125px;
         object-fit: cover;
         border-radius: 9px;
 
@@ -345,10 +345,7 @@ header {
         text-align: center;
         margin-top: 2%;
     }
-    .img {
-        height: 100px;
-        width: 100px;
-    }
+    
     .section-movies {
         display: flex;
         flex-wrap: wrap;
@@ -357,6 +354,9 @@ header {
         text-align: center;
         margin-bottom: 10px;
         
+    }
+    h3 {
+        font-size: small;
     }
     
 }

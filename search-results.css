@@ -162,7 +162,6 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         font-size:x-small;
-    
     }
     
     
@@ -185,10 +184,7 @@ footer {
         text-align: start;
     }
     
-    
-    
-    
-    
+
     .headerinfo:hover {
         color: black;
         background-color: white;
@@ -223,6 +219,23 @@ footer {
     .iconos {
         text-align: center;
         margin-top: 2%;
+    }
+
+    img.img1 {
+        height: 213.27px;
+        width:150px
+    }
+    h2.ryf {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    h1.título {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .sectionnn article {
+        
+        margin-bottom: 50px;
     }
     
 }
