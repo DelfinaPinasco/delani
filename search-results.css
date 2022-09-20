@@ -237,5 +237,9 @@ footer {
         
         margin-bottom: 50px;
     }
+
+    h4.nombredepeliculas {
+        font-size: small;
+    }
     
 }
