@@ -37,7 +37,15 @@ header {
     flex-wrap: nowrap;
 }
 
-
+section.search1 {
+    height: 200x;
+    width: 200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+}
 
 .generos {
     height: 20px;
@@ -172,5 +180,9 @@ footer {
     .iconos {
         text-align: center;
         margin-top: 2%;
+    }
+    .img1 {
+        height: 1px;
+        width: 1px;
     }
 }

@@ -42,7 +42,7 @@ body{
 }   
 footer {
     color: white;
-  g
+  
 }
 .fotofast {
     height: 700px;
@@ -295,7 +295,13 @@ header {
         width: 10px;
         flex-wrap: nowrap;
     }
-    .search {
+    .search1 {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+
+    .search2 {
         height: 15px;
         width: 15px;
         font-size: x-small
@@ -316,5 +322,20 @@ header {
     .iconos {
         text-align: center;
         margin-top: 2%;
+    }
+    .titulo {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+    }
+    .fotofast {
+    height: 350px;
+    margin-right: 60px;
+    margin-left: 40px;
+    border-radius: 9px;
+    }
+    .trailer {
+        font-size:large;
     }
 }

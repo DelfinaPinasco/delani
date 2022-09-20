@@ -271,5 +271,48 @@ header {
         text-align: center;
         margin-top: 2%;
     }
+    
+    .titulo {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+    }
+    .fotoriverdale {
+        height: 300px;
+        width: 300px;
+    }
+    .sinópsis {
+        font-size: small;
+    }
+    .calificación {
+        font-size: small;
+    }
+    .genero {
+        font-size: small;
+    }
+    .estreno {
+        font-size: small;
+    }
+    .episodios {
+        font-size: small;
+    }
+    .temporadas {
+        font-size: small;
+    }
+    section.contenedor {
+        flex-wrap: nowrap;
+        display: flex;
+    }
+    h1.trailer {
+        color: white;
+        text-align: center;
+        font-family: 'Roboto', 'swap';
+        font-size:large;
+    }
+    .videot {
+        width:"180"; 
+        height:"55"
+    }
 }
 
