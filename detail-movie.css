@@ -338,4 +338,9 @@ header {
     .trailer {
         font-size:large;
     }
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
 }
