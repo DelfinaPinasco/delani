@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: #32323D;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', 'swap';
     text-align: right;
     display: flex;
     color: white;
@@ -230,7 +230,16 @@ footer {
         transform: scale(1.1)
     }
     
-    
+    .search {
+        height: 15px;
+        width: 15px;
+        font-size: x-small
+    }
+    .buscador {
+        height: 10px;
+        width: 10px;
+        flex-wrap: nowrap;
+    }
     .container {
         background-color: black;
         display: flex;
@@ -260,16 +269,7 @@ footer {
         text-align: center;
         font-size:medium;
     }
-    .search {
-        height: 15px;
-        width: 15px;
-        font-size: x-small
-    }
-    .buscador {
-        height: 10px;
-        width: 10px;
-        flex-wrap: nowrap;
-    }
+    
     
     .data {
         text-align: center;
