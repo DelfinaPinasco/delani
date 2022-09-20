@@ -84,7 +84,7 @@ body{
     background-size: cover;
     margin-bottom: 12vh;
     color: white;
-    align-items: center;
+    align-items:center;
     flex-wrap: nowrap;
 }
 
@@ -262,7 +262,9 @@ header {
 
     .videot {
         width:373px; 
-        height:210px
+        height:210px;
+        margin-top: 15px;
+        margin-bottom: 50px;
 
     }
 
@@ -276,11 +278,13 @@ header {
     footer {
         color: white;
         font-size: x-small;
+        
     }
     
     .iconos {
         text-align: center;
         margin-top: 2%;
+    
     }
     
     .titulo {
@@ -339,8 +343,41 @@ header {
         font-size: xx-small;
     }
     section.inf {
-        margin-left: 50px;
+        margin-left: 60px;
+        margin-bottom: 30px;
+        width: 280px;
+        height: 234px;
+    }
+
+    p.calificación {
+        font-size: x-small;
+    }
+    p.genero {
+        font-size: x-small;
+    }
+    p.estreno {
+        font-size: x-small;
+    }
+    p.episodios {
+        font-size: x-small;
+    }
+    p.temporadas {
+        font-size: x-small;
+    }
+
+    p.sinópsis {
+        font-size: x-small;
+    }
+
+
+    .star img.star {
+        width: 10px;
+        height: 10px;
+    }
+
+    .button.button {
         
     }
+
 }
 
