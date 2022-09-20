@@ -15,7 +15,6 @@ footer {
 
 .section-movies {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
@@ -48,7 +47,6 @@ footer {
 
 .section-series {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
