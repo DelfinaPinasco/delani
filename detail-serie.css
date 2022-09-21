@@ -9,29 +9,6 @@ body{
     text-align: start;
 }
 
-.menu {
-    background-color: rgba(223, 144, 65, 0.904);
-    text-align: right;
-}
-
-
-
-.container h2 {
-    border-style: solid;
-    border-width: 1px;
-    padding: 8px;
-    text-align: center;
-}
-
-.container img {
-    height: 200x;
-    width: 200px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
-    overflow: scroll;
-}
 
 .button:hover {
     color: yellow;
@@ -39,13 +16,18 @@ body{
     transform: scale(1.1);
 }
 
+.fotoriverdale {
+    height: 700px;
+    margin-right: 60px;
+    margin-left: 40px;
+    border-radius: 9px;
+}
 
 .titulo {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
     color: white;
-
 }
 
 .genero {
@@ -87,8 +69,6 @@ body{
     flex-wrap: nowrap;
 }
 
-
-
 header {
     background-color: #32323D;
     font-family: 'Roboto', 'swap';
@@ -107,13 +87,10 @@ header {
 }
 
 .headerinfo {
-
     text-align: start;
     display: flex;
     flex-wrap: nowrap;
 }
-
-
 
 .generos {
     height: 20px;
@@ -166,13 +143,8 @@ header {
     border-radius: 15px;
     padding: 15px;
     margin-right: 60px;
+}
 
-}
-.favo:hover {
-    color: yellow;
-    background-color: rgb(204, 201, 50);
-    transform: scale(1.1);
-}
 .trailer {
     color: white;
     text-align: center;
@@ -188,9 +160,7 @@ header {
     text-align: center;
 
 }
-.etiqueta {
-    color: white;
-}
+
 .textofooter {
     color: white;
 }
