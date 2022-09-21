@@ -50,6 +50,7 @@ body {
 
 body {
     color: white;
+    text-align: center;
 }
 
 .logo {
@@ -59,7 +60,6 @@ body {
 
 
 .img {
-    height: 380px;
     width: 250px;
     border-radius: 9px;
 }
@@ -76,27 +76,19 @@ header {
 }
 .generos {
     height: 20px;
-    width: 20px;
-    text-align: start;
 }
 
 .home {
-    height: 20px;
-    width: 20px;
-    text-align: start;
+    height: 20px; 
 }
 
 .favs {
     height: 20px;
-    width: 20px;
-    text-align: start;
 }
 
 
 .buscador {
     height: 25px;
-    width: 25px;
-    flex-wrap: nowrap;
 }
 
 .headerinfo:hover {
@@ -110,9 +102,6 @@ header {
     margin-top: 2%;
 }
 
-.h1 {
-    text-align: center;
-}
 
 /* MOBILE */
 
@@ -120,8 +109,6 @@ header {
     body {
         background-image: url(.//imgs/glaxia.webp)
     }
-
-
 
     .title1 {
         text-align: center;
@@ -219,7 +206,6 @@ header {
     .logo {
         height: 40px;
         width: 40px;
-        text-align: start;
     }
 
     .menu {
@@ -245,39 +231,29 @@ header {
     }
 
     .headerinfo {
-
-        text-align: start;
-        display: flex;
-        flex-wrap: nowrap;
         font-size: x-small;
         font-family: 'Roboto', 'swap';
     }
 
-
-
     .generos {
         height: 10px;
         width: 10px;
-        text-align: start;
     }
 
     .home {
         height: 10px;
         width: 10px;
-        text-align: start;
     }
 
     .favs {
         height: 10px;
         width: 10px;
-        text-align: start;
     }
 
 
     .buscador {
         height: 10px;
         width: 10px;
-        flex-wrap: nowrap;
     }
 
     .search {
@@ -286,7 +262,6 @@ header {
         font-size: x-small
     }
 
-
     .headerinfo:hover {
         color: black;
         background-color: white;
@@ -294,23 +269,11 @@ header {
     }
 
     footer {
-        color: white;
         font-size: x-small;
     }
 
-    .iconos {
-        text-align: center;
-        margin-top: 2%;
-    }
-
     .section-movies {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
         margin-bottom: 10px;
-
     }
 
     h3 {
