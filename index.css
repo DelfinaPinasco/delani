@@ -1,6 +1,6 @@
 body {
     background-image: url(.//imgs/glaxia.webp);
-    width: auto;
+    
 }
 
 .logo {
@@ -153,7 +153,6 @@ footer {
     .buscador {
         height: 10px;
         width: 10px;
-        
     }
 
     .container {
@@ -193,6 +192,5 @@ footer {
     footer {
         font-size: x-small;
     }
-
    
 }

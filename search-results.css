@@ -5,18 +5,12 @@ body {
 .logo {
     height: 100px;
     width: 100px;
-    text-align: start;
-}
-
-.menu {
-    background-color: rgba(223, 144, 65, 0.904);
-    text-align: right;
+   
 }
 
 header {
     background-color: #32323D;
     font-family: 'Roboto', 'swap';
-    text-align: right;
     display: flex;
     color: white;
     margin: 15px;
@@ -27,38 +21,26 @@ header {
     border-width: 1px;
     border-color: white;
     border-radius: 15px;
-    padding: 8px;
-}
-
-.headerinfo {
-
-    text-align: start;
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .generos {
     height: 20px;
     width: 20px;
-    text-align: start;
 }
 
 .home {
     height: 20px;
-    width: 20px;
-    text-align: start;
+    width: 20px; 
 }
 
 .favs {
     height: 20px;
     width: 20px;
-    text-align: start;
 }
 
 .buscador {
     height: 25px;
     width: 25px;
-    flex-wrap: nowrap;
 }
 
 .headerinfo:hover {
@@ -74,7 +56,7 @@ header {
     height: 380px;
     border-radius: 9px;
     width: 250px;
-    object-fit: cover;
+
 }
 .sectionnn article {
     color: white;
@@ -107,13 +89,11 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 footer {
     color: white;
 }
-
 
 .iconos {
     text-align: center;
@@ -125,13 +105,11 @@ footer {
     .logo {
         height: 40px;
         width: 40px;
-        text-align: start;
     }
     
     .home {
         height: 20px;
         width: 20px;
-        text-align: start;
     }
     
     .menu {
@@ -158,38 +136,24 @@ footer {
     
     .headerinfo {
     
-        text-align: start;
-        display: flex;
-        flex-wrap: nowrap;
+        
         font-size:x-small;
         font-family: 'Roboto', 'swap';
     }
     
-    
-    
     .generos {
         height: 10px;
         width: 10px;
-        text-align: start;
     }
     
     .home {
         height: 10px;
         width: 10px;
-        text-align: start;
     }
     
     .favs {
         height: 10px;
         width: 10px;
-        text-align: start;
-    }
-    
-
-    .headerinfo:hover {
-        color: black;
-        background-color: white;
-        transform: scale(1.1)
     }
 
     .search {
@@ -197,15 +161,13 @@ footer {
         width: 15px;
         font-size: x-small
     }
+
     .buscador {
         height: 10px;
         width: 10px;
-        flex-wrap: nowrap;
     }
+
     h1 {
-        color: white;
-        text-align: center;
-        font-family: 'Roboto', 'swap';
         font-size:large;
     }
     h2 {
@@ -213,7 +175,6 @@ footer {
     }
 
     footer {
-        color: white;
         font-size: x-small;
     }
     
