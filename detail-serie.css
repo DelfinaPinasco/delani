@@ -33,13 +33,12 @@ body{
     overflow: scroll;
 }
 
-
-.fotoriverdale {
-    height: 700px;
-    margin-right: 60px;
-    margin-left: 40px;
-    border-radius: 9px;
+.button:hover {
+    color: yellow;
+    background-color: rgb(204, 201, 50);
+    transform: scale(1.1);
 }
+
 
 .titulo {
     font-size: 40px;
@@ -190,6 +189,9 @@ header {
 
 }
 .etiqueta {
+    color: white;
+}
+.textofooter {
     color: white;
 }
 
@@ -375,8 +377,10 @@ header {
         width: 10px;
         height: 10px;
     }
-
    
 
+
 }
+
+
 

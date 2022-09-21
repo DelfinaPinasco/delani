@@ -2,48 +2,10 @@ body {
     background-image: url(../delani/imgs/glaxia.webp);
 }
 
-
 .logo {
     height: 100px;
     width: 100px;
     text-align: start;
-}
-
-.menu {
-    background-color: rgba(223, 144, 65, 0.904);
-    text-align: right;
-}
-
-
-
-.container h2 {
-    border-style: solid;
-    border-width: 1px;
-    padding: 8px;
-    text-align: center;
-}
-
-.container img {
-    height: 200x;
-    width: 200px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-right: 20px;
-    margin-left: 20px;
-    overflow: scroll;
-}
-
-
-
-.fototitanic {
-    height: 470px;
-    border-radius: 9px;
-    justify-self: center;
-}
-
-footer {
-    color: white;
-
 }
 
 .fotofast {
@@ -58,7 +20,6 @@ footer {
     font-weight: bold;
     text-align: center;
     color: white;
-
 }
 
 .genero {
@@ -66,39 +27,12 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.favoritos {
-    font-size: 20px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    width: 340px;
-    height: 100px;
-}
-
-.favoritos .favs {
-    color: black;
-    text-align: center;
-    font-size: medium;
-}
-
-.favo:hover {
+.button:hover {
     color: yellow;
     background-color: rgb(204, 201, 50);
     transform: scale(1.1);
 }
 
-.contenedor .favoritos {
-    color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    border-radius: 15px;
-    padding: 8px;
-}
-
-.titanic .contenedor {
-    min-height: 80vh;
-}
 
 .calificación {
     font-size: 20px;
@@ -131,10 +65,6 @@ footer {
     flex-wrap: nowrap;
 }
 
-.fototitanic {
-    height: 600px;
-    width: 600px;
-}
 
 header {
     background-color: #32323D;
@@ -160,8 +90,6 @@ header {
     flex-wrap: nowrap;
 }
 
-
-
 .generos {
     height: 20px;
     width: 20px;
@@ -180,18 +108,10 @@ header {
     text-align: start;
 }
 
-
-
 .buscador {
     height: 25px;
     width: 25px;
     flex-wrap: nowrap;
-}
-
-.fototitanic :hover {
-    color: black;
-    background-color: white;
-
 }
 
 .estrellas {
@@ -236,10 +156,10 @@ header {
 
 .videot {
     text-align: center;
-
 }
 
-.etiqueta {
+
+.textofooter{
     color: white;
 }
 

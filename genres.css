@@ -2,11 +2,6 @@ body {
     background-image: url(.//imgs/glaxia.webp)
 }
 
-footer {
-    color: white;
-
-}
-
 .title1 {
     text-align: center;
     margin: 40px;
@@ -15,23 +10,16 @@ footer {
 
 .section-movies {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
- 
-
 }
 
 .section-movies article {
-    color: white;
     border-style: solid;
     border-width: 2px;
-    border-color: white;
     border-radius: 15px;
     padding: 8px;
     margin-bottom: 100px;
-
 }
 
 .section-movies article:hover {
@@ -40,25 +28,15 @@ footer {
     transform: scale(1.1)
 }
 
-.title2 {
-    text-align: center;
-    margin: 100px;
-    color: white;
-}
-
 .section-series {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     text-align: center;
 }
 
 .section-series article {
-    color: white;
     border-style: solid;
     border-width: 2px;
-    border-color: white;
     border-radius: 15px;
     padding: 8px;
     margin-bottom: 100px;
@@ -71,55 +49,31 @@ footer {
 }
 
 body {
-    background-color: black;
     color: white;
 }
 
 .logo {
     height: 100px;
     width: 100px;
-    text-align: start;
 }
 
-.menu {
-    background-color: rgba(223, 144, 65, 0.904);
-    text-align: right;
-}
 
 .img {
     height: 380px;
     width: 250px;
-    object-fit: cover;
     border-radius: 9px;
-
 }
 
 header {
     background-color: #32323D;
-    font-family: 'Roboto', 'swap';
-    text-align: right;
     display: flex;
-    color: white;
     margin: 15px;
     justify-content: space-around;
     align-items: center;
-    color: white;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
     border-radius: 15px;
     padding: 8px;
 }
-
-.headerinfo {
-
-    text-align: start;
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-
-
 .generos {
     height: 20px;
     width: 20px;
@@ -182,9 +136,9 @@ header {
         align-items: center;
         text-align: center;
         margin-bottom: 100px;
-        
-        
-        
+
+
+
     }
 
     .section-movies article {
@@ -194,7 +148,7 @@ header {
         border-color: white;
         border-radius: 15px;
         padding: 8px;
-        
+
 
     }
 
@@ -226,7 +180,7 @@ header {
         border-radius: 15px;
         padding: 8px;
         margin-bottom: 100px;
-        
+
     }
 
     .section-series article:hover {
@@ -247,6 +201,7 @@ header {
         border-radius: 9px;
 
     }
+
     .iconos {
         text-align: center;
         margin-top: 2%;
@@ -257,10 +212,10 @@ header {
         color: white;
         text-align: center;
         font-family: 'Roboto', 'swap';
-        font-size:large;
-        }
+        font-size: large;
+    }
 
-    
+
     .logo {
         height: 40px;
         width: 40px;
@@ -324,6 +279,7 @@ header {
         width: 10px;
         flex-wrap: nowrap;
     }
+
     .search {
         height: 15px;
         width: 15px;
@@ -336,16 +292,17 @@ header {
         background-color: white;
         transform: scale(1.1)
     }
+
     footer {
         color: white;
         font-size: x-small;
     }
-    
+
     .iconos {
         text-align: center;
         margin-top: 2%;
     }
-    
+
     .section-movies {
         display: flex;
         flex-wrap: wrap;
@@ -353,10 +310,11 @@ header {
         align-items: center;
         text-align: center;
         margin-bottom: 10px;
-        
+
     }
+
     h3 {
         font-size: small;
     }
-    
+
 }
