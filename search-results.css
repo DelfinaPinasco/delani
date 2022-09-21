@@ -5,7 +5,7 @@ body {
 .logo {
     height: 100px;
     width: 100px;
-   
+
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 
 .home {
     height: 20px;
-    width: 20px; 
+    width: 20px;
 }
 
 .favs {
@@ -52,12 +52,14 @@ header {
     color: yellow;
     text-align: center;
 }
+
 .img1 {
     height: 380px;
     border-radius: 9px;
     width: 250px;
 
 }
+
 .sectionnn article {
     color: white;
     border-style: solid;
@@ -71,7 +73,8 @@ header {
 .sectionnn article:hover {
     color: black;
     background-color: rgb(62, 62, 65);
-    transform: scale(1.1)}
+    transform: scale(1.1)
+}
 
 .título {
     color: white;
@@ -85,6 +88,7 @@ header {
 .título {
     text-align: center;
 }
+
 .sectionnn {
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +103,7 @@ footer {
     text-align: center;
     margin-top: 2%;
 }
+
 /* MOBILE */
 
 @media (max-width: 420px) {
@@ -106,17 +111,17 @@ footer {
         height: 40px;
         width: 40px;
     }
-    
+
     .home {
         height: 20px;
         width: 20px;
     }
-    
+
     .menu {
         background-color: rgba(223, 144, 65, 0.904);
         text-align: right;
     }
-    
+
     header {
         background-color: #32323D;
         font-family: 'Raleway', sans-serif;
@@ -133,24 +138,24 @@ footer {
         border-radius: 15px;
         padding: 8px;
     }
-    
+
     .headerinfo {
-    
-        
-        font-size:x-small;
+
+
+        font-size: x-small;
         font-family: 'Roboto', 'swap';
     }
-    
+
     .generos {
         height: 10px;
         width: 10px;
     }
-    
+
     .home {
         height: 10px;
         width: 10px;
     }
-    
+
     .favs {
         height: 10px;
         width: 10px;
@@ -168,16 +173,17 @@ footer {
     }
 
     h1 {
-        font-size:large;
+        font-size: large;
     }
+
     h2 {
-        font-size:large; 
+        font-size: large;
     }
 
     footer {
         font-size: x-small;
     }
-    
+
     .iconos {
         text-align: center;
         margin-top: 2%;
@@ -185,23 +191,26 @@ footer {
 
     img.img1 {
         height: 213.27px;
-        width:150px
+        width: 150px
     }
+
     h2.ryf {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
     h1.título {
         margin-top: 30px;
         margin-bottom: 30px;
     }
+
     .sectionnn article {
-        
+
         margin-bottom: 50px;
     }
 
     h4.nombredepeliculas {
         font-size: small;
     }
-    
+
 }

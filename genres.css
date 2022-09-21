@@ -74,12 +74,13 @@ header {
     border-radius: 15px;
     padding: 8px;
 }
+
 .generos {
     height: 20px;
 }
 
 .home {
-    height: 20px; 
+    height: 20px;
 }
 
 .favs {
