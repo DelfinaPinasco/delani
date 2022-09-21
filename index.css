@@ -1,6 +1,6 @@
 body {
     background-image: url(.//imgs/glaxia.webp);
-    
+
 }
 
 .logo {
@@ -30,12 +30,12 @@ header {
 
 .generos {
     height: 20px;
-    width: 20px; 
+    width: 20px;
 }
 
 .home {
     height: 20px;
-    width: 20px;   
+    width: 20px;
 }
 
 .favs {
@@ -106,7 +106,7 @@ footer {
 .iconos {
     text-align: center;
     margin-top: 2%;
-    
+
 }
 
 .container .miniconte :hover {
@@ -120,13 +120,18 @@ footer {
     .logo {
         height: 40px;
         width: 40px;
-        
+
     }
 
     .headerinfo {
         font-size: x-small;
         font-family: 'Roboto', 'swap'
     }
+
+    header {
+        padding: 8px;
+    }
+    
 
     .generos {
         height: 10px;
@@ -141,7 +146,7 @@ footer {
     .favs {
         height: 10px;
         width: 10px;
-    
+
     }
 
     .search {
@@ -156,7 +161,7 @@ footer {
     }
 
     .container {
-    
+
         margin-bottom: 50px;
     }
 
@@ -186,11 +191,11 @@ footer {
     .container img {
         height: 100x;
         width: 100px;
-        
+
     }
 
     footer {
         font-size: x-small;
     }
-   
+
 }

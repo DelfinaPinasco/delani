@@ -5,29 +5,21 @@ body {
 .logo {
     height: 100px;
     width: 100px;
-    text-align: start;
 }
 
 .menu {
     background-color: rgba(223, 144, 65, 0.904);
-    text-align: right;
 }
-
-
 
 footer {
     color: white;
 }
-
-
 
 .container h2 {
     border-style: solid;
     border-width: 1px;
     padding: 8px;
     text-align: center;
-
-
 }
 
 .container img {
@@ -231,12 +223,14 @@ header {
         border-radius: 15px;
         padding: 8px;
         margin-bottom: 80px;
-        
+
 
     }
+
     h1 {
-        font-size:large;
+        font-size: large;
     }
+
     h2 {
         font-size: medium;
     }
@@ -245,7 +239,7 @@ header {
         color: white;
         font-size: x-small;
     }
-    
+
     .iconos {
         text-align: center;
         margin-top: 2%;
@@ -253,16 +247,16 @@ header {
 
     img.foto {
         height: 142.18px;
-        width:100px
+        width: 100px
     }
+
     section.container {
         height: 192.18px;
-        
+
     }
+
     h4.nombre {
         font-size: small;
     }
-    
+
 }
-
-

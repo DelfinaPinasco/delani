@@ -1,5 +1,5 @@
-body{
-    background-image: url(../delani/imgs/glaxia.webp); 
+body {
+    background-image: url(../delani/imgs/glaxia.webp);
 }
 
 
@@ -49,10 +49,12 @@ body{
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .temporadas {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .sinópsis {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -65,7 +67,7 @@ body{
     background-size: cover;
     margin-bottom: 12vh;
     color: white;
-    align-items:center;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
@@ -117,7 +119,7 @@ header {
     flex-wrap: nowrap;
 }
 
-.estrellas{
+.estrellas {
     width: 140px;
     height: 140px;
 }
@@ -227,6 +229,7 @@ header {
         width: 10px;
         flex-wrap: nowrap;
     }
+
     .search {
         height: 15px;
         width: 15px;
@@ -234,8 +237,8 @@ header {
     }
 
     .videot {
-        width:373px; 
-        height:210px;
+        width: 373px;
+        height: 210px;
         margin-top: 15px;
         margin-bottom: 50px;
 
@@ -251,70 +254,81 @@ header {
     footer {
         color: white;
         font-size: x-small;
-        
+
     }
-    
+
     .iconos {
         text-align: center;
         margin-top: 2%;
-    
+
     }
-    
+
     .titulo {
         color: white;
         text-align: center;
         font-family: 'Roboto', 'swap';
-        font-size:large;
+        font-size: large;
         margin-top: 40px;
     }
+
     .fotoriverdale {
         height: 300px;
         width: 300px;
         margin-bottom: 40px;
         margin-top: 40px;
-        
+
     }
+
     .sinópsis {
         font-size: small;
     }
+
     .calificación {
         font-size: small;
     }
+
     .genero {
         font-size: small;
     }
+
     .estreno {
         font-size: small;
     }
+
     .episodios {
         font-size: small;
     }
+
     .temporadas {
         font-size: small;
     }
+
     section.contenedor {
         flex-wrap: nowrap;
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
     }
-    
+
 
     h1.trailer {
         color: white;
         text-align: center;
         font-family: 'Roboto', 'swap';
-        font-size:medium;
+        font-size: medium;
     }
+
     .videot {
-        width:345px; 
-        height:180px
+        width: 345px;
+        height: 180px
     }
+
     .button {
-        width:50px; 
-        height:50px;
+        width: 50px;
+        height: 50px;
         font-size: xx-small;
     }
+
     section.inf {
         margin-left: 60px;
         margin-bottom: 30px;
@@ -325,15 +339,19 @@ header {
     p.calificación {
         font-size: x-small;
     }
+
     p.genero {
         font-size: x-small;
     }
+
     p.estreno {
         font-size: x-small;
     }
+
     p.episodios {
         font-size: x-small;
     }
+
     p.temporadas {
         font-size: x-small;
     }
@@ -347,10 +365,7 @@ header {
         width: 10px;
         height: 10px;
     }
-   
+
 
 
 }
-
-
-
