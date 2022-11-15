@@ -7,7 +7,10 @@ body {
     height: 100px;
     width: 100px;
 }
-
+.logob {
+    height: 60px;
+    width: 60px;
+}
 .home {
     height: 20px;
     width: 20px;
