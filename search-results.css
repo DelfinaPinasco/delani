@@ -7,6 +7,10 @@ body {
     width: 100px;
 
 }
+.logob {
+    height: 60px;
+    width: 60px;
+}
 
 header {
     background-color: #32323D;

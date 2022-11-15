@@ -5,6 +5,12 @@ body {
 .logo {
     height: 100px;
     width: 100px;
+    text-align: start;
+}
+
+.logob {
+    height: 60px;
+    width: 60px;
 }
 
 .menu {
