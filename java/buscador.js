@@ -19,6 +19,7 @@ function buscarYMostrarFavoritos (id){
                             
                             </article>`
         })
-        .catch(function(e){
+        .catch (function(e){
             console.log(e);
         })
+    }
