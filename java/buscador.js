@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+/* let buscador = document.querySelector (".buscador");
+let formulario = document.querySelector ("form");
+<<<<<<< HEAD
+let campoAEvaluar = document.querySelector ("[name='q']") */
+
+let url ('https://api.themoviedb.org/3/authentication/token/new?api_key=15370bef1a25ea674deaaf70270ad202')
+fetch
+=======
+let campoAEvaluar = document.querySelector ("[name='q']")
+>>>>>>> fbb8599ec32052e5119da8b4e7be0a92d28ad6cb
 
 let searchbar=document.getElementById('searchbar')
 
@@ -22,9 +34,13 @@ function buscar (id){
             console.log(e);
         })
     }
+<<<<<<< HEAD
 
 
 
 let queryString = location.search; //Obtengo la QS
 let queryStringToObject = new URLSearchParams(queryString); //La trasnformo en OL
 let id = queryStringToObject.get('id'); //Obtengo los datos de una propiedad con get()
+=======
+>>>>>>> c41c1cc21d946edccb06185fbb79f7af88d80aca
+>>>>>>> fbb8599ec32052e5119da8b4e7be0a92d28ad6cb
