@@ -8,56 +8,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <script src="/delani/java/index.js"></script>
 
 </head>
 
+
 <body>
-
     <header>
-        
-
         <img class="logo" src="./imgs/logo posta.png" alt="logo">
+        <a href="./index.html" class="headerinfo">HOME</a> <img class="home" src="../delani/imgs/home.png"
+            alt="homepng">
+        <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos" src="../delani/imgs/logo movies.png"
+            alt="generos">
+        <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
+            alt="favs">
 
-        <a href="./index.html" class="headerinfo">HOME</a> <img class="home"
-            src="../delani/imgs/home.png" alt="homepng">
-
-
-        <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos"
-            src="../delani/imgs/logo movies.png" alt="generos">
-
-
-        <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs"
-            src="../delani/imgs/favs.png" alt="favs">
-
-        
-        <script src="../delani/java/"></script>
+        <!-- formulario para el buscador -->
         <form action="./search-results.html" method="GET">
             <input type="text" name="q" id="searchbar" value="" placeholder="Busca por título, género ...">
             <button type="submit">Buscar</button>
         </form>
-    </div>
+        </div>
     </header>
+
+
 
 
     <h1 class="h1"> ✤ EL MEJOR CATÁLOGO DE CINE ONLINE ✤ </h1>
 
-    <section class="pelisyseriestop">
-       
-        <h2 class="titulos">
-            <a href="detail_movie.html" class ="barratexto">Películas Populares</a></h2>
-            <ul class="listapeliculas"></ul> 
-    </section>
-    <section class="pelisyseriestop">
-            <h2 class="titulos">
-            <a href="detail_serie.html" class="barratexto">Series Populares</a></h2>
-        <ul class="listaseries"></ul>
+    <main class="container">
+        <section class="pelisculaspopulares"> </section>
+            <h2 class="priurl"> <i>Peliculas populares</i></h2>
 
-    </section
+        <section class="seriespopulares">
+            <h2 class="segurl"> <i>Series Populares</i></h2>
+        </section>
+
+        <section class="peliculasnuevas">
+            <h2 class="segurl"><i>Peliculas nuevas</i></h2>
+    </section>
+    </main>
 </body>
 
-
 <footer>
+    <script src="/delani/java/index.js"></script>
     <section class="iconos">
         <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
@@ -65,7 +58,6 @@
         <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
     </section>
     <img class="logob" src="./imgs/logo.png" alt="logob">
-
     <p>Elaborado por Nina Teller, Lara Manfredini y Delfina Pinasco (estudiantes de la materia Programación 1 -
         Licenciatura de Negocios Digitales)</p>
 

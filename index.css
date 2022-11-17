@@ -79,8 +79,9 @@ header {
 }
 
 .h2 {
-    color: white;
     text-align: center;
+    margin: 40px;
+    color: white;
 }
 
 
@@ -114,6 +115,7 @@ footer {
 .container .miniconte :hover {
     transform: scale(1.1)
 }
+
 
 
 /* MOBILE */
@@ -173,6 +175,7 @@ footer {
 
     .h2 {
         font-size: medium;
+
     }
 
     .data {
