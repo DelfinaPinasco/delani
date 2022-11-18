@@ -22,7 +22,12 @@
         <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
             alt="favs">
 
-    
+        <!-- formulario para el buscador -->
+        <form action="./search-results.html" method="GET">
+            <input type="text" name="q" id="searchbar" value="" placeholder="Busca por título, género ...">
+            <button type="submit">Buscar</button>
+        </form>
+        </div>
     </header>
 
 
@@ -30,27 +35,22 @@
 
     <h1 class="h1"> ✤ EL MEJOR CATÁLOGO DE CINE ONLINE ✤ </h1>
 
-    <main class="tcontainer">
-        <h2 style="color: white" class="priurl"> <i>Peliculas populares</i></h2>
-<section class="peliculaspopulares">
-            
-</section>
+    <main class="container">
+        <section class="pelisculaspopulares"> </section>
+            <h2 class="priurl"> <i>Peliculas populares</i></h2>
 
-<h3 style="color: white" class="segurl"> <i>Series Populares</i></h3>
         <section class="seriespopulares">
-            
+            <h2 class="segurl"> <i>Series Populares</i></h2>
         </section>
 
-<h style="color: white" class="segurl"><i>Peliculas nuevas</i></h>
         <section class="peliculasnuevas">
-            
-        </section>
+            <h2 class="segurl"><i>Peliculas nuevas</i></h2>
+    </section>
     </main>
-    <script src="./java/index.js"></script>
 </body>
 
 <footer>
-
+    <script src="/delani/java/index.js"></script>
     <section class="iconos">
         <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
         <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
