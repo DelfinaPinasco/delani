@@ -1,4 +1,4 @@
-"/* direccionarlo con el endpoint de searchresults,  esto es lo de rick & morty */
+/* direccionarlo con el endpoint de searchresults,  esto es lo de rick & morty */
 
 let query = location.search; // recuperamos el querystring
 let stringToObject = new URLSearchParams(query); //La trasnformo en OL, // usando el querystring, creamos un objeto del tipo URLSearchParams

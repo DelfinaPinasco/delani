@@ -10,12 +10,11 @@
             this.submit();
         }
     })
-})
+})*/
     buscador.addEventListener('input', function(){
         aviso.innerText= '';
 
     })
-*/
 
 /* para que aparezcan la division por section, cada una con su url y selector */
 
