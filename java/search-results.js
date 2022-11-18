@@ -13,21 +13,7 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
-        let info = data.results
-        let container = document.querySelector('.sectionnn');
-        let characters = '';
-
-        for(let i=0; i<info.length; i++){  /* i++ --> para que se itere */
-            characters += `<article>
-                                <img src=${info[i].image} alt='' />
-                                <a href='detalle.html?id=${info[i].id}'><p>Name: ${info[i].name}</p></a>
-                                <p>Status: ${info[i].status} </p>
-                                
-                            </article>`
-        }
-        container.innerHTML = characters;
-
-
+        
     })
 
     .catch(function(error){
