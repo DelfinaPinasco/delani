@@ -2,12 +2,12 @@ window.addEventListener("load", function(){
     let moviedetail = location.search;
     let movieobjeto = new URLSearchParams(moviedetail);
     let movie_id = movieobjeto.get('id');
+    console.log(movie_id)
 })
 
 
 
-let apikey = "15370bef1a25ea674deaaf70270ad202"
-let url = `(https://api.themoviedb.org/3/movie/${movie_id}?${api_key}=15370bef1a25ea674deaaf70270ad202&language=en-US")`
+let url = `https://api.themoviedb.org/3/movie/${movie_id}?${api_key}=15370bef1a25ea674deaaf70270ad202&language=en-US"`
 
 fetch (url)
 .then(function(respuesta) {
@@ -16,8 +16,8 @@ fetch (url)
 
 .then(function(data) { 
     let info = data.results;
-    console.log(data);// hay que seguir con esto
-    let container = document.querySelector('.contenedor') //aca va la class a la que queremos entrar
+    console.log(data);
+    let container = document.querySelector('.contenedor') 
     `
     <article class= "contenedor">
     <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> 
