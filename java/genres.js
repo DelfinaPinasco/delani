@@ -21,7 +21,7 @@ fetch ("https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674d
 
 let sectionseries = document.querySelector('.section-series')
 
-fetch ("https://api.themoviedb.org/3/movie/{movie_id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US")
+fetch ("https://api.themoviedb.org/3/genre/tv/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US")
 .then(function(res) {
     return res.json();
 })
