@@ -22,7 +22,14 @@
         <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
             alt="favs">
 
-    
+        <!-- formulario para el buscador -->
+        <form action="./search-results.html" method="GET" class="buscador">
+            <input type="text" name="q" id="searchbar" value="" placeholder="Busca por título, género ...">
+            <button class="lupa" id="buscador" type="submit">
+                <p class="aviso"></p>
+            </button>
+        </form>
+        </div>
     </header>
 
 
@@ -30,20 +37,23 @@
 
     <h1 class="h1"> ✤ EL MEJOR CATÁLOGO DE CINE ONLINE ✤ </h1>
 
-    <main class="tcontainer">
-        <h2 style="color: white" class="priurl"> <i>Peliculas populares</i></h2>
-<section class="peliculaspopulares">
-            
-</section>
 
-<h3 style="color: white" class="segurl"> <i>Series Populares</i></h3>
-        <section class="seriespopulares">
-            
+
+    <main class="tcontainer">
+
+        <h2 style="color: white" class="priurl"> <i>Peliculas populares</i></h2>
+        <section class="peliculaspopulares">
+
         </section>
 
-<h style="color: white" class="segurl"><i>Peliculas nuevas</i></h>
+        <h2 style="color: white" class="segurl"> <i>Series Populares</i></h2>
+        <section class="seriespopulares">
+
+        </section>
+
+        <h2 style="color: white" class="segurl"><i>Próximamente en cines...</i></h2>
         <section class="peliculasnuevas">
-            
+
         </section>
     </main>
     <script src="./java/index.js"></script>

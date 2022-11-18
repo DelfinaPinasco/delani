@@ -22,7 +22,7 @@ let priurl = "https://api.themoviedb.org/3/movie/top_rated?api_key=15370bef1a25e
 
 let segurl = "https://api.themoviedb.org/3/tv/top_rated?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
-let terurl = "https://api.themoviedb.org/3/movie/latest?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US"
+let terurl = "https://api.themoviedb.org/3/movie/upcoming?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
 
 /*cada section tiene un url y un fetch propio*/
