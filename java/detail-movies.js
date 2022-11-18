@@ -12,9 +12,18 @@ fetch (url)
 .then(function(res) {
     return res.json();
 })
-.then(function(data) {
-    console.log(data);// hay que seguir con esto
+.then(function(data) { 
+console.log(data);// hay que seguir con esto
+let info = data.results
+let contenido = "";
+
+for (let index = 0; index < info.length; index++) /* i++ se va iterando */ 
+contenido+= 
+`<img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> `
+
+
 })
+
 .catch(function(error){
     console.log('El error es' + error);
     return error
