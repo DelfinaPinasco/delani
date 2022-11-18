@@ -144,9 +144,8 @@ header {
     }
 
     .logo {
-        height: 40px;
-        width: 40px;
-        text-align: start;
+        height: 100px;
+        width: 100px;
     }
 
     header {
