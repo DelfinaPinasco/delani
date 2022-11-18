@@ -13,7 +13,7 @@ fetch (url)
     return res.json();
 })
 .then(function(data) {
-    console.log(data);
+    console.log(data);// hay que seguir con esto
 })
 .catch(function(error){
     console.log('El error es' + error);
