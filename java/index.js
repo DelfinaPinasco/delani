@@ -1,4 +1,4 @@
-window.addEventListener('load',function() {
+/*  window.addEventListener('load',function() {
     let formulario = document.querySelector('form');
     let buscador = document.querySelector('[name="search"]'); 
     let aviso = document.querySelector('.aviso')
@@ -15,6 +15,7 @@ window.addEventListener('load',function() {
         aviso.innerText= '';
 
     })
+*/
 
 /* para que aparezcan la division por section, cada una con su url y selector */
 

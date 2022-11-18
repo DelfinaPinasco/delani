@@ -17,9 +17,13 @@ console.log(data);// hay que seguir con esto
 let info = data.results
 let contenido = "";
 
+
+//delfi
+
 for (let index = 0; index < info.length; index++) /* i++ se va iterando */ 
 contenido+= 
 `<img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> `
+
 
 
 })

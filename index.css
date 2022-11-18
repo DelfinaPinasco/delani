@@ -134,6 +134,17 @@ footer {
     transform: scale(1.1)
 }
 
+form {
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin: auto;
+  }
+  form{
+    display: flex;
+    justify-content: flex-end;
+  }
 
 /* MOBILE */
 
