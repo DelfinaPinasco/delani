@@ -27,7 +27,6 @@ fetch (url)
     
 `
 
-
 })
 
 .catch(function(error){
