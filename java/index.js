@@ -1,87 +1,155 @@
+window.addEventListener('load',function() {
+    let formulario = document.querySelector('form');
+    let buscador = document.querySelector('[name="search"]'); 
+    let aviso = document.querySelector('.aviso')
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+        if( buscador.value === ""){
+            aviso.innerText = 'El buscador está vacío';
+        } else {
+            this.submit();
+        }
+
+    })
+})
+
+    buscador.addEventListener('input', function(){
+        aviso.innerText= '';
+
+    })
+
+
 
 /* para que aparezcan la division por section, cada una con su url y selector */
-let apiKey = "15370bef1a25ea674deaaf70270ad202a"
 
-let priurl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
-let prisection= document.querySelector(".peliculaspopulares")
 
-let segurl = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`
-let segsection= document.querySelector(".seriespopulares")
+let priurl = "https://api.themoviedb.org/3/movie/top_rated?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
-let terurl = `https://api.themoviedb.org/3/movie/latest?api_key=${apiKey}&language=en-US`
-let tersection= document.querySelector(".peliculasnuevas")
+let segurl = "https://api.themoviedb.org/3/tv/top_rated?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
+
+let terurl = "https://api.themoviedb.org/3/movie/latest?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US"
+
 
 /*cada section tiene un url y un fetch propio*/
-
 
 //prisection
 
 fetch(priurl)
-.then(function(respuesta) {
+    .then(function(respuesta) {
     return respuesta.json();
-})
-.then(function(data) {
-    console.log(data);
-    let okey = ""
-    for (let index = 0; index < 5; index++) {
-        const element = data[index];
-        okey+=`<article class= cartelera>
-        <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt='imagen' />
-         <p>Título:${element.title}</p>
-         <p>Fecha de estreno: ${element.release_date} </p>
+    })
+
+    .then(function(data) {
+        console.log(data);
+        let info = data.results     /* el results es generico y contiene el array  */
+        let prisection = document.querySelector(".peliculaspopulares")
+        let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+
+
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+        `<article class= "container img">
+        <a href ="./detail-movie.html?id=${info[index].id}">                 
+        <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+         <h3>${info[index].title}</h3>
+         <h3>Fecha de estreno: ${info[index].release_date} </h3>
+         </a>
         </article>`
     }
-    prisection.innerHTML = okey
-    return data
+        prisection.innerHTML += contenido
+    
 })
-.catch(function(error){
+    .catch(function(error){
     console.log('El error es' + error);
-    return error
 })
     
-//segsection
+ //segsection --> preguntar por que si vuelvo a poner esto sin comentario no me lo toma
+ fetch(segurl)
+ .then(function(respuesta) {
+ return respuesta.json();
+ })
 
-fetch(segurl)
-.then(function(respuesta) {
-    return respuesta.json();
+ .then(function(data) {
+     console.log(data);
+     let info = data.results     /* el results es generico y contiene el array  */
+     let segsection = document.querySelector(".seriespopulares")
+     let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+
+
+ for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+     contenido+=
+     `<article class= "container img">
+     <a href ="./detail-movie.html?id=${info[index].id}">                 
+     <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+      <h3>${info[index].title}</h3>
+      <h3>Fecha de estreno: ${info[index].release_date} </h3>
+      </a>
+     </article>`
+ }
+     segsection.innerHTML += contenido
+ 
 })
-.then(function(data) {
-    console.log(data);
-    let okey = ""
-    for (let index = 0; index < 5; index++) {
-        const element = data[index];
-        okey+=`<article class= cartelera>
-        <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt='imagen' />
-        <p>Título:${element.title}</p>
-        <p>Fecha de estreno: ${element.release_date} </p>
-       </article>`
-    }
-    section1.innerHTML = okey
-})
-.catch(function(error){
-    console.log('El error es' + error);
-    return error
+ .catch(function(error){
+ console.log('El error es' + error);
 })
 
 //tersection
-fetch(terurl)
-.then(function(respuesta) {
+fetch(priurl)
+    .then(function(respuesta) {
     return respuesta.json();
-})
-.then(function(data) {
-    console.log(data);
-    let okey = ""
-    for (let index = 0; index < 5; index++) {
-        const element = data[index];
-        okey+=`<article class= cartelera>
-        <img src="https://image.tmdb.org/t/p/w500${element.poster_path}" alt='imagen' />
-         <p>Título:${element.title}</p>
-         <p>Fecha de estreno: ${element.release_date} </p>
+    })
+
+    .then(function(data) {
+        console.log(data);
+        let info = data.results     /* el results es generico y contiene el array  */
+        let prisection = document.querySelector(".peliculasnuevas")
+        let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+
+
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+        `<article class= "container img">
+        <a href ="./detail-movie.html?id=${info[index].id}">                 
+        <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+         <h3>${info[index].title}</h3>
+         <h3>Fecha de estreno: ${info[index].release_date} </h3>
+         </a>
         </article>`
     }
-    tersection.innerHTML = okey
+        prisection.innerHTML += contenido
+    
 })
-.catch(function(error){
+    .catch(function(error){
     console.log('El error es' + error);
-    return error
+})
+    
+ //segsection 
+
+ fetch(terurl)
+ .then(function(respuesta) {
+ return respuesta.json();
+ })
+
+ .then(function(data) {
+     console.log(data);
+     let info = data.results     /* el results es generico y contiene el array  */
+     let tersection = document.querySelector(".seriespopulares")
+     let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+
+
+ for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+     contenido+=
+     `<article class= "container img">
+     <a href ="./detail-movie.html?id=${info[index].id}">                 
+     <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+      <h3>${info[index].title}</h3>
+      <h3>Fecha de estreno: ${info[index].release_date} </h3>
+      </a>
+     </article>`
+ }
+     tersection.innerHTML += contenido
+ 
+})
+ .catch(function(error){
+ console.log('El error es' + error);
 })

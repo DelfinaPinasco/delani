@@ -12,7 +12,7 @@ fetch (`https://api.themoviedb.org/3/search/movie?api_key=15370bef1a25ea674deaaf
 .then(function(data) {
     console.log(data);
     let searchResults = document.querySelector(".results");
-    let container = document.querySelector(".container")
+    let container = document.querySelector(".tcontainer")
     if (data.results.length == 0){
         searchResults.innerHTML += `La busqueda ${search} no dio ningun resultado`
     }
