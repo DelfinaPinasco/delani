@@ -1,5 +1,4 @@
 let generoPelicula = document.querySelector('.section-movies')
-
 fetch ("https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US"
 )
 .then(function(res) {
@@ -8,55 +7,33 @@ fetch ("https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674d
 .then(function(data) {
     console.log(data);
         let generos = data;
-
     for(let i=0; i<generos.length; i++){
-	        	generoPelicula.innerHTML += `
-				
-                
+	        	generoPelicula.innerHTML += `         
 <ul>
-
 <li>
-
 <a href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>
-
 </li>
-
 </ul>`
     }
         
 })
 .catch (error => console.log(error))
 
-
 let sectionseries = document.querySelector('.section-series')
 
-fetch ("https://api.themoviedb.org/3/movie/{movie_id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US"
+fetch ("https://api.themoviedb.org/3/movie/{movie_id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US")
 .then(function(res) {
     return res.json();
 })
-.then(function(data) {
+.then (function(data) {
     console.log(data);
         let generosDos = data;
     for(let i=0; i<generosDos.length; i++) {
-        `       generoSerie.innerHTML += `
-							
-<ul>
-
-<li>
-
-<a href="detail-genres.html?id=${generosDos[i].id}">${generosDos[i].name}</a>
-
-</li>
-<<<<<<< HEAD
-</ul>`    
-}
-)        
-    })
-=======
-
-</ul>`    
-    }
-        
+        `       generoSerie.innerHTML += 					
+    <ul>
+    <li>
+    <a href="detail-genres.html?id=${generosDos[i].id}">${generosDos[i].name}</a>
+    </li>
+    </ul>`
+        }
 })
-.catch(error => console.log(error))
->>>>>>> d9adbcf73034d4ce17a1b6d089e6d0ea0160e411
