@@ -8,76 +8,77 @@
     <title>Document</title>
     <link rel="stylesheet" href="./detail-movie.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    
+
     <header>
         <img class="logob" src="./imgs/logo.png" alt="logob">
         <img class="logo" src="./imgs/logo posta.png" alt="logo">
-        <a href="./index.html" class="headerinfo">HOME</a> <img class="home"
-            src="../delani/imgs/home.png" alt="homepng">
+        <a href="./index.html" class="headerinfo">HOME</a> <img class="home" src="../delani/imgs/home.png"
+            alt="homepng">
 
 
-        <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos"
-            src="../delani/imgs/logo movies.png" alt="generos">
+        <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos" src="../delani/imgs/logo movies.png"
+            alt="generos">
 
 
-        <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs"
-            src="../delani/imgs/favs.png" alt="favs">
+        <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
+            alt="favs">
 
 
-            <div class="buscador">
-                <form action="./search-results.html" method="GET">
-                    <input type="text" name="q" id="search" value="" placeholder="Busca por título, género ...">
-                    <button class="lupa" id="buscador" type="submit">
-                        Buscar
-                    </button>
-            </div>
-            </form>
-            </div>
+        <div class="buscador">
+            <form action="./search-results.html" method="GET">
+                <input type="text" name="q" id="search" value="" placeholder="Busca por título, género ...">
+                <button class="lupa" id="buscador" type="submit">
+                    Buscar
+                </button>
+        </div>
+        </form>
+        </div>
 
     </header>
 
 </head>
 
+
+
+
 <body>
-
     <h1 class="titulo">FAST AND FURIOUS</h1>
+        <section class="contenedor">
+            <article>
+                <img class="fotofast" src="../delani/imgs/afast.webp" alt="fast and furious">
+            </article>
+            <section class="inf">
+                <p class="calificación"> <u>Calificación</u>: </p>
+                <p class="genero"> <u>Género</u>: Acción/ suspenso</p>
+                <p class="estreno"> <u> Fecha de estreno</u>: 2 de abril de 2009</p>
+                <p class="duración"> <u> Duración</u>: 1h 47min</p>
+                <p class="sinópsis"> <u> Sinópsis</u>: El exconvicto Dominic Toretto se une a su viejo adversario, Brian
+                    O'Conner, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una
+                    organización criminal que se dedica a introducir heroína en la ciudad.</p>
+            </section>
 
-   
-        <body>
-            <h1 class="titulo">FAST AND FURIOUS</h1>
-            <main class="containermovie">
-                <section class="contenedor">
-                    <article><img class="fotofast" src="../delani/imgs/afast.webp" alt="fast and furious">
-                    </article>
-                    <section class="inf">
-                        <p class="calificación"> <u>Calificación</u>: </p>
-                        <p class="genero"> <u>Género</u>: Acción/ suspenso</p>
-                        <p class="estreno"> <u> Fecha de estreno</u>: 2 de abril de 2009</p>
-                        <p class="duración"> <u> Duración</u>: 1h 47min</p>
-                        <p class="sinópsis"> <u> Sinópsis</u>: El exconvicto Dominic Toretto se une a su viejo adversario, Brian O'Conner, que ahora trabaja para el FBI en Los Ángeles, con el fin de infiltrarse en una organización criminal que se dedica a introducir heroína en la ciudad.</p>
-                    </section>
-
-        <a href="./favorite.html"><button class="button" name="favorito" type="button">
-                <svg aria-hidden="true" viewBox="0 0 10 10">
-                    <path class="favo"
-                        d="m7.4 8.8-2.4-1.3-2.4 1.3.46-2.7-2-1.9 2.7-.39 1.2-2.5 1.2 2.5 2.7.39-1.9 1.9z" />
-                </svg>
-                Agregar a favoritos
-            </button></a>
-    </section>
+            <a href="./favorite.html"><button class="button" name="favorito" type="button">
+                    <svg aria-hidden="true" viewBox="0 0 10 10">
+                        <path class="favo"
+                            d="m7.4 8.8-2.4-1.3-2.4 1.3.46-2.7-2-1.9 2.7-.39 1.2-2.5 1.2 2.5 2.7.39-1.9 1.9z" />
+                    </svg>
+                    Agregar a favoritos
+                </button></a>
+        </section>
 
 
-    <h2 class="trailer">¿Querés saber más? Haz click aquí para ver el trailer</h2>
+        <h2 class="trailer">¿Querés saber más? Haz click aquí para ver el trailer</h2>
 
-    <article class="videot">
-        <iframe class="videot" width="1120" height="630" src="https://www.youtube.com/embed/NXfmQsBMYAI"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </article>
+        <article class="videot">
+            <iframe class="videot" width="1120" height="630" src="https://www.youtube.com/embed/NXfmQsBMYAI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
 
 </body>
 <script src="./java/detail-movies.js"></script>
+
 </html>
 <footer>
     <section class="iconos">
