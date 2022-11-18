@@ -5,13 +5,7 @@ window.addEventListener("load", function(){
 })
 
 let apikey = "15370bef1a25ea674deaaf70270ad202"
-<<<<<<< HEAD
-let url = `https://api.themoviedb.org/3/movie/{movie_id}?api_key=${apikey}&language=en-US
-
-`
-=======
 let url = `(https://api.themoviedb.org/3/movie/${movie_id}?${api_key}=15370bef1a25ea674deaaf70270ad202&language=en-US")`
->>>>>>> 8c0e607f9fa7b8b33495f2a7cce669e4419c6b70
 
 fetch (url)
     .then(function(res) {
