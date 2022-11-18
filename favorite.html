@@ -23,15 +23,30 @@
         <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs"
             src="../delani/imgs/favs.png" alt="favs">
 
-
-        <form action="./search-results.html" method="get">
+        <!-- FORMULARIO BUSCADOR -->
+    <section class="buscador">     
+    <form action="./search-results.html" method="get">
+        <div class="buscador">
             <img class="buscador" src="./imgs/buscador.png">
-            <input class="search" type="text" name="Busca por título, género ..."
+            <input class="search mb-2" type="text" name="Busca por título, género ..."
                 placeholder="Busca por título, género ..." value="">
-        </form>
+            <button class="boton mb-2" id="boton">Buscar</button> 
+        </div>
+        </form> 
 
-    </header>
-<body>
+       <!-- <script>
+         
+        const formulario = document.querySelector('#formulario');
+        const boton = document.querySelector('#boton');
+
+        const filtrar = ()=> {
+            console.log(formulario.value);
+        }
+
+        boton.addEventListener('click', filtrar)
+        </script> -->
+
+    </header> 
     <h1 class="title"><u> FAVORITOS</u></h1>
 
 <section class="container">
