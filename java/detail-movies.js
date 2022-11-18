@@ -17,6 +17,9 @@ for (let index = 0; index < info.length; index++) /* i++ se va iterando */
     <h1>${info[index].title}</h1>
     <p class = "estreno"> Fecha de estreno: ${info[index].release_date} </p>
     <p class = "calificacion" > Calificación: ${info[index].vote_avarage} </p>
+    <p class = "duracion" > Duración: ${info[index].runtime} </p>
+    <p class = "calificación" > Calificación: ${info[index].vote_avarage} </p>
+    <p class = "sinópsis" > Sinópsis: ${info[index].overview} </p>
     
 `
 
