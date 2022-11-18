@@ -2,13 +2,13 @@
 /* para que aparezcan la division por section, cada una con su url y selector */
 let apiKey = "15370bef1a25ea674deaaf70270ad202a"
 
-let priurl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`
+let priurl = `https://api.themoviedb.org/3/movie/popular?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
 let prisection= document.querySelector(".peliculaspopulares")
 
-let segurl = `https://api.themoviedb.org/3/tv/popular?api_key=${apiKey}&language=en-US&page=1`
+let segurl = `https://api.themoviedb.org/3/tv/popular?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
 let segsection= document.querySelector(".seriespopulares")
 
-let terurl = `https://api.themoviedb.org/3/movie/latest?api_key=${apiKey}&language=en-US`
+let terurl = `https://api.themoviedb.org/3/movie/latest?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 let tersection= document.querySelector(".peliculasnuevas")
 
 /*cada section tiene un url y un fetch propio*/
