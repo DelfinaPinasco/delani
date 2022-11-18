@@ -30,7 +30,7 @@ fetch ("https://api.themoviedb.org/3/movie/{movie_id}?api_key=15370bef1a25ea674d
 
 let sectionseries = document.querySelector('.section-series')
 
-fetch (url)
+fetch ("https://api.themoviedb.org/3/movie/{movie_id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US"
 .then(function(res) {
     return res.json();
 })
@@ -47,7 +47,16 @@ fetch (url)
 <a href="detail-genres.html?id=${generosDos[i].id}">${generosDos[i].name}</a>
 
 </li>
+<<<<<<< HEAD
 </ul>`    
 }
 )        
     })
+=======
+
+</ul>`    
+    }
+        
+})
+.catch(error => console.log(error))
+>>>>>>> d9adbcf73034d4ce17a1b6d089e6d0ea0160e411
