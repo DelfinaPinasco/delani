@@ -57,8 +57,7 @@ header {
     transform: scale(1.1)
 }
 
-
-.container {
+.peliculaspopulares {
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
@@ -67,28 +66,30 @@ header {
     color: white;
     border-style: solid;
     border-radius: 15px;
-    padding: 8px;
     margin-bottom: 100px;
 }
 
-.peliculaspopulares {
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 10px;
-    overflow: scroll;
-}
-
 .seriespopulares {
+    background-color: black;
     display: flex;
     flex-wrap: nowrap;
     padding: 10px;
     overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
 }
 .peliculasnuevas {
+    background-color: black;
     display: flex;
     flex-wrap: nowrap;
     padding: 10px;
     overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
 }
 
 .h1 {
