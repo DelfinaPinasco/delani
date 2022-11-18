@@ -27,12 +27,15 @@
                 src="../delani/imgs/favs.png" alt="favs">
 
 
-            <form action="./search-results.html" method="get">
-                <img class="buscador" src="./imgs/buscador.png">
-                <input class="search" type="text" name="Busca por título, género ..."
-                    placeholder="Busca por título, género ..." value="">
-
-            </form>
+                <div class="buscador">
+                    <form action="./search-results.html" method="GET">
+                        <input type="text" name="q" id="search" value="" placeholder="Busca por título, género ...">
+                        <button class="lupa" id="buscador" type="submit">
+                            Buscar
+                        </button>
+                </div>
+                </form>
+                </div>
 
         </header>
         <h1 class="h1"> <u> GÉNEROS</u></h1>
