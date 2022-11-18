@@ -71,6 +71,25 @@ header {
     margin-bottom: 100px;
 }
 
+.peliculaspopulares {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.seriespopulares {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+}
+.peliculasnuevas {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+}
 
 .h1 {
     color: white;
@@ -79,9 +98,8 @@ header {
 }
 
 .h2 {
-    text-align: center;
-    margin: 40px;
     color: white;
+    text-align: center;
 }
 
 
@@ -101,29 +119,6 @@ header {
     overflow: scroll;
 }
 
-.container .peliculaspopulares {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding: 10px;
-    overflow: scroll;
-    padding: 8px;
-    margin-bottom: 100px;
-}
-.seriespopulares {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.peliculasnuevas {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-
-
 
 footer {
     color: white;
@@ -138,7 +133,6 @@ footer {
 .container .miniconte :hover {
     transform: scale(1.1)
 }
-
 
 
 /* MOBILE */
@@ -198,7 +192,6 @@ footer {
 
     .h2 {
         font-size: medium;
-
     }
 
     .data {
