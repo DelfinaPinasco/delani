@@ -101,6 +101,29 @@ header {
     overflow: scroll;
 }
 
+.container .peliculaspopulares {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 10px;
+    overflow: scroll;
+    padding: 8px;
+    margin-bottom: 100px;
+}
+.seriespopulares {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.peliculasnuevas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+
 
 footer {
     color: white;
