@@ -16,18 +16,11 @@ fetch (url)
 
 .then(function(data) { 
     let info = data.results;
-    console.log(data);// hay que seguir con esto
-<<<<<<< HEAD
-
-
-    let contenido = document.querySelector('.contenedor') //aca va la class a la que queremos entrar
-    contenido+=  `<img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> 
-=======
-    let container = document.querySelector('.contenedor') //aca va la class a la que queremos entrar
+    console.log(data);
+    let container = document.querySelector('.contenedor') 
     `
     <article class= "contenedor">
     <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> 
->>>>>>> 80cef2e39495f4b666eed4a81d8631b799505c44
     <h1>${info[index].title}</h1>
     <p class = "estreno"> Fecha de estreno: ${info[index].release_date} </p>
     <p class = "calificacion" > Calificación: ${info[index].vote_avarage} </p>
@@ -38,10 +31,6 @@ fetch (url)
     container.innerHTML += contenido
 }
 
-<<<<<<< HEAD
-})
-=======
->>>>>>> 80cef2e39495f4b666eed4a81d8631b799505c44
 
 .catch(function(error){
     console.log('El error es' + error);
