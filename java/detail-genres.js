@@ -7,7 +7,7 @@ let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea6
 
 fetch (url)
 .then (function (respuesta) {
-    return respuesta.jason();
+    console.log(respuesta);
 }
     
 
