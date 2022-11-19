@@ -20,9 +20,9 @@ fetch(url)
         `<article class= "contenedor"> 
         <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <h1>${data.name}</h1>
-        <p class = "texto"> Fecha de estreno: ${data.first_air_date} </p>
-        <p class = "texto" > Calificación: ${data.vote_average} </p>
-        <p class = "texto" > Sinópsis: ${data.overview} </p>
+        <p class = "texto"> <u>Fecha de estreno</u>: ${data.first_air_date} </p>
+        <p class = "texto" > <u>Calificación</u>: ${data.vote_average} </p>
+        <p class = "texto" > <u>Sinópsis</u>: ${data.overview} </p>
         </article>`;
         container.innerHTML += contenido
     })
