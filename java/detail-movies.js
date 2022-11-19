@@ -1,11 +1,11 @@
-window.addEventListener("load", function () {
+
     let moviedetail = location.search;
     let movieobjeto = new URLSearchParams(moviedetail);
     let id = movieobjeto.get('id');
     console.log(id)
-})
-let api_key = "15370bef1a25ea674deaaf70270ad202"
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}&language=en-US`
+
+//let api_key = "15370bef1a25ea674deaaf70270ad202"
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 
 fetch(url)
     .then(function (respuesta) {
@@ -20,11 +20,11 @@ fetch(url)
         <article class= "contenedor">
         <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <h1>${data.title}</h1>
-        <p class = "estreno"> Fecha de estreno: ${data.release_date} </p>
-        <p class = "calificacion" > Calificación: ${data.vote_avarage} </p>
-        <p class = "duracion" > Duración: ${data.runtime} </p>
-        <p class = "calificación" > Calificación: ${data.vote_avarage} </p>
-        <p class = "sinópsis" > Sinópsis: ${data.overview} </p>
+        <p class = "texto"> Fecha de estreno: ${data.release_date} </p>
+        <p class = "texto" > Calificación: ${data.vote_avarage} </p>
+        <p class = "texto" > Duración: ${data.runtime} </p>
+        <p class = "texto" > Calificación: ${data.vote_avarage} </p>
+        <p class = "texto" > Sinópsis: ${data.overview} </p>
         </article>
         `;
         container.innerHTML += contenido
