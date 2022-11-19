@@ -1,39 +1,40 @@
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     let moviedetail = location.search;
     let movieobjeto = new URLSearchParams(moviedetail);
-    let movie_id = movieobjeto.get('id');
-    console.log(movie_id)
+    let id = movieobjeto.get('id');
+    console.log(id)
 })
+let api_key = "15370bef1a25ea674deaaf70270ad202"
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key}&language=en-US`
 
-let url = `https://api.themoviedb.org/3/movie/${movie_id}?${api_key}=15370bef1a25ea674deaaf70270ad202&language=en-US"`
-
-fetch (url)
-.then(function(respuesta) {
-    return respuesta.json();
+fetch(url)
+    .then(function (respuesta) {
+        return respuesta.json();
     })
 
-.then(function(data) { 
-    let info = data.results;
-    console.log(data);
-    let container = document.querySelector('.contenedor') 
-    `
-    <article class= "contenedor">
-    <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' /> 
-    <h1>${info[index].title}</h1>
-    <p class = "estreno"> Fecha de estreno: ${info[index].release_date} </p>
-    <p class = "calificacion" > Calificación: ${info[index].vote_avarage} </p>
-    <p class = "duracion" > Duración: ${info[index].runtime} </p>
-    <p class = "calificación" > Calificación: ${info[index].vote_avarage} </p>
-    <p class = "sinópsis" > Sinópsis: ${info[index].overview} </p>
-`
-    container.innerHTML += contenido
-}
+    .then(function (data) {
+        console.log(data);
+        let container = document.querySelector('.contenedor')
+        let contenido = 
+            `
+        <article class= "contenedor">
+        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
+        <h1>${data.title}</h1>
+        <p class = "estreno"> Fecha de estreno: ${data.release_date} </p>
+        <p class = "calificacion" > Calificación: ${data.vote_avarage} </p>
+        <p class = "duracion" > Duración: ${data.runtime} </p>
+        <p class = "calificación" > Calificación: ${data.vote_avarage} </p>
+        <p class = "sinópsis" > Sinópsis: ${data.overview} </p>
+        </article>
+        `;
+        container.innerHTML += contenido
+    })
 
 
-.catch(function(error){
-    console.log('El error es' + error);
-    return error
-}))
+        .catch(function (error) {
+            console.log(error);
+          
+    })
 
 
 /*let query1 = location.search
@@ -55,11 +56,11 @@ fetch(url)
 .then(function(data) {
     console.log(data);
    <!-- let info = data.results     /* el results es generico y contiene el array  */
-    let genero = document.querySelector(".section-movies")
-    let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+let genero = document.querySelector(".section-movies")
+let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
 
-    for (let index = 0; index < 5; index++) {         /* i++ se va iterando */ 
-    contenido+= `<article class= ".section-movies article">
+for (let index = 0; index < 5; index++) {         /* i++ se va iterando */
+    contenido += `<article class= ".section-movies article">
     <a href ="./detail-genres.html?id=${info[index].id}">    
     <div>
         <h3>${info[i].id} </h3>            
@@ -70,10 +71,9 @@ fetch(url)
         <div/>
     </article>`
 }
-    genero.innerHTML += contenido
+genero.innerHTML += contenido
 
-})
 
-    .catch(function(error){
+    .catch(function (error) {
         console.log(error)
-}) */ 
+    })
