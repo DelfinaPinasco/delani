@@ -17,16 +17,16 @@ fetch(url)
         let contenido = 
             `
         <article class= "contenedor">
-        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <h1>${data.title}</h1>
-        <p class = "texto"> Fecha de estreno: ${data.release_date} </p>
+        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.still_path}" alt='' /> 
+        <h1>${data.name}</h1>
+        <p class = "texto"> Fecha de estreno: ${data.air_date} </p>
         <p class = "texto" > Calificación: ${data.vote_avarage} </p>
-        <p class = "texto" > Duración: ${data.runtime} </p>
+        <p class = "texto" > Duración: ${data.episode_run_time} </p>
         <p class = "texto" > Calificación: ${data.vote_avarage} </p>
         <p class = "texto" > Sinópsis: ${data.overview} </p>
         </article>
         `;
-        container.innerHTML += contenido
+        contenedor.innerHTML += contenido
     })
 
 
