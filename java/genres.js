@@ -11,7 +11,7 @@ fetch ("https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674d
 	        	generoPelicula.innerHTML += `         
 <ul>
 <li>
-<a href="detail-genres.html?id=${generos[i].id}"&>${generos[i].name}</a>
+<a href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>
 </li>
 </ul>`
     }
