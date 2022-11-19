@@ -2,29 +2,16 @@ body {
     background-image: url(../delani/imgs/glaxia.webp);
 }
 
-
 .logo {
     height: 100px;
     width: 100px;
 }
-
 .logob {
     height: 60px;
     width: 60px;
 }
 
-.texto {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.button:hover {
-    color: yellow;
-    background-color: rgb(204, 201, 50);
-    transform: scale(1.1);
-}
-
-.fotoriverdale {
+.fotofast {
     height: 700px;
     margin-right: 60px;
     margin-left: 40px;
@@ -43,7 +30,14 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.calificación {
+.button:hover {
+    color: yellow;
+    background-color: rgb(204, 201, 50);
+    transform: scale(1.1);
+}
+
+
+.texto {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -53,12 +47,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.episodios {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.temporadas {
+.duración {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -78,6 +67,7 @@ body {
     align-items: center;
     flex-wrap: nowrap;
 }
+
 
 header {
     background-color: #32323D;
@@ -120,7 +110,6 @@ header {
     text-align: start;
 }
 
-
 .buscador {
     height: 25px;
     width: 25px;
@@ -144,7 +133,6 @@ header {
     background-color: black;
     display: flex;
     box-sizing: 500%;
-    flex-wrap: nowrap;
     flex-direction: column;
     color: white;
     border-style: solid;
@@ -168,7 +156,6 @@ header {
 
 .videot {
     text-align: center;
-
 }
 
 .textofooter {
