@@ -3,7 +3,7 @@ let queryStringToObject = new URLSearchParams(queryString); //La trasnformo en O
 let id = queryStringToObject.get('id'); //Obtengo los datos de una propiedad con get()
 
 
-let url = `https://rickandmortyapi.com/api/character/${id}`
+let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
 
 console.log(url);
 
