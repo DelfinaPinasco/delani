@@ -20,7 +20,7 @@
 
 let priurl = "https://api.themoviedb.org/3/movie/top_rated?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
-let segurl = "https://api.themoviedb.org/3/tv/top_rated?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
+let segurl = "https://api.themoviedb.org/3/tv/popular?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
 let terurl = "https://api.themoviedb.org/3/movie/upcoming?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1"
 
@@ -71,12 +71,12 @@ fetch(priurl)
  for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
      contenido+=
      `<article class= "container img">
-     <a href ="./detail-movie.html?id=${info[index].id}">                 
+     <a href ="./detail-serie.html?id=${info[index].id}">                 
      <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
-      <h3>${info[index].title}</h3>
-      <h3>Fecha de estreno: ${info[index].release_date} </h3>
+      <h3>${info[index].name}</h3>
+      <h3>Fecha de estreno: ${info[index].first_air_date} </h3>
       </a>
-     </article>`
+     </article>`;
  }
      segsection.innerHTML += contenido
  
