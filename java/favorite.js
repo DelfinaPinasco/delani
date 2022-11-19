@@ -1,4 +1,39 @@
-let queryString = location.search; //Obtengo la QS
+let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
+
+let recupStoragepelic = localStorage.getItem ("favoritospeliculas");
+let favoritospelic = JSON.parse(recupStoragepelic);
+
+let recupStorageserie = localStorage.getItem ("favoritosserie");
+let favoritosseries = JSON.parse(recupStorageserie);
+
+let favs = document.querySelector (".container")
+
+
+
+if (favoritospelic.length == 0 || favoritos == null){
+  favs.innerHTML = <p>Aún no hay lista de peliculas favoritas.</p>
+} else {
+  let peliculasfavs = ''
+  for (let i = 0; i < favoritospelic.length; i++) {
+    //let url = 
+    fetch (url)
+    .then (function (respuesta) {
+      return respuesta . json ()
+    })
+    .then (function(data) {
+      console.log (data)
+      let title = data.title
+      let imagen = data.poster_path
+      let id = data.id
+      let fecha = data.release_date
+      peliculasfavs += //seguir aca
+     }
+    )
+  }
+}
+
+
+/*let queryString = location.search; //Obtengo la QS
 let queryStringToObject = new URLSearchParams(queryString); //La trasnformo en OL
 let id = queryStringToObject.get('id'); //Obtengo los datos de una propiedad con get()
 
@@ -37,7 +72,7 @@ document.getElementById(".favoritos").addEventListener("click", function(e) {
  
  });
 
-/* fetch(url)
+ fetch(url)
     .then(function(response){
         return response.json();
     })
