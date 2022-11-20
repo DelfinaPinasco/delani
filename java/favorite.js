@@ -1,10 +1,9 @@
-//let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
-
+let apiKey = b0c989c37b55d3ea4a70eda0aeea1b02
 let recupStoragePelic = localStorage.getItem ("favoritosPeliculas");
-let favoritosPelic = JSON.parse(recuperoStoragePelic);
+let favoritosPelic = JSON.parse(recuperoStorage);
 
 let recupStorageSerie = localStorage.getItem ("favoritosSerie");
-let favoritosSeries = JSON.parse(recuperoStorageSerie);
+let favoritos = JSON.parse(recuperoStorage);
 
 let favs = document.querySelector (".containerpelis")
 let favs1 = document.querySelector (".containerseries")
@@ -13,9 +12,9 @@ if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
 } else {  
-  let peliculasFavs = ''
+  let peliculasFavs = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${api_key}&language=en-US`;
   for (let i = 0; i < favoritosPelic.length; i++) { 
-    let url = 'https://api.themoviedb.org/3/account/{account_id}/favorite/movies?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US&sort_by=created_at.asc&page=1'
+    let url = ''
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
@@ -38,11 +37,11 @@ if (favoritosPelic.length == 0 || favoritos == null){
     )
       }
      }
-
+/* MARCA ERROR ESTO
 .catch (function(error){ //corregir error aca
   console.log (error);
   return error
-})
+}) */
 
 //Bloque para array de peliculas
 if (favoritosSeries.length == 0 || favoritos == null){
@@ -51,7 +50,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
 } else {
   let seriesFavs = ''
   for (let i = 0; i < favoritosSeries.length; i++) {
-    let urlseries = 'https://api.themoviedb.org/3/tv/${tv_id}?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US'
+    let urlseries = `https://api.themoviedb.org/3/tv/${favoritos[i]}?api_key=${api_key}&language=en-US`;
     fetch (urlseries)
     .then (function (respuesta) {
       return respuesta . json ()
