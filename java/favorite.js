@@ -14,7 +14,7 @@ let favs1 = document.querySelector (".containerseries")
 if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
-} else { //fijarse donde cierra
+} else { //fijarse donde cierra 
   let peliculasFavs = ''
   for (let i = 0; i < favoritosPelic.length; i++) { //fijarse donde cierra
     let url = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
@@ -31,7 +31,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
       peliculasFavs += <a href="./detail_movie.html?idPersonaje=${id}">
         <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p>${data.title}</p>
-        <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
+        <p class = "texto"> Estreno: ${data.release_date} </p>
       </a>
       favs.innerHTML = peliculasFavs
       return data
@@ -64,7 +64,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
       seriesFavs += <a href="./detail_serie.html?idPersonaje=${id}">
         <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p>${data.name}</p>
-        <p class = "texto"> <u>Fecha de estreno</u>: ${data.first_air_date} </p>
+        <p class = "texto"> Estreno: ${data.first_air_date} </p>
       </a>
       favs2.innerHTML = seriesFavs
       return data
