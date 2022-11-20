@@ -1,6 +1,3 @@
-// mark as favorite https://api.themoviedb.org/3/account/{account_id}/favorite?api_key=15370bef1a25ea674deaaf70270ad202
-
-
 //let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
 let apiKey = "371e304b1b9f8df6a3f0e225dc4511b7"
 
