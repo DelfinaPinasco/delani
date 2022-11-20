@@ -6,7 +6,7 @@ console.log(id);
 let genero = "movie"
 
 //peliculas
-let url = ``
+let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 fetch(url)
     .then(function (respuesta) {
         return respuesta.json();
