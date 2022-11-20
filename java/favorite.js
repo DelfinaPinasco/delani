@@ -1,21 +1,23 @@
-let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
+//let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
+let apiKey = "371e304b1b9f8df6a3f0e225dc4511b7"
 
-let recupStoragepelic = localStorage.getItem ("favoritospeliculas");
-let favoritospelic = JSON.parse(recupStoragepelic);
+let recupStoragePelic = localStorage.getItem ("favoritospeliculas");
+let favoritosPelic = JSON.parse(recuperoStoragepelic);
 
-let recupStorageserie = localStorage.getItem ("favoritosserie");
-let favoritosseries = JSON.parse(recupStorageserie);
+let recupStorageSerie = localStorage.getItem ("favoritosserie");
+let favoritosSeries = JSON.parse(recuperoStorageserie);
 
-let favs = document.querySelector (".container")
+let favs = document.querySelector (".containerpelis")
+let favs1 = document.querySelector (".containerseries")
 
 
+if (favoritosPelic.length == 0 || favoritos == null){
+  favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
-if (favoritospelic.length == 0 || favoritos == null){
-  favs.innerHTML = <p>Aún no hay lista de peliculas favoritas.</p>
 } else {
-  let peliculasfavs = ''
-  for (let i = 0; i < favoritospelic.length; i++) {
-    //let url = 
+  let peliculasFavs = ''
+  for (let i = 0; i < favoritosPelic.length; i++) {
+    let url = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
@@ -23,10 +25,10 @@ if (favoritospelic.length == 0 || favoritos == null){
     .then (function(data) {
       console.log (data)
       let title = data.title
-      let imagen = data.poster_path
       let id = data.id
+      let imagen = data.poster_path
       let fecha = data.release_date
-      peliculasfavs += //seguir aca
+      peliculasFavs += //seguir
      }
     )
   }
