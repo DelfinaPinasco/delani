@@ -46,12 +46,12 @@ if (favoritosPelic.length == 0 || favoritos == null){
 
 //Bloque para array de peliculas
 if (favoritosSeries.length == 0 || favoritos == null){
-  favs2.innerHTML = <p>Aún no hay series favoritas.</p>
+  favs1.innerHTML = <p>Aún no hay series favoritas.</p>
 
 } else {
   let seriesFavs = ''
   for (let i = 0; i < favoritosSeries.length; i++) {
-    let urlseries = 'https://api.themoviedb.org/3/tv/${tv_id}?api_key=45d43a6901861343cdb188d4f3bafd7c&language=en-US'
+    let urlseries = 'https://api.themoviedb.org/3/tv/${tv_id}?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US'
     fetch (urlseries)
     .then (function (respuesta) {
       return respuesta . json ()
@@ -67,7 +67,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
         <p>${data.name}</p>
         <p class = "texto"> Estreno: ${data.first_air_date} </p>
       </a>
-      favs2.innerHTML = seriesFavs
+      favs1.innerHTML = seriesFavs
       return data
 
      })
@@ -79,93 +79,3 @@ if (favoritosSeries.length == 0 || favoritos == null){
   }
 }
 
-/* idea:
-
-// leemos los favoritos del localStorage
-var favoritos = localStorage.getItem("favoritos") || "[]";
-favoritos = JSON.parse(favoritos);
-
-// creamos una lista
-var ul = document.createElement("ul");
-// para cada producto en favoritos
-for (var x = 0; x < favoritos.length; x++) {
-  // creamos un elemento de lista
-  var li = document.createElement("li");
-  // con un enlace al producto
-  var a = document.createElement("a");
-  a.href = favoritos[x].url;
-  a.textContent = favoritos[x].nombre;
-  li.appendChild(a);
-  ul.appendChild(li);
-}
-// agregamos el producto donde correspona
-document.querySelector("#favoritos").appendChild(ul);
-
-
-
-/*let queryString = location.search; //Obtengo la QS
-let queryStringToObject = new URLSearchParams(queryString); //La trasnformo en OL
-let id = queryStringToObject.get('id'); //Obtengo los datos de una propiedad con get()
-
-
-let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
-
-console.log(url);
-
-
-
-
-// cuando se pulsa en "agregar a favoritos"
-document.getElementById(".favoritos").addEventListener("click", function(e) {
-    //los guardamos en un objeto
-  var datos = {
-    id: document.getElementById("producto-id").value,
-    nombre: document.getElementById("producto-nombre").textContent,
-    url: document.location.href
-  };
-    // leemos los favoritos del localStorage
-  var favoritos = localStorage.getItem("favoritos") || "[]";
-  favoritos = JSON.parse(favoritos);
-
-   // buscamos el producto en la lista de favoritos
-   var posLista = favoritos.findIndex(function(e) { return e.id == datos.id; });
-   if (posLista > -1) {
-     // si está, lo quitamos
-     favoritos.splice(posLista, 1);
-   } else {
-     // si no está, lo añadimos
-     favoritos.push(datos);
-   }
- 
-   // guardamos la lista de favoritos 
-   localStorage.setItem("favoritos", JSON.stringify(favoritos));
- 
- });
-
- fetch(url)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(data){
-        console.log(data);
-
-        //Capturamos DOM
-        let section = document.querySelector('.detalle')
-
-        section.innerHTML += `<article>
-                                <h2>Nombre: ${data.name}</h2>
-                                <img src="${data.image}">
-                                <p> Status: ${data.status}</p>
-                                <p> Especie: ${data.species}</p>
-                                <p> Genero: ${data.gender}</p>
-                            </article>`   
-    })
-    .catch(function(error){
-        console.log(error);
-    })
-
-// 1 - crear un array para ir completando con datos
-let favoritos = [];
-
-// 2 - recupero datos del storage
-let recuperoStorage= localStorage.getItem("favoritos"); */
