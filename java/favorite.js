@@ -24,7 +24,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
-    })
+    }) 
     .then (function(data) {
       console.log (data)
       let title = data.title
@@ -43,6 +43,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
     )
       }
      }
+
 .catch (function(error){
   console.log (error);
   return error
@@ -172,4 +173,4 @@ document.getElementById(".favoritos").addEventListener("click", function(e) {
 let favoritos = [];
 
 // 2 - recupero datos del storage
-let recuperoStorage= localStorage.getItem("favoritos");
+let recuperoStorage= localStorage.getItem("favoritos"); */

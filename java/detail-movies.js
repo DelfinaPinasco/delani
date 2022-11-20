@@ -20,7 +20,6 @@ fetch(url)
         <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <h1>${data.title}</h1>
         <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
-        <p class = "texto" > <u>Calificación</u>: ${data.vote_avarage} </p>
         <p class = "texto" > <u>Duración</u>: ${data.runtime} minutos </p>
         <p class = "texto" > <u>Calificación</u>: ${data.vote_avarage} </p>
         <p class = "texto" > <u>Sinópsis</u>: ${data.overview} </p>
