@@ -116,10 +116,14 @@ header {
     height: 20px;
     width: 20px;
 }
+<<<<<<< HEAD
+
+=======
 .buscador {
     height: 25px;
     width: 25px;
 }
+>>>>>>> 153af2812badbe0124164061b1abe2ddc86959c1
 
 .headerinfo:hover {
     color: black;

@@ -18,7 +18,7 @@ fetch(url)
     return respuestas.json()
 })
 
-.then(function(data){
+.then(function(data) {
     console.log(data);
     let info = data.results;
 
@@ -31,6 +31,10 @@ fetch(url)
             </article>`
     
        
-    
+        }
+    }
 })
-.catch(error => console.log(error))
+
+.catch(function(error){
+    console.log('El error es' + error);
+})

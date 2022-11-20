@@ -14,14 +14,14 @@ let favs1 = document.querySelector (".containerseries")
 if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
-} else { //fijarse donde cierra 
+} else {  
   let peliculasFavs = ''
-  for (let i = 0; i < favoritosPelic.length; i++) { //fijarse donde cierra
+  for (let i = 0; i < favoritosPelic.length; i++) { 
     let url = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
-    })
+    }) 
     .then (function(data) {
       console.log (data)
       let title = data.title
@@ -38,7 +38,10 @@ if (favoritosPelic.length == 0 || favoritos == null){
 
      }
     )
-.catch (function(error){
+      }
+     }
+
+.catch (function(error){ //corregir error aca
   console.log (error);
   return error
 })
@@ -77,6 +80,29 @@ if (favoritosSeries.length == 0 || favoritos == null){
 })
   }
 }
+
+/* idea:
+
+// leemos los favoritos del localStorage
+var favoritos = localStorage.getItem("favoritos") || "[]";
+favoritos = JSON.parse(favoritos);
+
+// creamos una lista
+var ul = document.createElement("ul");
+// para cada producto en favoritos
+for (var x = 0; x < favoritos.length; x++) {
+  // creamos un elemento de lista
+  var li = document.createElement("li");
+  // con un enlace al producto
+  var a = document.createElement("a");
+  a.href = favoritos[x].url;
+  a.textContent = favoritos[x].nombre;
+  li.appendChild(a);
+  ul.appendChild(li);
+}
+// agregamos el producto donde correspona
+document.querySelector("#favoritos").appendChild(ul);
+
 
 
 /*let queryString = location.search; //Obtengo la QS

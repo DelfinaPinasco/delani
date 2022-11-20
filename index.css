@@ -1,6 +1,5 @@
 body {
     background-image: url(.//imgs/glaxia.webp);
-
 }
 
 .logo {
@@ -30,13 +29,13 @@ header {
     border-color: white;
     border-radius: 15px;
 }
-
-.generos {
-    height: 20px;
-    width: 20px;
+.headerinfo:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.1)
 }
 
-.home {
+.generos {
     height: 20px;
     width: 20px;
 }
@@ -46,16 +45,7 @@ header {
     width: 20px;
 }
 
-.buscador {
-    height: 25px;
-    width: 25px;
-}
 
-.headerinfo:hover {
-    color: black;
-    background-color: white;
-    transform: scale(1.1)
-}
 
 .peliculaspopulares {
     background-color: black;

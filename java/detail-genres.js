@@ -2,46 +2,67 @@ let detailgenre = window.location.search;
 let genres = new URLSearchParams(detailgenre);
 let id = genres.get('id');
 console.log(id)
-
-let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+//peliculas
+let url = ``
 fetch(url)
     .then(function (respuesta) {
         return respuesta.json();
     })
-.then (function (respuesta) {
-    console.log(respuesta);
-    let pelis = document.querySelector (".peliculas") //nuestra variable
-    let contenido = ""
-    `<article class= "contenedor"> 
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <h1>${data.name}</h1>
-        <p class = "texto"> Fecha de estreno: ${data.first_air_date} </p>
-        <p class = "texto" > Calificación: ${data.vote_average} </p>
-        <p class = "texto" > Sinópsis: ${data.overview} </p>
-        </article>`;
-}
-    
-
-    
-)
-
-
-
-/* fetch(url)
-    .then(function (respuesta) {
-        return respuesta.json();
-    })
-
     .then(function (data) {
         console.log(data);
-        let container = document.querySelector('.contenedor')
-        let contenido =
-        `<article class= "contenedor"> 
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <h1>${data.name}</h1>
-        <p class = "texto"> Fecha de estreno: ${data.first_air_date} </p>
-        <p class = "texto" > Calificación: ${data.vote_average} </p>
-        <p class = "texto" > Sinópsis: ${data.overview} </p>
-        </article>`;
-        container.innerHTML += contenido
-    }) */
+        let info = data.results ;
+        let pelis = document.querySelector(".peliculas") //nuestra variable
+        let contenido = "";
+
+        for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+            `<article class= "contenedor"> 
+        <h1>${data.with_genres}</h1>
+        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+
+
+    }
+    pelis += contenido
+    
+
+    })
+
+    .catch(function (error) {
+        console.log('El error es' + error);
+    })
+
+
+    //series
+
+    let url2 = `https://api.themoviedb.org/3/discover/tv?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`
+fetch(url2)
+.then(function (respuesta) {
+    return respuesta.json();
+})
+.then(function (data) {
+    console.log(data);
+    let info = data.results ;
+    let series = document.querySelector(".series") //nuestra variable
+    let contenido = "";
+
+        for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+            `<article class= "contenedor"> 
+        <h1>${data.with_genres}</h1>
+        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+
+
+    }
+    series += contenido
+    
+
+    })
+
+    .catch(function (error) {
+        console.log('El error es' + error);
+    })
+
+
+
+
+
