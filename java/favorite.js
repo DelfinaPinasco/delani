@@ -28,7 +28,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
       let id = data.id
       let imagen = data.poster_path
       let fecha = data.release_date
-      peliculasFavs += <a href="./detail_movie.html?idPersonaje=${id}">
+      peliculasFavs += <a href="./detail-movie.html?idPersonaje=${id}">
         <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p>${data.title}</p>
         <p class = "texto"> Estreno: ${data.release_date} </p>
@@ -61,7 +61,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
       let id = data.id
       let imagen = data.poster_path
       let fecha = data.release_date
-      seriesFavs += <a href="./detail_serie.html?idPersonaje=${id}">
+      seriesFavs += <a href="./detail-serie.html?idPersonaje=${id}">
         <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p>${data.name}</p>
         <p class = "texto"> Estreno: ${data.first_air_date} </p>
