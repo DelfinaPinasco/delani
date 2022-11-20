@@ -38,7 +38,7 @@ fetch(url)
 
     //series
     let genero2 = "tv"
-    let url2 = `https://api.themoviedb.org/3/discover/tv?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`
+    let url2 = `https://api.themoviedb.org/3/genre/tv/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 fetch(url2)
 .then(function (respuesta) {
     return respuesta.json();
