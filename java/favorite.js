@@ -1,23 +1,22 @@
 //let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
-let apiKey = "371e304b1b9f8df6a3f0e225dc4511b7"
+let apiKey = "15370bef1a25ea674deaaf70270ad202"
 
-let recupStoragePelic = localStorage.getItem ("favoritospeliculas");
-let favoritosPelic = JSON.parse(recuperoStoragepelic);
+let recupStoragePelic = localStorage.getItem ("favoritosPeliculas");
+let favoritosPelic = JSON.parse(recuperoStoragePelic);
 
-let recupStorageSerie = localStorage.getItem ("favoritosserie");
-let favoritosSeries = JSON.parse(recuperoStorageserie);
+let recupStorageSerie = localStorage.getItem ("favoritosSerie");
+let favoritosSeries = JSON.parse(recuperoStorageSerie);
 
 let favs = document.querySelector (".containerpelis")
 let favs1 = document.querySelector (".containerseries")
 
-//Bloque para array de peliculas
 if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
 } else {  
   let peliculasFavs = ''
   for (let i = 0; i < favoritosPelic.length; i++) { 
-    let url = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
+    let url = 'https://api.themoviedb.org/3/account/{account_id}/favorite/movies?api_key=15370bef1a25ea674deaaf70270ad202&session_id=ninateller&language=en-US&sort_by=created_at.asc&page=1'
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
