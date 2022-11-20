@@ -14,9 +14,9 @@ let favs1 = document.querySelector (".containerseries")
 if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
-} else {
+} else { //fijarse donde cierra
   let peliculasFavs = ''
-  for (let i = 0; i < favoritosPelic.length; i++) {
+  for (let i = 0; i < favoritosPelic.length; i++) { //fijarse donde cierra
     let url = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
     fetch (url)
     .then (function (respuesta) {
