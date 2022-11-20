@@ -4,8 +4,7 @@ let serieobjeto = new URLSearchParams(seriedetail);
 let id = serieobjeto.get('id');
 console.log(id)
 
-let url = `https://api.themoviedb.org/3/tv/{tv_id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
-
+let url = `https://api.themoviedb.org/3/tv/${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 
 
 fetch(url)
