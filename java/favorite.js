@@ -1,5 +1,4 @@
 //let url = `https://api.themoviedb.org/3/account/%7Baccount_id%7D/favorite/movies${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=created_at.asc&page=1`
-let apiKey = "15370bef1a25ea674deaaf70270ad202"
 
 let recupStoragePelic = localStorage.getItem ("favoritosPeliculas");
 let favoritosPelic = JSON.parse(recuperoStoragePelic);
@@ -16,7 +15,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
 } else {  
   let peliculasFavs = ''
   for (let i = 0; i < favoritosPelic.length; i++) { 
-    let url = 'https://api.themoviedb.org/3/account/{account_id}/favorite/movies?api_key=15370bef1a25ea674deaaf70270ad202&session_id=ninateller&language=en-US&sort_by=created_at.asc&page=1'
+    let url = 'https://api.themoviedb.org/3/account/{account_id}/favorite/movies?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US&sort_by=created_at.asc&page=1'
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
@@ -52,7 +51,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
 } else {
   let seriesFavs = ''
   for (let i = 0; i < favoritosSeries.length; i++) {
-    let urlseries = 'https://api.themoviedb.org/3/movie/${favoritosSeries[i]}?api_key={apiKey}&language=en-US'
+    let urlseries = 'https://api.themoviedb.org/3/tv/${tv_id}?api_key=45d43a6901861343cdb188d4f3bafd7c&language=en-US'
     fetch (urlseries)
     .then (function (respuesta) {
       return respuesta . json ()
