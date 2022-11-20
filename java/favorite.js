@@ -50,7 +50,7 @@ if (favoritosSeries.length == 0 || favoritos == null){
 } else {
   let seriesFavs = ''
   for (let i = 0; i < favoritosSeries.length; i++) {
-    let urlseries = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
+    let urlseries = 'https://api.themoviedb.org/3/movie/${favoritosSeries[i]}?api_key={apiKey}&language=en-US'
     fetch (urlseries)
     .then (function (respuesta) {
       return respuesta . json ()
