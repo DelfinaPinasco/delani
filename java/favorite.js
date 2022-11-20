@@ -44,7 +44,7 @@ if (favoritosPelic.length == 0 || favoritos == null){
       }
      }
 
-.catch (function(error){
+.catch (function(error){ //corregir error aca
   console.log (error);
   return error
 })
