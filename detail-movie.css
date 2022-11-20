@@ -154,10 +154,6 @@ header {
     display: flex;
 }
 
-.videot {
-    text-align: center;
-}
-
 .textofooter {
     color: white;
 }
@@ -260,10 +256,6 @@ header {
         width: 300px;
         margin-bottom: 40px;
         margin-top: 40px;
-    }
-
-    .trailer {
-        font-size: large;
     }
 
     .videot {

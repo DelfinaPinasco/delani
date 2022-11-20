@@ -143,19 +143,10 @@ header {
     margin-right: 60px;
 }
 
-.trailer {
-    color: white;
-    text-align: center;
-}
-
 .inf .star {
     height: 20px;
     width: 20px;
     display: flex;
-}
-
-.videot {
-    text-align: center;
 }
 
 .textofooter {

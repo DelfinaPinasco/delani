@@ -10,7 +10,7 @@ let favoritosSeries = JSON.parse(recuperoStorageserie);
 let favs = document.querySelector (".containerpelis")
 let favs1 = document.querySelector (".containerseries")
 
-
+//Bloque para array de peliculas
 if (favoritosPelic.length == 0 || favoritos == null){
   favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
 
@@ -28,9 +28,53 @@ if (favoritosPelic.length == 0 || favoritos == null){
       let id = data.id
       let imagen = data.poster_path
       let fecha = data.release_date
-      peliculasFavs += //seguir
+      peliculasFavs += <a href="./detail_movie.html?idPersonaje=${id}">
+        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
+        <p>${data.title}</p>
+        <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
+      </a>
+      favs.innerHTML = peliculasFavs
+      return data
+
      }
     )
+.catch (function(error){
+  console.log (error);
+  return error
+})
+
+//Bloque para array de peliculas
+if (favoritosSeries.length == 0 || favoritos == null){
+  favs2.innerHTML = <p>Aún no hay series favoritas.</p>
+
+} else {
+  let seriesFavs = ''
+  for (let i = 0; i < favoritosSeries.length; i++) {
+    let urlseries = 'https://api.themoviedb.org/3/movie/${favoritosPelic[i]}?api_key={apiKey}&language=en-US'
+    fetch (urlseries)
+    .then (function (respuesta) {
+      return respuesta . json ()
+    })
+    .then (function(data) {
+      console.log (data)
+      let title = data.title
+      let id = data.id
+      let imagen = data.poster_path
+      let fecha = data.release_date
+      seriesFavs += <a href="./detail_serie.html?idPersonaje=${id}">
+        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
+        <p>${data.name}</p>
+        <p class = "texto"> <u>Fecha de estreno</u>: ${data.first_air_date} </p>
+      </a>
+      favs2.innerHTML = seriesFavs
+      return data
+
+     })
+
+.catch (function(error){
+  console.log (error);
+  return error
+})
   }
 }
 
