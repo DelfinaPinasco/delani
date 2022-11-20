@@ -1,7 +1,10 @@
 let detailgenre = window.location.search;
+console.log (detailgenre);
 let genres = new URLSearchParams(detailgenre);
 let id = genres.get('id');
-console.log(id)
+console.log(id);
+let genero = "movie"
+
 //peliculas
 let url = ``
 fetch(url)
@@ -10,8 +13,9 @@ fetch(url)
     })
     .then(function (data) {
         console.log(data);
-        let info = data.results ;
         let pelis = document.querySelector(".peliculas") //nuestra variable
+        let info = data.results ;
+        console.log (info)
         let contenido = "";
 
         for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
