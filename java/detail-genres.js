@@ -6,7 +6,7 @@ console.log(id);
 let genero = "movie"
 
 //peliculas
-let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US`
 fetch(url)
     .then(function (respuesta) {
         return respuesta.json();
@@ -14,15 +14,24 @@ fetch(url)
     .then(function (data) {
         console.log(data);
         let pelis = document.querySelector(".peliculas") //nuestra variable
+        let contenido = "";
         let info = data.results ;
-        console.log (info)
+        //console.log (info)
         //let contenido = "";
 
         for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
-        pelis.innerHTML+=
-            `<article class= "contenedor"> 
-        <h1>${data.with_genres}</h1>
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+        contenido+=
+        `<article class= "contenedor">
+        <a href ="./detail-movie.html?id=${info[index].id}">                 
+        <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+         <h3>${info[index].title}</h3>
+         </a>
+        </article>`
+
+        pelis.innerHTML += contenido
+          //*  `<article class= "contenedor"> 
+       // <h1>${data.with_genres}</h1>
+       // <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
 
 
     }
@@ -38,7 +47,7 @@ fetch(url)
 
     //series
     let genero2 = "tv"
-    let url2 = `https://api.themoviedb.org/3/genre/tv/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+    let url2 = `https://api.themoviedb.org/3/genre/tv/list?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US`
 fetch(url2)
 .then(function (respuesta) {
     return respuesta.json();
@@ -46,20 +55,22 @@ fetch(url2)
 .then(function (data) {
     console.log(data);
     let info = data.results ;
-    console.log (info)
     let series = document.querySelector(".series") //nuestra variable
-    //let contenido = "";
+    let contenido = "";
 
-        for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
-        series.innerHTML+=
-            `<article class= "contenedor"> 
-        <h1>${data.with_genres}</h1>
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+        `<article class= "contenedor">
+     <a href ="./detail-serie.html?id=${info[index].id}">                 
+     <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+      <h3>${info[index].name}</h3>
+      </a>
+     </article>`    
 
-
-    }
-    //series += contenido
     
+    }
+
+    series.innerHTML += contenido
 
     })
 
