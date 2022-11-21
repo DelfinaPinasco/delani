@@ -35,3 +35,19 @@ fetch(url)
     })
 
 
+
+
+    //Boton de favoritos
+
+    let favoritos = []
+
+    let recuperoStorage = localStorage.getItem("favoritos")
+
+    if (recuperoStorage != null) {
+        favoritos = JSON.parse(recuperoStorage)
+    }
+
+    if (favoritos.includes(pelicula)) {
+        fav
+
+    }
