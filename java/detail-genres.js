@@ -25,7 +25,6 @@ fetch(url)
         <a href ="./detail-movie.html?id=${info[index].id}">                 
         <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
          <h3>${info[index].title}</h3>
-         <h3>Fecha de estreno: ${info[index].release_date} </h3>
          </a>
         </article>`
 
@@ -56,15 +55,18 @@ fetch(url2)
 .then(function (data) {
     console.log(data);
     let info = data.results ;
-    console.log (info)
     let series = document.querySelector(".series") //nuestra variable
-    //let contenido = "";
+    let contenido = "";
 
-        for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
-        series.innerHTML+=
-            `<article class= "contenedor"> 
-        <h1>${data.with_genres}</h1>
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+        `<article class= "contenedor">
+     <a href ="./detail-serie.html?id=${info[index].id}">                 
+     <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+      <h3>${info[index].name}</h3>
+      </a>
+     </article>`    
+       
 
 
     }
