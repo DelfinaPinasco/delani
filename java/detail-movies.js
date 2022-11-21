@@ -35,8 +35,6 @@ fetch(url)
     })
 
 
-
-
     //Boton de favoritos
 
     let favoritos = []
