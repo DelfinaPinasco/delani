@@ -26,9 +26,7 @@ fetch(priurl)
          <h3>${info[index].title}</h3>
          </a>
         </article>`
-          //*  `<article class= "contenedor"> 
-       // <h1>${data.with_genres}</h1>
-       // <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
+          
     }
     pelis.innerHTML += contenido
 
