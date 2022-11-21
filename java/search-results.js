@@ -2,9 +2,9 @@ let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get("q");
 let apiKey = "15370bef1a25ea674deaaf70270ad202"
-let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${busqueda}&page=1&include_adult=false`
-let urlSeries = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&page=1&query=${busqueda}&include_adult=false`
-fetch(url)
+let urlm = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${busqueda}&page=1&include_adult=false`
+let urls = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&page=1&query=${busqueda}&include_adult=false`
+fetch(urlm)
     .then(function (response) {
         return response.json()
     })
@@ -13,8 +13,8 @@ fetch(url)
         let tituloBusqueda = document.querySelector(".textoprinci")
 
 
-        if (data.results.length == 0) {
-            tituloBusqueda.innerText= `No se ha encontrado resultado de busqueda para: ${busqueda}`
+        if (data.results.length == "") {
+            tituloBusqueda.innerText= `No se ha encontrado resultado de busqueda para: ${busqueda}` //crear una alert
         }
         else {
             tituloBusqueda.innerText = `Resultado de busqueda para: ${busqueda}`
@@ -34,7 +34,7 @@ fetch(url)
         console.log(error);
     })
 
-fetch(urlSeries)
+fetch(urls)
     .then(function (response) {
         return response.json()
     })
