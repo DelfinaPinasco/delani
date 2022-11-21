@@ -1,4 +1,3 @@
-let apiKey = "15370bef1a25ea674deaaf70270ad202"
 let recupStorage = localStorage.getItem ("favoritos");
 let favoritos = JSON.parse(recuperoStorage);
 
