@@ -152,6 +152,14 @@ header {
 .textofooter {
     color: white;
 }
+.contenedor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+   
+    flex-direction: column;
+   
+}
 
 /* MOBILE */
 

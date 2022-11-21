@@ -17,8 +17,8 @@ fetch(url)
         let container = document.querySelector('.contenedor')
         let contenido =
             `<article class= "contenedor">
-        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <h1>${data.title}</h1>
+       
+     <p class = "texto"> <u>Titulo</u>: ${data.title} </p> <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
         <p class = "texto" > <u>Duración</u>: ${data.runtime} minutos </p>
         <p class = "texto" > <u>Calificación</u>: ${data.vote_average} </p>
@@ -37,28 +37,28 @@ fetch(url)
 
     //Boton de favoritos
 
-    let favoritos = []
+    let favoritosm = []
 
     let recuperoStorage = localStorage.getItem("favoritos")
 
     if (recuperoStorage != null) {
-        favoritos = JSON.parse(recuperoStorage)
+        favoritosm = JSON.parse(recuperoStorage)
     }
 
-    if (favoritos.includes(pelicula)) {
-        favoritos.innerText = "Quitar de favoritos";
+    if (favoritosm.includes(pelicula)) {
+        favoritosm.innerText = "Quitar de favoritos";
     }
     fav.addEventListener ("click", function(e){
         e.preventDefault();
-        if (favoritos.includes(pelicula)){
-            let indice = favortitos.indexOf(pelicula)
-            favoritos.splice(indice,1);
+        if (favoritosm.includes(pelicula)){
+            let indice = favoritosm.indexOf(pelicula)
+            favoritosm.splice(indice,1);
             fav.innerText = "Agregar a favoritos";
 
         }else{
-            favoritos.push(pelicula)
+            favoritosm.push(pelicula)
             fav.innerText = "Quitar de favoritos"
         }
-        let favsToString = JSON.stringify(favoritos);
+        let favsToString = JSON.stringify(favoritosm);
         localStorage.setItem ("favoritos", favsToString)
     })
