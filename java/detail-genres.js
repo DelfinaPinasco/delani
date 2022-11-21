@@ -1,8 +1,8 @@
-let detailgenre = window.location.search;
-console.log (detailgenre);
-let genres = new URLSearchParams(detailgenre);
-let id = genres.get('id');
-console.log(id);
+//let detailgenre = window.location.search;
+//console.log (detailgenre);
+//let genres = new URLSearchParams(detailgenre);
+//let id = genres.get('id');
+//console.log(id);
 let genero = "movie"
 
 //peliculas
@@ -17,26 +17,20 @@ fetch(priurl)
         let contenido = "";
         let info = data.results ;
         //console.log (info)
-        //let contenido = "";
 
         for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
         contenido+=
-        `<article class= "contenedor">
+        `<article class= "container img">
         <a href ="./detail-movie.html?id=${info[index].id}">                 
         <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
          <h3>${info[index].title}</h3>
          </a>
         </article>`
-
-        pelis.innerHTML += contenido
           //*  `<article class= "contenedor"> 
        // <h1>${data.with_genres}</h1>
        // <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.backdrop_path}" alt='' /> `
-
-
     }
-    //pelis += contenido
-    
+    pelis.innerHTML += contenido
 
     })
 
@@ -60,7 +54,7 @@ fetch(segurl)
 
     for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
         contenido+=
-        `<article class= "contenedor">
+        `<article class= "container img">
      <a href ="./detail-serie.html?id=${info[index].id}">                 
      <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
       <h3>${info[index].name}</h3>
