@@ -66,12 +66,11 @@ fetch(url2)
       <h3>${info[index].name}</h3>
       </a>
      </article>`    
-       
 
-
-    }
-    //series += contenido
     
+    }
+
+    series.innerHTML += contenido
 
     })
 
