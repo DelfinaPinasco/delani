@@ -1,41 +1,65 @@
-let queryString = window.location.search;
-console.log(queryString);
-let queryObject = new URLSearchParams(queryString)
-let search = queryObject.get('search');
-console.log(search);
-
-let url = `https://api.themoviedb.org/3/search/multi?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&query=${search}&page=1&include_adult=false`
-
-
-
-let resultados = document.querySelector('.resultados')
-
-
-
+let queryString = location.search;
+let queryStringObj = new URLSearchParams(queryString);
+let busqueda = queryStringObj.get("q");
+let apiKey = "15370bef1a25ea674deaaf70270ad202"
+let url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${busqueda}&page=1&include_adult=false`
+let urlSeries = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&language=en-US&page=1&query=${busqueda}&include_adult=false`
 fetch(url)
-    .then(function (respuestas) {
-        return respuestas.json()
+    .then(function (response) {
+        return response.json()
     })
-
     .then(function (data) {
         console.log(data);
-        let info = data.results;
+        let tituloBusqueda = document.querySelector(".textoprinci")
 
-        for (let i = 0; i < info.length; i++) {
-            if (info[i].media_type == "tv") {
-                /* resultados.innerHTML += `<li>Serie: ${info[i].original_name}</li>` */
-                resultados.innerHTML += `<li>
-                                        <a href="detail-serie.html?id=${info[i].id}">
-                                            <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
-                                            <h3>Título: ${info[index].title} </h3>
-                                         </a>
-                                    </li>`;
-                                    info.innerHTML += contenido
-            
-            }}
-        } )
 
-        .catch(function (error) {
-            console.log(error);
-    
-        })
+        if (data.results.length == 0) {
+            tituloBusqueda.innerText= `No se ha encontrado resultado de busqueda para: ${busqueda}`
+        }
+        else {
+            tituloBusqueda.innerText = `Resultado de busqueda para: ${busqueda}`
+        }
+        let srul = document.querySelector(".resultados")
+        for (let i = 0; i < data.results.length; i++) {
+            const element = data.results[i];
+            srul.innerHTML += `<article>
+                <a href="detail-movie.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/></a>
+                <p>${element.title}</p>
+                <p>${element.release_date}</p>      
+           </article>`  
+        }
+        
+    })   
+   .catch(function (error) {
+        console.log(error);
+    })
+
+fetch(urlSeries)
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        console.log(data);
+        let tituloBusqueda = document.querySelector(".textoprinci")
+
+
+        if (data.results.length == 0) {
+            tituloBusqueda.innerText = `No se a encontrado resultado de busqueda para: ${busqueda}`
+        }
+        else {
+            tituloBusqueda.innerText = `Resultado de busqueda para: ${busqueda}`
+        }
+        let srul = document.querySelector(".resultados")
+        for (let i = 0; i < data.results.length; i++) {
+            const element = data.results[i];
+            srul.innerHTML += `<article>
+                <a href="detail-series.html?id=${element.id}"><img src="https://image.tmdb.org/t/p/w500${element.poster_path}"/></a>
+                <p>${element.name}</p>
+                <p>${element.first_air_date}</p>      
+           </article>`  
+        }
+    })
+
+    .catch(function (error) {
+        console.log(error);
+    })

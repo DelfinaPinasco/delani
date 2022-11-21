@@ -108,6 +108,25 @@ footer {
     margin-top: 2%;
 }
 
+.resultados {
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+.resultados img {
+    height: 200x;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+}
+
 /* MOBILE */
 
 @media (max-width: 420px) {
