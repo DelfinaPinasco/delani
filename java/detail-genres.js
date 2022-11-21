@@ -6,7 +6,7 @@ console.log(id);
 let genero = "movie"
 
 //peliculas
-let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US`
 fetch(url)
     .then(function (respuesta) {
         return respuesta.json();
@@ -47,7 +47,7 @@ fetch(url)
 
     //series
     let genero2 = "tv"
-    let url2 = `https://api.themoviedb.org/3/genre/tv/list?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+    let url2 = `https://api.themoviedb.org/3/genre/tv/list?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US`
 fetch(url2)
 .then(function (respuesta) {
     return respuesta.json();
