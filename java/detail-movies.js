@@ -48,6 +48,19 @@ fetch(url)
     }
 
     if (favoritos.includes(pelicula)) {
-        fav
-
+        favoritos.innerText = "Quitar de favoritos";
     }
+    fav.addEventListener ("click", function(e){
+        e.preventDefault();
+        if (favoritos.includes(pelicula)){
+            let indice = favortitos.indexOf(pelicula)
+            favoritos.splice(indice,1);
+            fav.innerText = "Agregar a favoritos";
+
+        }else{
+            favoritos.push(pelicula)
+            fav.innerText = "Quitar de favoritos"
+        }
+        let favsToString = JSON.stringify(favoritos);
+        localStorage.setItem ("favoritos", favsToString)
+    })
