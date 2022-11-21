@@ -1,4 +1,4 @@
-let detailgenre = window.location.search;
+//let detailgenre = window.location.search;
 console.log (detailgenre);
 let genres = new URLSearchParams(detailgenre);
 let id = genres.get('id');
@@ -9,7 +9,7 @@ let genero = "movie"
 let url = `https://api.themoviedb.org/3/genre/movie/list?api_key=b0c989c37b55d3ea4a70eda0aeea1b02&language=en-US`
 fetch(url)
     .then(function (respuesta) {
-        return respuesta.json();
+    return respuesta.json();
     })
     .then(function (data) {
         console.log(data);
