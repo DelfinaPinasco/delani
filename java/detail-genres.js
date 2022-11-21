@@ -1,4 +1,4 @@
-//let detailgenre = window.location.search;
+let detailgenre = window.location.search;
 console.log (detailgenre);
 let genres = new URLSearchParams(detailgenre);
 let id = genres.get('id');
