@@ -1,80 +1,47 @@
 let apiKey = b0c989c37b55d3ea4a70eda0aeea1b02
-let recupStoragePelic = localStorage.getItem ("favoritosPeliculas");
-let favoritosPelic = JSON.parse(recuperoStorage);
-
-let recupStorageSerie = localStorage.getItem ("favoritosSerie");
+let recupStorage = localStorage.getItem ("favoritos");
 let favoritos = JSON.parse(recuperoStorage);
 
-let favs = document.querySelector (".containerpelis")
-let favs1 = document.querySelector (".containerseries")
+let recupStorageSeries = localStorage.getItem ("favoritosSeries");
+let favoritosSeries = JSON.parse(recuperoStorageSeries);
 
-if (favoritosPelic.length == 0 || favoritos == null){
-  favs.innerHTML = <p>Aún no hay peliculas favoritas.</p>
+let section1 = document.querySelector (".container1")
+let section2 = document.querySelector (".container2")
 
-} else {  
-  let peliculasFavs = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${api_key}&language=en-US`;
-  for (let i = 0; i < favoritosPelic.length; i++) { 
-    let url = ''
+if (favoritos.length == 0 || favoritos == null){
+  section1.innerHTML = '<p>Aún no hay peliculas favoritas.</p>'
+
+}
+else {  
+  let pelisFavoritas = '';
+  for (let i = 0; i < favoritos.length; i++) { 
+    let url = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${api_key}&language=en-US`
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
     }) 
     .then (function(data) {
       console.log (data)
-      let title = data.title
+      let titulo = data.title
+      let imagenes = data.poster_path
       let id = data.id
-      let imagen = data.poster_path
       let fecha = data.release_date
-      peliculasFavs += <a href="./detail-movie.html?idPersonaje=${id}">
-        <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <p>${data.title}</p>
-        <p class = "texto"> Estreno: ${data.release_date} </p>
-      </a>
-      favs.innerHTML = peliculasFavs
+      pelisFavoritas += `<article class = ".section1">
+                      <a href="./detail-movie.html?idPersonaje=${id}">
+                      <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${imagenes}" alt='' /> 
+                      <p>titulo:${titulo}</p>
+                      <p> Estreno: ${fecha} </p>
+                      </a>
+                      </article>`
+      section1.innerHTML = pelisFavoritas
       return data
+     })
+     .catch(function(error){
+console.log (error);
+return error
+    })
 
-     }
-    )
       }
      }
-/* MARCA ERROR ESTO
-.catch (function(error){ //corregir error aca
-  console.log (error);
-  return error
-}) */
 
-//Bloque para array de peliculas
-if (favoritosSeries.length == 0 || favoritos == null){
-  favs1.innerHTML = <p>Aún no hay series favoritas.</p>
-
-} else {
-  let seriesFavs = ''
-  for (let i = 0; i < favoritosSeries.length; i++) {
-    let urlseries = `https://api.themoviedb.org/3/tv/${favoritos[i]}?api_key=${api_key}&language=en-US`;
-    fetch (urlseries)
-    .then (function (respuesta) {
-      return respuesta . json ()
-    })
-    .then (function(data) {
-      console.log (data)
-      let title = data.title
-      let id = data.id
-      let imagen = data.poster_path
-      let fecha = data.release_date
-      seriesFavs += <a href="./detail-serie.html?idPersonaje=${id}">
-        <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <p>${data.name}</p>
-        <p class = "texto"> Estreno: ${data.first_air_date} </p>
-      </a>
-      favs1.innerHTML = seriesFavs
-      return data
-
-     })
-
-.catch (function(error){
-  console.log (error);
-  return error
-})
-  }
-}
 
