@@ -53,8 +53,8 @@ fetch(segurl)
 
     for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
         contenido+=
-        `<article class= "container img">
-     <a href ="./detail-serie.html?id=${info[index].id}">                 
+    `<article class= "container img">
+     <a href ="./detail-serie.html?id=${info[index].id}">    
      <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
       <h3>${info[index].name}</h3>
       </a>
