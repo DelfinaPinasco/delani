@@ -1,27 +1,24 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./detail-serie.css">
+    <link rel="stylesheet" href="./favorite.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <header>
-        <img class="logo" src="./imgs/logo posta.png" alt="logo">
-        <a href="./index.html" class="headerinfo">HOME</a> <img class="home" src="../delani/imgs/home.png"
-            alt="homepng">
+    <script src="./java/favorite.js"></script>
+</head>
+<header>
+    <img class="logo" src="./imgs/logo posta.png" alt="logo">
+    <a href="./index.html" class="headerinfo">HOME</a> <img class="home" src="../delani/imgs/home.png"
+        alt="homepng">
+    <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos" src="../delani/imgs/logo movies.png"
+        alt="generos">
+    <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
+        alt="favs">
 
-
-        <a href="./genres.html" class="headerinfo">GÉNEROS</a> <img class="generos" src="../delani/imgs/logo movies.png"
-            alt="generos">
-
-
-        <a href="./favorite.html" class="headerinfo">FAVORITOS</a> <img class="favs" src="../delani/imgs/favs.png"
-            alt="favs">
-
-
+ 
         <div class="buscador">
             <form action="./search-results.html" method="GET">
                 <input type="text" name="q" id="search" value="" placeholder="Busca por título, género ...">
@@ -30,118 +27,23 @@
                 </button>
         </div>
         </form>
-        </div>
-
-    </header>
-</head>
+</header>
 
 
+    <h1 class="title"><u> FAVORITOS</u></h1>
 
+    <h2 style="color: white"> Peliculas favoritas</h2>
+<section class="favoritospeliculas">
 
-
-<body>
+</section>
+    <h2 style="color: white">Series favoritas</h2>
+    <section class="favoritosserie">
     
-    <header>
-
-      
-            <article class="cuadrado"><h2><i class="fa-solid fa-bars"></i></h2></article>
-            <article>
-                <form class="busqueda" action="./search-results.html" method="GET">
-                    <input class="opcion" type="radio" name = "media" value = "all">
-                    <label for="">Todo</label>
-                    <input class="opcion" type="radio" name="media" value="peliculas">
-                    <label for=""> Películas </label> 
-                    <input class="opcion" type="radio" name="media" value="series">
-                    <label for=""> Series </label>
-
-                   
-                </form>
-            </article>
-        </section>
-    
-    </header>
-    
-    
-<main class="main-favoritos">
-    <section class="seccion-favoritos">
-        <h1> Mis favoritos </h1>
-
-
-        <h2> Peliculas favoritas </h2>
-        <div class="mis-favoritos-peliculas"></div>
-    <!--h1 class="titulocomedia">Favoritos</h1>
-    
-    <h2 class = "titulo_ppl"> Tus Peliculas Favoritas </h2>
-    <section class="peliculas_populares">
-    
-        <article class="pelicula">
-            <a class = "hipervinculo" href="./detail_movie.html">
-                <img class="imagenPP" src="img/increibles.jpeg" alt="Top Gun"> 
-                <p class = 'titulo'> Los increíbles</p>
-                <p class = 'estreno'> 18-02-2013</p> 
-            </a>
-        </article>
-        
-        <article class = "pelicula">  
-            <a class = "hipervinculo" href="./detail_movie.html"> 
-                <img class="imagenPP" src="img/soncomoniños.jpeg" alt=""> 
-                <p class = 'titulo'> Son como niños</p>     
-                <p class = 'estreno'> 02-06-2011</p> 
-            </a>
-        </article> 
-                
-       
-    <article class = "pelicula">  
-        <a class = "hipervinculo" href="./detail_movie.html"> 
-            <img class="imagenPP" src="img/locura.jpeg" alt=""> 
-            <p class = 'titulo'> Locura de amor en Las Vegas</p>
-            <p class = 'estreno'> 21-10-2014</p> 
-        </a> 
-    </article>
-       
-    
-       
-    <article class = "pelicula">  
-        <a class = "hipervinculo" href="./detail_movie.html">
-            <img class="imagenPP" src="img/avengers.jpeg" alt="">
-                <p class = 'titulo'> Avengers: Inifnity War</p>
-                <p class = 'estreno'> 29-04-2019</p> 
-        </a> 
-    </article>
-       
-      
     </section>
-
-
-    <h2 class = "titulo_ppl"> Tus Series Favoritas </h2>
-    <section class="peliculas_populares">
-    
-        <article class="pelicula">
-            <a class = "hipervinculo" href="./detail_serie.html">
-                <img class="imagenPP" src="img/greys.jpeg" alt="Top Gun"> 
-                <p class = 'titulo'> Greys´s Anatomy</p>
-                <p class = 'estreno'> 01-01-2009</p> 
-            </a>
-        </article>
         
-        <article class = "pelicula">  
-            <a class = "hipervinculo" href="./detail_serie.html"> 
-                <img class="imagenPP" src="img/gossip.webp" alt=""> 
-                <p class = 'titulo'> Gossip Girl</p>     
-                <p class = 'estreno'> 04-03-2008</p> 
 
-            </a>
-        </article--> 
-       
-      
-    </section>
-
-   
-</main> 
-</body>
 <script src="./java/favorite.js"></script>
 
-</html>
 <footer>
     <section class="iconos">
         <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
@@ -150,8 +52,9 @@
         <a href="https://www.whatsapp.com/?lang=es"><i class="fa-brands fa-whatsapp"></i></a>
     </section>
     <img class="logob" src="./imgs/logo.png" alt="logob">
-    <p class="textofooter">Elaborado por Nina Teller, Lara Manfredini y Delfina Pinasco (estudiantes de la materia
-        Programación 1 -
+    <p>Elaborado por Nina Teller, Lara Manfredini y Delfina Pinasco (estudiantes de la materia Programación 1 -
         Licenciatura de Negocios Digitales)</p>
 
 </footer>
+</body>
+</html>
