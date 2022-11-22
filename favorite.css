@@ -131,6 +131,29 @@ header {
     transform: scale(1.1)
 }
 
+.mis-favoritos-peliculas  {
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+.mis-favoritos-series  {
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    overflow: scroll;
+    color: white;
+    border-style: solid;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
 /* MOBILE */
 
 @media (max-width: 420px) {

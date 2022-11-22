@@ -16,9 +16,9 @@ fetch(url)
         console.log(data);
         let container = document.querySelector('.contenedor')
         let contenido =
-            `<article class= "contenedor">
-       
-     <p class = "texto"> <u>Titulo</u>: ${data.title} </p> <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
+
+        `<article class= "contenedor">
+        <p class = "texto"> <u>Titulo</u>: ${data.title} </p> <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
         <p class = "texto" > <u>Duración</u>: ${data.runtime} minutos </p>
         <p class = "texto" > <u>Calificación</u>: ${data.vote_average} </p>
@@ -35,7 +35,7 @@ fetch(url)
     })
 
 
-    // FAVS
+    // Favoritos
 let favoritos = [];
 
 let recuperoStorage = localStorage.getItem('peliculas_favoritas'); // te va a devolver null o los datos
