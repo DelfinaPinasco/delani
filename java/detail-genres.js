@@ -6,7 +6,7 @@ console.log(id);
 let genero = "movie"
 
 //peliculas
-let priurl = `https://api.themoviedb.org/3/discover/movie?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`
+let priurl = `https://api.themoviedb.org/3/discover/movie?api_key=15370bef1a25ea674deaaf70270ad202&language=es-ES&with_genres=${id}&sort_by=popularity.desc`
 fetch(priurl)
 .then(function (respuesta) {
 return respuesta.json();
@@ -39,7 +39,7 @@ pelis.innerHTML += contenido
 
     //series
 let genero2 = "tv"
-let segurl = `https://api.themoviedb.org/3/discover/tv?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&include_null_first_air_dates=false&with_watch_monetization_types=flatrate&with_status=0&with_type=0`
+let segurl = `https://api.themoviedb.org/3/discover/tv?api_key=15370bef1a25ea674deaaf70270ad202&language=es-ES&with_genres=${id}&sort_by=popularity.desc`
 fetch(segurl)
 .then(function (respuesta) {
 return respuesta.json();
