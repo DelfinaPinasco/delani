@@ -4,7 +4,7 @@
     let aviso = document.querySelector('.aviso')
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
-        if( buscador.value === ""){
+        if( buscador.value == ""){
             aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
         } else {
             this.submit();
