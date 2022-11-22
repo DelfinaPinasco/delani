@@ -91,9 +91,10 @@ form {
     border-style: solid;
     border-radius: 15px;
     margin-bottom: 100px;
+
 }
 
-.peliculas  {
+section.peliculas  {
     background-color: black;
     display: flex;
     flex-wrap: nowrap;
@@ -103,11 +104,19 @@ form {
     border-style: solid;
     border-radius: 15px;
     margin-bottom: 100px;
+    
 }
 
 
 
-
+.container img {
+    height: 200x;
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    overflow: scroll;
+    flex-direction: row;
+}
 
 
 
