@@ -14,12 +14,13 @@ fetch(priurl)
     .then(function (data) {
         console.log(data);
         let pelis = document.querySelector(".peliculas") //nuestra variable
-        let contenido = "";
-        let info = data.results ;
+        let info = data.results
+        console.log(info);
+       // let contenido = "";
         //console.log (info)
 
         for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
-        contenido+=
+        pelis.innerHTML +=
         `<article class= "container img">
         <a href ="./detail-movie.html?id=${info[index].id}">                 
         <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
@@ -28,7 +29,7 @@ fetch(priurl)
         </article>`
           
     }
-    pelis.innerHTML += contenido
+    //pelis.innerHTML += contenido
 
     })
 
