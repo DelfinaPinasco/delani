@@ -1,3 +1,28 @@
+let campo = document.querySelector('.search')
+let aviso = document.querySelector('.textooo')
+let formulario = document.querySelector('.formulario');
+
+formulario.addEventListener('submit', function(evento){  
+    evento.preventDefault()
+    console.log("Error. Sin enviar")
+if (campo.value == "") {
+    aviso.innerText = 'El campo no puede estar vacío';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else if (campo.value.lenght < 3){
+    aviso.innerText = 'Debe ingresar más caracteres';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else {
+    this.submit()
+}
+})
+
+
+
+
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get("q");
@@ -44,7 +69,7 @@ fetch(urls)
 
 
         if (data.results.length == 0) {
-            tituloBusqueda.innerText = `No se a encontrado resultado de busqueda para: ${busqueda}`
+            tituloBusqueda.innerText = `No se ha encontrado resultado de busqueda para: ${busqueda}`
         }
         else {
             tituloBusqueda.innerText = `Resultado de busqueda para: ${busqueda}`

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*  window.addEventListener('load',function() {
     let formulario = document.querySelector('form');
     let buscador = document.querySelector('[name="search"]'); 
@@ -19,7 +20,31 @@ buscador.addEventListener('input', function(){
     aviso.innerText= '';
 >>>>>>> 6f1745166ae2648f02bb7bacb86d432f723df73a
 
+=======
+let campo = document.querySelector('.search')
+let aviso = document.querySelector('.textooo')
+let formulario = document.querySelector('.formulario');
+
+formulario.addEventListener('submit', function(evento){  
+    evento.preventDefault()
+    console.log("Error. Sin enviar")
+if (campo.value == "") {
+    aviso.innerText = 'El campo no puede estar vacío';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else if (campo.value.lenght < 3){
+    aviso.innerText = 'Debe ingresar más caracteres';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else {
+    this.submit()
+}
+>>>>>>> 03037e3de538a1b3d41d3a2855f9b1f90999c865
 })
+
+
 
 /* para que aparezcan la division por section, cada una con su url y selector */
 
