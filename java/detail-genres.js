@@ -67,24 +67,23 @@ fetch(segurl)
 return respuesta.json();
 })
 .then(function (data) {
-console.log(data);
-let info = data.results ;
-console.log(info);
-let series = document.querySelector(".series") //nuestra variable
-let contenido = "";
+    console.log(data);
+    let info = data.results ;
+    console.log(info);
+    let series = document.querySelector(".series") //nuestra variable
+    let contenido = "";
 
-for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
     contenido+=
-`<article class= "container img">
- <a href ="./detail-serie.html?id=${info[index].id}">    
- <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
-  <h3>${info[index].name}</h3>
-  </a>
- </article>`    
+    `<article class= "container img">
+    <a href ="./detail-serie.html?id=${info[index].id}">    
+    <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+    <h3>${info[index].name}</h3>
+    </a>
+    </article>`    
 
     
 }
-
 series.innerHTML += contenido
 
 })
