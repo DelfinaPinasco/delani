@@ -1,20 +1,16 @@
-<<<<<<< HEAD
-
-=======
 /*  window.addEventListener('load',function() {
     let formulario = document.querySelector('form');
     let buscador = document.querySelector('[name="search"]'); 
     let aviso = document.querySelector('.aviso')
     formulario.addEventListener('submit', function(e){
         e.preventDefault();
-        if( buscador.value == ""){
+        if( buscador.value === ""){
             aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
         } else {
             this.submit();
         }
     })
 })*/
->>>>>>> a1c8a125606752fd5d67b38d77caf6a3cd7b94af
     buscador.addEventListener('input', function(){
         aviso.innerText= '';
 
@@ -40,11 +36,11 @@ fetch(priurl)
 
     .then(function(data) {
         console.log(data);
-        let info = data.results    
+        let info = data.results     /* el results es generico y contiene el array  */
         let prisection = document.querySelector(".peliculaspopulares")
-        let contenido = "";       
+        let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
 
-    for (let index = 0; index < info.length; index++) {        
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
         contenido+=
         `<article class= "container img">
         <a href ="./detail-movie.html?id=${info[index].id}">                 
