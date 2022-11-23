@@ -19,3 +19,5 @@ fetch ("https://api.themoviedb.org/3/genre/movie/list?api_key=15370bef1a25ea674d
 })
 .catch (error => console.log(error))
 
+
+ 

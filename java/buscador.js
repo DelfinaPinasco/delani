@@ -19,9 +19,6 @@ fetch (url)
             results.innerHTML += '<li>'
         }}
 
-
-
-
 })
 .catch(function(error){
     console.log('El error es' + error);
