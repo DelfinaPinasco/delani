@@ -20,14 +20,17 @@ else {
 }
 })
 
+
+
+
 let recupStorage = localStorage.getItem ("favoritos");
 let favoritos = JSON.parse(recuperoStorage);
 
 let recupStorageSeries = localStorage.getItem ("favoritosSeries");
 let favoritosSeries = JSON.parse(recuperoStorageSeries);
 
-let section1 = document.querySelector (".container1")
-let section2 = document.querySelector (".container2")
+let section1 = document.querySelector (".mis-favoritos-peliculas")
+let section2 = document.querySelector (".mis-favoritos-series")
 
 if (favoritos.length == 0 || favoritos == null){
   section1.innerHTML = '<p>Aún no hay peliculas favoritas.</p>'
