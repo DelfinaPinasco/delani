@@ -97,3 +97,67 @@ fav.addEventListener('click', function (evento) {
     console.log(localStorage);
 
 })
+
+url2 =  `https://api.themoviedb.org/3/movie/${id}/watch/providers?api_key=15370bef1a25ea674deaaf70270ad202`
+fetch(url2)
+    .then(function(response){
+        return response.json()
+    })
+    .then (function(data){
+        console.log(data);
+        let bContainer= document.querySelector('.detmovie1');
+        let contenidoT= 
+        `<article href>
+        <h2>${data.title}</h2>
+        <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
+        <h4 style="color: white" > Estreno: ${data.release_date} </h4>
+        <h4 style="color: white"> Idioma original: ${data.original_language} </h4>
+        <h4 style="color: white"> Puntuación: ${data.vote_average} </h4>
+        <h4 style="color: white"> Resumen: ${data.overview}
+        </article>`;
+
+
+       bContainer.innerHTML += contenidoT
+    })
+
+    .catch(function(error){
+        console.log(error);
+ })   
+ 
+
+// favoritos
+
+let favoritos1=[]
+
+//  si ya hay favoritos
+
+let storageRecuperado = localStorage.getItem('pelisfavs');
+    if (storageRecuperado != null){
+        favoritos1 = JSON.parse(storageRecuperado);
+        console.log(favoritos);
+    }
+let boton = document.querySelector('.boton2');   
+
+//si el id esta en el array cambiamos el texto del boton
+if (favoritos1.includes(id)){
+     boton.innerText="sacar de favoritos"
+    };
+
+boton.addEventListener('click', function(){
+    // chequear si el id ya esta lista y cambiar el texto del boton
+
+    if (favoritos1.includes(id)){
+        let indicePelicula = favoritos1.indexOf(id);
+        favoritos1.splice(indicePelicula, 1)
+        boton.innerText="agregar a favoritos"; 
+    } else{
+    // guardar el id de pelicula en el array
+        favoritos1.push(id);
+        boton.innerText= 'quitar de favoritos';
+    }
+  
+    // Guardar datos en local storage
+    let favsTostring = JSON.stringify(favoritos1)
+    localStorage.setItem('pelisfavs', favsTostring)
+    console.log(localStorage);
+});

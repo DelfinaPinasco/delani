@@ -20,83 +20,81 @@ else {
 }
 })
 
-let moviedetail = location.search;
-let movieobjeto = new URLSearchParams(moviedetail);
-let id = movieobjeto.get('id');
-console.log(id)
+let qsString = location.search
+let qs2 = new URLSearchParams(qsString)
+//qs2 = {id= 43270}
+let id = qs2.get("id")
+console.log(id);
 
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
+
+let urldetmov = `https://api.themoviedb.org/3/movie/${id}?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US`
 
 
-fetch(url)
-    .then(function (respuesta) {
-        return respuesta.json();
+
+
+fetch(urldetmov)
+    .then(function(response){
+        return response.json()
     })
-
-    .then(function (data) {
+    .then (function(data){
         console.log(data);
-        let container = document.querySelector('.detmovie1')
-        let contenido =
+        let bContainer= document.querySelector('.detmovie1');
+        let contenidoT= 
+        `<article href>
+        <h2>${data.title}</h2>
+        <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
+        <h4 style="color: white" > Estreno: ${data.release_date} </h4>
+        <h4 style="color: white"> Idioma original: ${data.original_language} </h4>
+        <h4 style="color: white"> Puntuación: ${data.vote_average} </h4>
+        <h4 style="color: white"> Resumen: ${data.overview}
+        </article>`;
 
-        `<article class= "contenedor">
-        <p class = "texto"> <u>Titulo</u>: ${data.title} </p> <img class = "fotofast" src= "https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
-        <p class = "texto"> <u>Fecha de estreno</u>: ${data.release_date} </p>
-        <p class = "texto" > <u>Duración</u>: ${data.runtime} minutos </p>
-        <p class = "texto" > <u>Calificación</u>: ${data.vote_average} </p>
-        <p class = "texto" > <u>Sinópsis</u>: ${data.overview} </p>
-        </article>
-        `;
-        container.innerHTML += contenido
+
+       bContainer.innerHTML += contenidoT
     })
 
-
-    .catch(function (error) {
+    .catch(function(error){
         console.log(error);
+ })   
+ 
 
-    })
+// favoritos
+let favoritos=[]
 
+//  si ya hay favoritos
 
-    // Favoritos
-let favoritos = [];
-
-let recuperoStorage = localStorage.getItem('pelisfavs'); // te va a devolver null o los datos
-    if (recuperoStorage != null) {
-    //1ero tenemos que transformarlo de cadena de texto con JSON.parse y despues lo guardamos en favoritos 
-        favoritos = JSON.parse(recuperoStorage);
-        console.log(favoritos)
-}
-
-// Hacer click en el link. Primero deberemos capturar el elemento
-let fav = document.querySelector('.boton2');
-
-// Chequear que id este en el array de favoritos 
-if (favoritos.includes(id)) {
-    fav.innerText = "Quitar de favoritos"
-};
-
-fav.addEventListener('click', function () {
-    
-
-    if (favoritos.includes(id)) {
-        // Si el id esta en el array
-        let indice = favoritos.indexOf(id);
-
-        //Borrar a partir del indice 1 elemento 
-        favoritos.splice(indice, 1)
-        fav.innerText = "Agregar a favoritos"
+let storageRecuperado = localStorage.getItem('pelisfavs');
+    if (storageRecuperado != null){
+        favoritos = JSON.parse(storageRecuperado);
+        console.log(favoritos);
     }
-else  { // Guardar dato en un array: agregar un dato al array 
+let boton = document.querySelector('.boton2');   
+
+//si el id esta en el array cambiamos el texto del boton
+if (favoritos.includes(id)){
+     boton.innerText="sacar de favoritos"
+    };
+
+boton.addEventListener('click', function(){
+    // chequear si el id ya esta lista y cambiar el texto del boton
+
+    if (favoritos.includes(id)){
+        let indicePelicula = favoritos.indexOf(id);
+        favoritos.splice(indicePelicula, 1)
+        boton.innerText="agregar a favoritos"; 
+    } else{
+    // guardar el id de pelicula en el array
         favoritos.push(id);
-        fav.innerText = "Quitar de favoritos";  
-        
-}
-
-
-    // Guardar el array en el storage (esto se hace pase lo que pase, no se mete en el else)
-    let favsToString = JSON.stringify(favoritos); // Transformamos el array en una cadena de texto
-
-    localStorage.setItem("pelisfavs", favsToString);
-
+        boton.innerText= 'quitar de favoritos';
+    }
+  
+    // Guardar datos en local storage
+    let favsTostring = JSON.stringify(favoritos)
+    localStorage.setItem('pelisfavs', favsTostring)
     console.log(localStorage);
 });
+
+ 
+
+
 
