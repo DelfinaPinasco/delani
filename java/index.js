@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 
+=======
+/*  window.addEventListener('load',function() {
+    let formulario = document.querySelector('form');
+    let buscador = document.querySelector('[name="search"]'); 
+    let aviso = document.querySelector('.aviso')
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+        if( buscador.value == ""){
+            aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
+        } else {
+            this.submit();
+        }
+    })
+})*/
+>>>>>>> a1c8a125606752fd5d67b38d77caf6a3cd7b94af
     buscador.addEventListener('input', function(){
         aviso.innerText= '';
 

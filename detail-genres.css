@@ -91,10 +91,9 @@ form {
     border-style: solid;
     border-radius: 15px;
     margin-bottom: 100px;
-
 }
 
-section.peliculas  {
+.peliculas  {
     background-color: black;
     display: flex;
     flex-wrap: nowrap;

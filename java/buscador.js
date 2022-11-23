@@ -19,20 +19,6 @@ fetch (url)
             results.innerHTML += '<li>'
         }}
 
-
-
-    /*  let container = document.querySelector(".tcontainer")
-    if (data.results.length == 0){
-        searchResults.innerHTML += `La busqueda ${search} no dio ningun resultado`
-    }
-  else{
-    for (let i=0; i<data.results.length; i++){
-
-    }
-}
-*/
-
-
 })
 .catch(function(error){
     console.log('El error es' + error);
