@@ -10,7 +10,7 @@ if (campo.value == "") {
     campo.style.outline = '2px solid red'
     aviso.style.color = 'red'
 }
-else if (campo.value.lenght < 3){
+else if (campo.value.length < 3){
     aviso.innerText = 'Debe ingresar más caracteres';
     campo.style.outline = '2px solid red'
     aviso.style.color = 'red'

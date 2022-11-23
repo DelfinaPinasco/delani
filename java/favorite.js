@@ -10,7 +10,7 @@ if (campo.value == "") {
     campo.style.outline = '2px solid red'
     aviso.style.color = 'red'
 }
-else if (campo.value.lenght < 3){
+else if (campo.value.length < 3){
     aviso.innerText = 'Debe ingresar más caracteres';
     campo.style.outline = '2px solid red'
     aviso.style.color = 'red'
@@ -21,29 +21,33 @@ else {
 })
 
 
-
-
-let recupStorage = localStorage.getItem ("favoritos");
+// 1 - recuperar el storage 
+let recuperoStorage = localStorage.getItem ("favoritos");
 let favoritos = JSON.parse(recuperoStorage);
 
-let recupStorageSeries = localStorage.getItem ("favoritosSeries");
+let recuperoStorageSeries = localStorage.getItem ("favoritosSeries");
 let favoritosSeries = JSON.parse(recuperoStorageSeries);
 
 let section1 = document.querySelector (".mis-favoritos-peliculas")
 let section2 = document.querySelector (".mis-favoritos-series")
 
+let api_key = '15370bef1a25ea674deaaf70270ad202'
+
 if (favoritos.length == 0 || favoritos == null){
-  section1.innerHTML = '<p>Aún no hay peliculas favoritas.</p>'
+  section1.innerHTML = '<p>No hay favoritos seleccionados.</p>'
 
 }
 else {  
   let pelisFavoritas = '';
+   // pedir a la api los dotos de todos los ids del array de peliculas elegidas
   for (let i = 0; i < favoritos.length; i++) { 
     let url = `https://api.themoviedb.org/3/movie/${favoritos[i]}?api_key=${api_key}&language=en-US`
+
     fetch (url)
     .then (function (respuesta) {
       return respuesta . json ()
     }) 
+    
     .then (function(data) {
       console.log (data)
       let titulo = data.title
