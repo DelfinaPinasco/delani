@@ -1,3 +1,20 @@
+/*  window.addEventListener('load',function() {
+    let formulario = document.querySelector('form');
+    let buscador = document.querySelector('[name="search"]'); 
+    let aviso = document.querySelector('.aviso')
+    formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+        if( buscador.value === ""){
+            aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
+        } else {
+            this.submit();
+        }
+    })
+})*/
+
+
+
+
 let campo = document.querySelector('.search')
 let aviso = document.querySelector('.textooo')
 let formulario = document.querySelector('.formulario');
@@ -40,23 +57,23 @@ fetch(priurl)
 return respuesta.json();
 })
 
-.then(function(data) {
-    console.log(data);
-    let info = data.results     /* el results es generico y contiene el array  */
-    let prisection = document.querySelector(".peliculaspopulares")
-    let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+    .then(function(data) {
+        console.log(data);
+        let info = data.results     /* el results es generico y contiene el array  */
+        let prisection = document.querySelector(".peliculaspopulares")
+        let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
 
-for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
-    contenido+=
-    `<article class= "container img">
-    <a href ="./detail-movie.html?id=${info[index].id}">                 
-    <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
-     <h3>${info[index].title}</h3>
-     <h3>Fecha de estreno: ${info[index].release_date} </h3>
-     </a>
-    </article>`
-}
-    prisection.innerHTML += contenido
+    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+        contenido+=
+        `<article class= "container img">
+        <a href ="./detail-movie.html?id=${info[index].id}">                 
+        <img src="https://image.tmdb.org/t/p/w500${info[index].poster_path}" alt='' />
+         <h3>${info[index].title}</h3>
+         <h3>Fecha de estreno: ${info[index].release_date} </h3>
+         </a>
+        </article>`
+    }
+        prisection.innerHTML += contenido
 })
 .catch(function(error){
 console.log('El error es' + error);
