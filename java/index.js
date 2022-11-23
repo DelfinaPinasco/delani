@@ -1,20 +1,26 @@
-/*  window.addEventListener('load',function() {
-    let formulario = document.querySelector('form');
-    let buscador = document.querySelector('[name="search"]'); 
-    let aviso = document.querySelector('.aviso')
-    formulario.addEventListener('submit', function(e){
-        e.preventDefault();
-        if( buscador.value === ""){
-            aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
-        } else {
-            this.submit();
-        }
-    })
-})*/
-buscador.addEventListener('input', function(){
-    aviso.innerText= '';
+let campo = document.querySelector('.search')
+let aviso = document.querySelector('.textooo')
+let formulario = document.querySelector('.formulario');
 
+formulario.addEventListener('submit', function(evento){  
+    evento.preventDefault()
+    console.log("Error. Sin enviar")
+if (campo.value == "") {
+    aviso.innerText = 'El campo no puede estar vacío';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else if (campo.value.lenght < 3){
+    aviso.innerText = 'Debe ingresar más caracteres';
+    campo.style.outline = '2px solid red'
+    aviso.style.color = 'red'
+}
+else {
+    this.submit()
+}
 })
+
+
 
 /* para que aparezcan la division por section, cada una con su url y selector */
 
