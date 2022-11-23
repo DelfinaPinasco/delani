@@ -1,16 +1,4 @@
-/*  window.addEventListener('load',function() {
-    let formulario = document.querySelector('form');
-    let buscador = document.querySelector('[name="search"]'); 
-    let aviso = document.querySelector('.aviso')
-    formulario.addEventListener('submit', function(e){
-        e.preventDefault();
-        if( buscador.value === ""){
-            aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
-        } else {
-            this.submit();
-        }
-    })
-})*/
+
     buscador.addEventListener('input', function(){
         aviso.innerText= '';
 
@@ -36,11 +24,11 @@ fetch(priurl)
 
     .then(function(data) {
         console.log(data);
-        let info = data.results     /* el results es generico y contiene el array  */
+        let info = data.results    
         let prisection = document.querySelector(".peliculaspopulares")
-        let contenido = "";       /* comienza vacía porque es la lista a la que se le agregan los elementos  */
+        let contenido = "";       
 
-    for (let index = 0; index < info.length; index++) {         /* i++ se va iterando */ 
+    for (let index = 0; index < info.length; index++) {        
         contenido+=
         `<article class= "container img">
         <a href ="./detail-movie.html?id=${info[index].id}">                 
