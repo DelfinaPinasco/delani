@@ -40,12 +40,12 @@ fetch(urldetmov)
         let Container= document.querySelector('.detmovie1');
         let contenido= 
         `<article href>
-        <h2>${data.title}</h2>
+        <h2 style="color: white"> <u> ${data.title} </u></h2>
         <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
-        <h4 style="color: white" > Estreno: ${data.release_date} </h4>
-        <h4 style="color: white"> Idioma original: ${data.original_language} </h4>
-        <h4 style="color: white"> Puntuación: ${data.vote_average} </h4>
-        <h4 style="color: white"> Resumen: ${data.overview}
+        <h4 style="color: white" > <u> Estreno: </u> ${data.release_date} </h4>
+        <h4 style="color: white"> <u>Idioma original: </u> ${data.original_language} </h4>
+        <h4 style="color: white"> <u>Puntuación: </u> ${data.vote_average} </h4>
+        <h4 style="color: white"> <u>Resumen: </u> ${data.overview} </h4>
         </article>`;
 
 
@@ -91,7 +91,33 @@ boton.addEventListener('click', function(){
     console.log(localStorage);
 });
 
- 
+let urlreviews = `https://api.themoviedb.org/3/movie/{movie_id}/reviews?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
+
+fetch (urlreviews)
+    .then (function (response){
+        return response.json ()
+    })
+    . then (function (data){
+        console.log (data);
+
+        let results = data.results
+        let boton = document.querySelector (".reviews")
+        let review = documment.querySelector (".comentarios")
+
+        boton.addEventListener ("click", function (e) {
+            e.preventDefault();
+
+            document.querySelector (".comments").innerText = "Reviews";
+
+            for (let i = 0; i < results.length; i++) {
+                review.innerHTML += 
+                `<article class= "opiniones">
+        <p class="autorreseña"> Autor: ${results[i].author} </p>
+        <p class="comentarioreseña"> Comentario: ${results[i].content} </p>
+        </article>`
+        }
+    })
+})
 
 
 
