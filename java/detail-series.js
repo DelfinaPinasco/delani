@@ -161,3 +161,38 @@ boton.addEventListener('click', function(){
     localStorage.setItem('pelisfavs', favsTostring)
     console.log(localStorage);
 });
+
+
+//reviews
+
+let qString = location.search
+let query3 = new URLSearchParams(qString)
+let serieid = query3.get("id")
+console.log(serieid);
+
+
+let urlreviews = `https://api.themoviedb.org/3/tv/${serieid}/reviews?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
+
+
+
+fetch(urlreviews)
+    .then(function (respuesta) {
+        return respuesta.json()
+    })
+    .then(function (info) {
+        console.log(info);
+        let resul= info.results
+        let reviewcontainer = document.querySelector(".reseña");
+        let contenidor =
+            `<article href>
+                <h4 style="color: white" > <u>  Autor: </u> "${resul[0].author}" </h4>
+                <h4 style="color: white" > <u>  Comentario: </u> "${resul[0].content}" </h4>
+       
+        </article>`;
+
+        reviewcontainer.innerHTML += contenidor
+
+    }
+
+
+    )

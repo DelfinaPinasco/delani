@@ -2,22 +2,22 @@ let campo = document.querySelector('.search')
 let aviso = document.querySelector('.textooo')
 let formulario = document.querySelector('.formulario');
 
-formulario.addEventListener('submit', function(evento){  
+formulario.addEventListener('submit', function (evento) {
     evento.preventDefault()
     console.log("Error. Sin enviar")
-if (campo.value == "") {
-    aviso.innerText = 'El campo no puede estar vacío';
-    campo.style.outline = '2px solid red'
-    aviso.style.color = 'red'
-}
-else if (campo.value.length < 3){
-    aviso.innerText = 'Debe ingresar más caracteres';
-    campo.style.outline = '2px solid red'
-    aviso.style.color = 'red'
-}
-else {
-    this.submit()
-}
+    if (campo.value == "") {
+        aviso.innerText = 'El campo no puede estar vacío';
+        campo.style.outline = '2px solid red'
+        aviso.style.color = 'red'
+    }
+    else if (campo.value.length < 3) {
+        aviso.innerText = 'Debe ingresar más caracteres';
+        campo.style.outline = '2px solid red'
+        aviso.style.color = 'red'
+    }
+    else {
+        this.submit()
+    }
 })
 
 let qsString = location.search
@@ -32,14 +32,14 @@ let urldetmov = `https://api.themoviedb.org/3/movie/${id}?api_key=15370bef1a25ea
 
 
 fetch(urldetmov)
-    .then(function(response){
+    .then(function (response) {
         return response.json()
     })
-    .then (function(data){
+    .then(function (data) {
         console.log(data);
-        let Container= document.querySelector('.detmovie1');
-        let contenido= 
-        `<article href>
+        let Container = document.querySelector('.detmovie1');
+        let contenido =
+            `<article href>
         <h2 style="color: white"> <u> ${data.title} </u></h2>
         <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
         <h4 style="color: white" > <u> Estreno: </u> ${data.release_date} </h4>
@@ -49,42 +49,42 @@ fetch(urldetmov)
         </article>`;
 
 
-       Container.innerHTML += contenido
+        Container.innerHTML += contenido
     })
 
-    .catch(function(error){
+    .catch(function (error) {
         console.log(error);
- })   
- 
+    })
+
 
 // Favoritos
-let favoritos=[]
+let favoritos = []
 
 
 let storageRecuperado = localStorage.getItem('pelisfavs');
-    if (storageRecuperado != null){
-        favoritos = JSON.parse(storageRecuperado);
-        console.log(favoritos);
-    }
-let boton = document.querySelector('.boton2');   
+if (storageRecuperado != null) {
+    favoritos = JSON.parse(storageRecuperado);
+    console.log(favoritos);
+}
+let boton = document.querySelector('.boton2');
 
-if (favoritos.includes(id)){
-     boton.innerText="sacar de favoritos"
-    };
+if (favoritos.includes(id)) {
+    boton.innerText = "sacar de favoritos"
+};
 
-boton.addEventListener('click', function(){
+boton.addEventListener('click', function () {
     // Chequeamos si el id ya esta lista y cambiar el texto del boton
 
-    if (favoritos.includes(id)){
+    if (favoritos.includes(id)) {
         let indicePelicula = favoritos.indexOf(id);
         favoritos.splice(indicePelicula, 1)
-        boton.innerText="agregar a favoritos"; 
-    } else{
-    // Guardamos el id de pelicula en el array
+        boton.innerText = "agregar a favoritos";
+    } else {
+        // Guardamos el id de pelicula en el array
         favoritos.push(id);
-        boton.innerText= 'quitar de favoritos';
+        boton.innerText = 'quitar de favoritos';
     }
-  
+
     // Guardamos datos en local storage
     let favsTostring = JSON.stringify(favoritos)
     localStorage.setItem('pelisfavs', favsTostring)
@@ -97,24 +97,29 @@ let qString = location.search
 let query3 = new URLSearchParams(qString)
 let movieid = query3.get("id")
 console.log(movieid);
+
+
 let urlreviews = `https://api.themoviedb.org/3/movie/${movieid}/reviews?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
 
-fetch (urlreviews)
-    .then (function (response){
-        return response.json ()
+
+fetch(urlreviews)
+    .then(function (respuesta) {
+        return respuesta.json()
     })
-    . then (function (dataa){
-        console.log (dataa);
-        let reviewcontainer = document.querySelector (".reseña");
-        let contenidor= 
-                `<article class= "reviews">
-                <h4 style="color: white" > <u>  Autor: </u> ${dataa.author} </h4>
-                <h4 style="color: white" > <u>  Comentario: ${dataa.content} </h4>
+    .then(function (info) {
+        console.log(info);
+        let resul= info.results
+        let reviewcontainer = document.querySelector(".reseña");
+        let contenidor =
+            `<article href>
+                <h4 style="color: white" > <u>  Autor: </u> "${resul[0].author}" </h4>
+                <h4 style="color: white" > <u>  Comentario: </u> "${resul[0].content}" </h4>
        
         </article>`;
+
         reviewcontainer.innerHTML += contenidor
 
-        }
-        
-     
-            )
+    }
+
+
+    )
