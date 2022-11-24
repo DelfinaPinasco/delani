@@ -91,7 +91,13 @@ boton.addEventListener('click', function(){
     console.log(localStorage);
 });
 
-let urlreviews = `https://api.themoviedb.org/3/movie/{movie_id}/reviews?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
+//reviews
+
+let qString = location.search
+let query3 = new URLSearchParams(qString)
+let movieid = query3.get("id")
+console.log(movieid);
+let urlreviews = `https://api.themoviedb.org/3/movie/${movieid}/reviews?api_key=15370bef1a25ea674deaaf70270ad202&language=en-US&page=1`
 
 fetch (urlreviews)
     .then (function (response){
@@ -100,24 +106,20 @@ fetch (urlreviews)
     . then (function (data){
         console.log (data);
 
-        let results = data.results
-        let boton = document.querySelector (".reviews")
-        let review = documment.querySelector (".comentarios")
+        let reviewcontainer = document.querySelector (".reseña")
+            .then (function(data){
+                console.log(data);
+                let contenidor= 
+                `<article class= "reviews">
+                <h4 style="color: white" > <u>  Autor: </u> ${data[i].author} </h4>
+                <h4 style="color: white" > <u>  Comentario: ${data[i].content} </h4>
+       
+        </article>`;
+        reviewcontainer.innerHTML += contenidor
 
-        boton.addEventListener ("click", function (e) {
-            e.preventDefault();
-
-            document.querySelector (".comments").innerText = "Reviews";
-
-            for (let i = 0; i < results.length; i++) {
-                review.innerHTML += 
-                `<article class= "opiniones">
-        <p class="autorreseña"> Autor: ${results[i].author} </p>
-        <p class="comentarioreseña"> Comentario: ${results[i].content} </p>
-        </article>`
         }
-    })
-})
-
-
-
+        .catch(function(error){
+            console.log(error);
+     })   
+     
+            )})
