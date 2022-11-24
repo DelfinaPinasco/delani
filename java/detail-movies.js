@@ -103,23 +103,18 @@ fetch (urlreviews)
     .then (function (response){
         return response.json ()
     })
-    . then (function (data){
-        console.log (data);
-
-        let reviewcontainer = document.querySelector (".reseña")
-            .then (function(data){
-                console.log(data);
-                let contenidor= 
+    . then (function (dataa){
+        console.log (dataa);
+        let reviewcontainer = document.querySelector (".reseña");
+        let contenidor= 
                 `<article class= "reviews">
-                <h4 style="color: white" > <u>  Autor: </u> ${data[i].author} </h4>
-                <h4 style="color: white" > <u>  Comentario: ${data[i].content} </h4>
+                <h4 style="color: white" > <u>  Autor: </u> ${dataa.author} </h4>
+                <h4 style="color: white" > <u>  Comentario: ${dataa.content} </h4>
        
         </article>`;
         reviewcontainer.innerHTML += contenidor
 
         }
-        .catch(function(error){
-            console.log(error);
-     })   
+        
      
-            )})
+            )
