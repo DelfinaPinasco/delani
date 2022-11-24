@@ -22,7 +22,6 @@ else {
 
 
 
-
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let busqueda = queryStringObj.get("q");

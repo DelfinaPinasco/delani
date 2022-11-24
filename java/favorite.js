@@ -27,11 +27,11 @@ if (peliculas == null || peliculas.length == 0 ){
     favoritos.innerHTML = `<p>No hay favoritos seleccionados</p>`
 }else{
     for (let i = 0 ; i < peliculas.length; i++){
-        buscarymostrarfavoritos(peliculas[i])
+        funcionfav(peliculas[i])
     }
 }
 
-function buscarymostrarfavoritos(id){
+function funcionfav(id){
     let urldetmov = `https://api.themoviedb.org/3/movie/${id}?api_key=385115c8e9bd0bc996d46c69d38601de&language=en-US`
     let url2=`https://api.themoviedb.org/3/tv/${id}?api_key=c71f5b75c8e3c6372967558c16ff597f`
 
@@ -44,7 +44,7 @@ function buscarymostrarfavoritos(id){
         favoritos.innerHTML += `
         <a href="./detail-movie.html?id=${data.id}">
             <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
-            <h2>${data.title}</h2>
+            <h3 style="color: white">${data.title}</h3>
         </a>        
         ` 
 
@@ -61,7 +61,7 @@ console.log(data);
 favoritos.innerHTML += `
 <a href="./detail-serie.html?id=${data.id}">
     <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
-    <h2>${data.name}</h2>
+    <h3 style="color: white">${data.name}</h3>
 </a>        
 ` 
 

@@ -1,19 +1,3 @@
-/*  window.addEventListener('load',function() {
-    let formulario = document.querySelector('form');
-    let buscador = document.querySelector('[name="search"]'); 
-    let aviso = document.querySelector('.aviso')
-    formulario.addEventListener('submit', function(e){
-        e.preventDefault();
-        if( buscador.value === ""){
-            aviso.innerText = 'El buscador está vacío, por favor ingrese texto';
-        } else {
-            this.submit();
-        }
-    })
-})*/
-
-
-
 
 let campo = document.querySelector('.search')
 let aviso = document.querySelector('.textooo')
@@ -79,7 +63,7 @@ return respuesta.json();
 console.log('El error es' + error);
 })
 
-//segsection --> preguntar por que si vuelvo a poner esto sin comentario no me lo toma
+//segsection 
 fetch(segurl)
 .then(function(respuesta) {
 return respuesta.json();

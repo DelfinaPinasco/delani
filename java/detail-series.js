@@ -57,14 +57,14 @@ fetch(url)
      // FAVS
 let favoritos = [];
 
-let recuperoStorage = localStorage.getItem('series_favoritas'); // te va a devolver null o los datos
+let recuperoStorage = localStorage.getItem('series_favoritas'); 
 
 if (recuperoStorage != null) {
-    //1ero tenemos que transformarlo de cadena de texto con JSON.parse y despues lo guardamos en favoritos 
+    
     favoritos = JSON.parse(recuperoStorage);
 }
 
-// Hacer click en el link. Primero deberemos capturar el elemento
+
 let fav = document.querySelector('.boton2');
 
 // Chequear que id este en el array de favoritos 
@@ -105,8 +105,8 @@ fetch(url2)
     })
     .then (function(data){
         console.log(data);
-        let bContainer= document.querySelector('.detmovie1');
-        let contenidoT= 
+        let Container= document.querySelector('.detmovie1');
+        let contenido= 
         `<article href>
         <h2>${data.title}</h2>
         <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
@@ -117,7 +117,7 @@ fetch(url2)
         </article>`;
 
 
-       bContainer.innerHTML += contenidoT
+       Container.innerHTML += contenido
     })
 
     .catch(function(error){
@@ -129,7 +129,7 @@ fetch(url2)
 
 let favoritos1=[]
 
-//  si ya hay favoritos
+
 
 let storageRecuperado = localStorage.getItem('pelisfavs');
     if (storageRecuperado != null){
@@ -138,13 +138,13 @@ let storageRecuperado = localStorage.getItem('pelisfavs');
     }
 let boton = document.querySelector('.boton2');   
 
-//si el id esta en el array cambiamos el texto del boton
+
 if (favoritos1.includes(id)){
      boton.innerText="sacar de favoritos"
     };
 
 boton.addEventListener('click', function(){
-    // chequear si el id ya esta lista y cambiar el texto del boton
+   
 
     if (favoritos1.includes(id)){
         let indicePelicula = favoritos1.indexOf(id);

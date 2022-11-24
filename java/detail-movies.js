@@ -21,9 +21,8 @@ else {
 })
 
 let qsString = location.search
-let qs2 = new URLSearchParams(qsString)
-//qs2 = {id= 43270}
-let id = qs2.get("id")
+let query2 = new URLSearchParams(qsString)
+let id = query2.get("id")
 console.log(id);
 
 
@@ -38,8 +37,8 @@ fetch(urldetmov)
     })
     .then (function(data){
         console.log(data);
-        let bContainer= document.querySelector('.detmovie1');
-        let contenidoT= 
+        let Container= document.querySelector('.detmovie1');
+        let contenido= 
         `<article href>
         <h2>${data.title}</h2>
         <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="">
@@ -50,7 +49,7 @@ fetch(urldetmov)
         </article>`;
 
 
-       bContainer.innerHTML += contenidoT
+       Container.innerHTML += contenido
     })
 
     .catch(function(error){
@@ -58,10 +57,9 @@ fetch(urldetmov)
  })   
  
 
-// favoritos
+// Favoritos
 let favoritos=[]
 
-//  si ya hay favoritos
 
 let storageRecuperado = localStorage.getItem('pelisfavs');
     if (storageRecuperado != null){
@@ -70,25 +68,24 @@ let storageRecuperado = localStorage.getItem('pelisfavs');
     }
 let boton = document.querySelector('.boton2');   
 
-//si el id esta en el array cambiamos el texto del boton
 if (favoritos.includes(id)){
      boton.innerText="sacar de favoritos"
     };
 
 boton.addEventListener('click', function(){
-    // chequear si el id ya esta lista y cambiar el texto del boton
+    // Chequeamos si el id ya esta lista y cambiar el texto del boton
 
     if (favoritos.includes(id)){
         let indicePelicula = favoritos.indexOf(id);
         favoritos.splice(indicePelicula, 1)
         boton.innerText="agregar a favoritos"; 
     } else{
-    // guardar el id de pelicula en el array
+    // Guardamos el id de pelicula en el array
         favoritos.push(id);
         boton.innerText= 'quitar de favoritos';
     }
   
-    // Guardar datos en local storage
+    // Guardamos datos en local storage
     let favsTostring = JSON.stringify(favoritos)
     localStorage.setItem('pelisfavs', favsTostring)
     console.log(localStorage);
