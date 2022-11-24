@@ -38,7 +38,7 @@ fetch(url)
         let container = document.querySelector('.contenedor')
         let contenido =
         `<article class= "contenedor"> 
-        <p class = "texto"> <u>Titulo</u>: ${data.name} </p>
+        <p class = "texto"> <u> ${data.name} </u> </p>
         <img class = "fotoriverdale" src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt='' /> 
         <p class = "texto"> <u>Fecha de estreno</u>: ${data.first_air_date} </p>
         <p class = "texto" > <u>Calificación</u>: ${data.vote_average} </p>
